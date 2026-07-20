@@ -10,8 +10,9 @@
                 full viewport while the tiles underneath fade out (0.75–0.85)
    Tile height / spread amplitudes come from the --choreo-* custom properties
    in style.css so the media queries there stay in charge of responsiveness.
-   Tiles hug their image's natural aspect ratio, so photos are never cropped
-   or letterboxed; only the hero switches to cover as it fills the screen. */
+   All four tiles (including the hero, at rest) share the same fixed aspect
+   ratio and use object-fit: cover, so every tile renders at the same size;
+   the hero then grows edge-to-edge to fill the screen. */
 (function () {
   'use strict';
 
@@ -47,11 +48,11 @@
     cfg.centerY = parseFloat(cs.getPropertyValue('--choreo-center-y')) || 0;
   }
 
+  // Fixed aspect ratio shared by all four tiles (see .choreo-tile in
+  // style.css) so the hero's at-rest box matches the other three tiles
+  // instead of following this particular photo's own ratio.
   function heroRatio() {
-    if (heroImg && heroImg.naturalWidth && heroImg.naturalHeight) {
-      return heroImg.naturalWidth / heroImg.naturalHeight;
-    }
-    return 3 / 2;
+    return 890 / 616;
   }
 
   // Piecewise-linear interpolation of `values` over `stops` at progress t
