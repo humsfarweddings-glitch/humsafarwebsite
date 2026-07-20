@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+server/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Vercel
+.vercel/
+
+# OS / editor cruft
+.DS_Store
+.gstack/
+
+# Claude Code local settings
+.claude/settings.local.json

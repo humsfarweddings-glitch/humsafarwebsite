@@ -1,0 +1,2976 @@
+:root {
+    /* Color Cols */
+    --primary-bg-color: #143935;
+    /* For background and heading */
+    --inner-section-bg: #F8F1E2;
+    /* For inner section background */
+    --highlight-color: #FAE6A5;
+    /* For span, em, Strong, paragraph, <a> tags */
+    --white-color: #FFFFFF;
+    /* White Color */
+    --black-color: #000000;
+    /* Black Color */
+
+    /* Fonts Col */
+    --font-spectral: "Spectral";
+    /*Spectral serif Font*/
+    --font-Work: "Work Sans";
+    /*Work Sans Font*/
+    --font-Merriweather: "Merriweather";
+    /*Merriweather serif Font*/
+}
+
+/*Work Sans Font*/
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('../fonts/work/WorkSans-Regular.woff2') format('woff2'),
+            url('../fonts/work/WorkSans-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    p, li, strong {
+        font-family: 'Work Sans' !important;
+    }
+
+/*Spectral Sans Font*/
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Bold.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Bold.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-ExtraBold.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-ExtraLight.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-LightItalic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Light.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Italic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Medium.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-Regular.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-MediumItalic.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-SemiBold.woff2') format('woff2'),
+        url('../fonts/spectral/Spectral-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral' !important;
+}
+
+/*Merriweather serif Font*/
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-LightItalic.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-Light.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.single_heading_title {
+    font-family: "Merriweather" !important;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFAF0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px !important;
+    margin: 0 auto;
+    max-width: 1200px !important;
+}
+
+
+/* Home Banner Css Start */
+.banner_image img {
+    width: 100%;
+}
+
+.banner_image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Home Banner Css End */
+
+
+/* Featured Css Start */
+.Featured_main {
+    background: var(--primary-bg-color);
+    padding: 35px 0;
+}
+
+.featured_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.heading_featured h2 {
+    font-family: var(--font-spectral);
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+/* Featured Css End */
+
+
+/* HUMSAFAR WEDDINGS Start */
+.humsafar-section {
+    padding: 80px;
+}
+
+.humsafar-content h2 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.humsafar-content span.subtitle {
+    font-family: var(--font-spectral);
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 86px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+    color: var(--primary-bg-color);
+}
+
+.humsafar-content p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+section.humsafar-journal .col-md-4 {
+    overflow: hidden;
+}
+
+section.humsafar-journal .col-md-4 .journal_img {
+    overflow: hidden;
+    transition: 1s;
+}
+
+section.humsafar-journal .col-md-4:hover .journal_img img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+section.humsafar-journal .col-md-4:hover .journal_content {
+    transition: 1s;
+    background: var(--primary-bg-color);
+}
+
+section.humsafar-journal .col-md-4:hover .journal_content h5 {
+    color: #fff;
+}
+
+section.humsafar-journal .col-md-4:hover .journal_content a {
+    background: #ffffff;
+    color: #000;
+}
+
+/* HUMSAFAR WEDDINGS End */
+
+
+/* Weddings Across India  Css */
+.image_india_wedding {
+    background: url(../images/home_images/india_wedding.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-bottom: 60px;
+    /* background-attachment: fixed; */
+}
+
+.image_india_wedding .row_wedding_flex {
+    height: 100%;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+}
+
+.row_wedding_flex a {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38.65px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid;
+    padding: 15px 40px;
+    text-decoration: none;
+    letter-spacing: 6px;
+}
+
+.row_wedding_flex a:hover {
+    background: var(--primary-bg-color);
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+section.india_wedding_score .single_heading_title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38.65px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+
+/* WEDDINGS AROUND THE WORLD Html Css */
+.image_world_wedding {
+    background: url(../images/home_images/word_wedding.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-bottom: 60px;
+    /* background-attachment: fixed; */
+}
+
+.image_world_wedding .row_wedding_flex {
+    height: 100%;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+}
+
+section.world_wedding_score .single_heading_title {
+    padding: 30px 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38.65px;
+    letter-spacing: 20%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* THE HUMSAFER OFFERINGS CSS  */
+section.humsafer_offering {
+    background: #F8F1E2;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+h2.section_heading {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58.65px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    margin-bottom: 20px;
+}
+
+.humsafer_offering .card-img-overlay a {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 31.85px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid;
+    position: absolute;
+    bottom: 0px;
+    padding: 9px;
+    left: 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 7px 0px;
+}
+
+.humsafer_offering .card-img-overlay {
+    margin: 25px;
+}
+
+.humsafer_offering .card:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.humsafer_offering .card {
+    overflow: hidden;
+}
+
+.humsafer_offering .card:hover .card-img-overlay.d-flex a {
+    transition: 1s;
+}
+
+/*  Why Choose Humsafar Weddings Css */
+.Choose_Humsafar {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.feature-box.d-flex {
+    background: #F8F1E2;
+    border: 1px solid #DDD5C4;
+    margin-bottom: 20px;
+    padding: 24px;
+    border-radius: 20px;
+    gap: 22px;
+    align-items: center;
+    margin-top: 15px;
+    box-shadow: 0 6px 20px rgba(20, 57, 53, 0.06);
+    transition: background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.feature-box.d-flex:hover {
+    background: var(--primary-bg-color);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(20, 57, 53, 0.22);
+}
+
+.feature-icon-badge {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: 1.5px solid var(--highlight-color);
+    box-shadow: 0 4px 12px rgba(20, 57, 53, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease;
+}
+
+.feature-box.d-flex:hover .feature-icon-badge {
+    transform: scale(1.06);
+}
+
+.feature-icon {
+    width: 58%;
+    height: 58%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.feature-title {
+    font-family: var(--font-spectral);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35.38px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    color: #000;
+    transition: color 0.35s ease;
+}
+
+.feature-description {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27.05px;
+    color: #4E3309;
+    transition: color 0.35s ease;
+}
+
+.feature-box.d-flex:hover .feature-title {
+    color: #fff;
+}
+
+.feature-box.d-flex:hover .feature-description {
+    color: #fff;
+}
+
+/* humsafer journal Css */
+section.humsafar-journal {
+    background: #F7F1E2;
+    padding: 80px 0 0;
+    overflow: hidden;
+}
+
+.journal_img img {
+    width: 100%;
+}
+
+.journal_content {
+    background: #FFFAF0D9;
+    text-align: center;
+    padding: 30px 20px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    height: fit-content;
+}
+
+.journal_content h5 {
+    font-family: var(--font-spectral);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--primary-bg-color);
+    height: 85px;
+}
+
+a.journal_button {
+    font-family: var(--font-spectral);
+    font-weight: 500;
+    font-size: 15.45px;
+    line-height: 100%;
+    background: var(--primary-bg-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    display: block;
+    width: fit-content !important;
+    margin: 0 auto !important;
+}
+
+
+
+/* Footer Css Start */
+section.footer_topbar {
+    padding: 60px 0;
+    background: #F8F1E2;
+}
+
+.footer_Magic_btn {
+    width: fit-content;
+    margin: auto;
+}
+
+.footer_Magic_btn a {
+    font-family: var(--font-spectral);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAE6A5;
+    background-color: var(--primary-bg-color);
+    border: 1px solid #FAE6A5;
+    height: 60px;
+    display: flex;
+    gap: 12px;
+    padding: 0px 24px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+.footer_Magic_btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer.footer_main {
+    background: #143733;
+    padding: 50px 0 0;
+}
+
+footer.footer_main .navbar-brand img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.instagram_images {
+    padding: 30px 0;
+}
+
+footer.footer_main ul li.nav-item a {
+    font-family: var(--font-spectral);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20.85px;
+    color: #FAE6A5;
+}
+
+.instagram_images img {
+    width: 100%;
+}
+
+.copy_right p {
+    border: 1.5px solid #FFFFFF33;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.copy_right p {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 !important;
+}
+
+.social_media ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social_media ul li {
+    list-style: none;
+    margin: 30px 0 20px;
+}
+
+.social_media ul li a {
+    color: #fff;
+}
+
+/* humsafar stories testimonial slider Section  */
+.humsafar-stories .testimonial-item {
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: #F8F1E2;
+}
+
+.humsafar-stories .testimonial-image img {
+    width: 100%;
+    max-width: 100%;
+    /* Crop the sides of landscape photos into a vertical portrait frame,
+       keeping the couple (usually centered in the shot) in view. */
+    height: 640px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.humsafar-stories .testimonial-text {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.humsafar-stories .testimonial-image {
+    width: 50%;
+}
+
+.humsafar-stories .testimonial-content.p-4 {
+    width: 50%;
+    padding: 0 50px !important;
+}
+
+.humsafar-stories .testimonial_name strong {
+    font-family: var(--font-Work);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31.3px;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    color: var(--primary-bg-color);
+}
+
+section.humsafar-stories {
+    padding-bottom: 100px;
+    padding-top: 70px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+
+.humsafar-stories .slick-dots li button:before {
+    font-size: 12px !important;
+}
+
+.humsafar-stories ul.slick-dots {
+    bottom: -60px;
+}
+
+/* Indian Destination css */
+.journal_content-1 {
+    background: #FFFAF0D9;
+    text-align: center;
+    padding: 20px;
+    width: 78%;
+    margin: 0 auto;
+    position: relative;
+    top: -82px;
+    height: 185px;
+    border: 1px solid #80808047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination-content h1 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 58.65px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2A341F;
+    margin-bottom: 20px;
+    padding-top: 80px;
+}
+
+.destination-content p {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+}
+
+.indian-destination-image {
+    padding-top: 60px;
+}
+
+.journal_content-1 h3 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 68.76px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}
+
+.journal_content-1 span {
+    font-family: var(--font-spectral);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 23.35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.Indian_destination_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.Indian_destination_img {
+    overflow: hidden;
+}
+
+.indian-destination-image .col-md-6:hover .Indian_destination_img img {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+
+/* Humsafar Glimpses Css */
+.humsafar-glimpses {
+    background-color: #fffaf5;
+}
+
+/* Glimpses: scroll choreography. A tall (300vh) section with a sticky
+   full-screen stage. Four tiles start as a 2x2 spread that fits in one
+   screen, swap corners diagonally, stack into the center, then the
+   top-right tile expands to fill the screen. Driven by js/scroll-choreography.js.
+   Images use object-fit: contain so nothing is ever cropped; the unitless
+   custom properties below (vw/vh numbers) are read by the JS. */
+.scroll-choreo {
+    --choreo-tile-h: 32;  /* tile height in vh; width follows each image's ratio */
+    --choreo-off-x: 21;   /* horizontal offset from center in vw */
+    --choreo-off-y: 17;   /* vertical offset from center in vh */
+    --choreo-center-y: 8; /* stage center pushed down (vh) to clear the heading */
+    position: relative;
+    height: 300vh;
+    width: 100%;
+}
+
+/* Heading pinned at the top-center of the sticky screen, above the tiles.
+   JS slides it up and fades it out while the hero expands full screen. */
+.choreo-heading {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    will-change: transform, opacity;
+}
+
+/* Mandap ornaments flanking the heading. The source icon is orange/purple,
+   so it is re-tinted here into the site's gold to match the brand. */
+.choreo-mandap {
+    height: 76px;
+    width: auto;
+    filter: grayscale(1) sepia(1) saturate(2.4) hue-rotate(-10deg) brightness(1.05);
+    opacity: 0.9;
+}
+
+.choreo-mandap-flip {
+    transform: scaleX(-1);
+}
+
+.scroll-choreo-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll-choreo-stage {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Each tile hugs its image exactly: height fixed, width follows the photo's
+   natural aspect ratio, so there is never letterboxing or cropping. */
+.choreo-tile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: calc(var(--choreo-tile-h) * 1vh);
+    transform: translate(-50%, -50%);
+    will-change: transform, width, height, opacity;
+}
+
+.choreo-tile img {
+    height: 100%;
+    width: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(20, 57, 53, 0.25);
+}
+
+.choreo-tl { z-index: 10; }
+.choreo-br { z-index: 20; }
+.choreo-tr { z-index: 30; }
+.choreo-bl { z-index: 40; }
+
+/* Hero (bottom-left photo): its box is sized explicitly by JS and expands to
+   the full viewport at the end; cover keeps it edge-to-edge with no gaps.
+   At rest JS sizes the box to the image's own ratio, so nothing is cropped
+   until the full-screen expansion. */
+.choreo-bl img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .scroll-choreo {
+        --choreo-tile-h: 15;
+        --choreo-off-x: 25;
+        --choreo-off-y: 10;
+        --choreo-center-y: 6;
+    }
+    .choreo-heading {
+        top: 19vh;
+        gap: 10px;
+    }
+    .choreo-mandap {
+        height: 40px;
+    }
+    .choreo-tile img {
+        border-radius: 8px;
+    }
+}
+
+.humsafar-glimpses button.slick-prev:before {
+    background: url(../images/home_images/left.svg);
+    font-size: 0;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.humsafar-glimpses button.slick-next:before {
+    background: url(../images/home_images/right.svg);
+    font-size: 0;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+/* Udaipur Page Css */
+
+.Destinations_btn {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    bottom: 117px;
+}
+
+.Destinations_btn a {
+    border: 1px solid#fff;
+    color: #fff;
+    font-family: var(--font-Work);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33.06px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 20px;
+}
+
+.Destinations_btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.udaipur-section {
+    padding: 60px 0;
+    font-family: 'Georgia', serif;
+    background: #fffdf9;
+    color: #2c2c2c;
+}
+
+.udaipur-section .udaipur-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.udaipur-section .text-column {
+    flex: 1 1 60%;
+}
+
+.udaipur-section .image-column {
+    flex: 1 1 35%;
+}
+
+.udaipur-section .image-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.udaipur-section .dropcap-paragraph::first-letter {
+    float: left;
+    line-height: 1;
+    padding-right: 10px;
+    font-family: var(--font-spectral);
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.udaipur-section .highlight-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.udaipur-section .highlight-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--primary-bg-color);
+    letter-spacing: 0px;
+}
+
+.udaipur-section .highlight-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: var(--primary-bg-color);
+    font-size: 23px;
+    line-height: 23px;
+    width: 6px;
+    height: 6px;
+    top: 11px;
+}
+
+.udaipur-content p {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: var(--primary-bg-color);
+}
+
+.udaipur-section .subheading {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+/* Top Destination Wedding Venues in Udaipur, Rajasthan  Code */
+.Rajasthan-Destination_title {
+    padding: 20px 0;
+    background-color: var(--inner-section-bg);
+}
+
+.Rajasthan-Destination_title h2 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+
+/* THE OBEROI UDAIVILAS Css  */
+
+.hotel-feature {
+    padding: 60px 0;
+    background-color: #fffdf9;
+}
+
+.hotel-box {
+    position: relative;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hotel-box {
+    display: flex;
+    align-items: end;
+}
+
+.hotel-text ul {
+    padding-left: 20px;
+    list-style: disc;
+    font-size: 15px;
+    color: #333;
+}
+
+.hotel-image {
+    width: 65%;
+    margin: 0 0 0 auto;
+}
+
+.hotel-text {
+    background: #F8F1E2;
+    padding: 40px;
+    width: 450px;
+    margin: 0 0 0 auto;
+    position: relative;
+    left: 11%;
+    bottom: 70px;
+}
+
+.hotel-text li {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 26.3px;
+    letter-spacing: 0%;
+    color: var(--primary-bg-color);
+}
+
+.hotel-text h3 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    color: var(--primary-bg-color);
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0.5px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.hotel-image.Ekaaya_image {
+    margin: 0 auto 0 0;
+}
+
+.hotel-text.Ekaaya_content {
+    left: auto;
+    right: 14%;
+}
+
+/* Wedding Designing Page Css*/
+
+.designing_content p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: justify;
+    color: var(--primary-bg-color);
+}
+
+.designing_img img {
+    width: 100%;
+}
+
+section.designing_moments_content {
+    padding: 40px 0;
+}
+
+.designing_moments_content h2.section_heading {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.destination-content p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: justify;
+    color: var(--primary-bg-color);
+    font-family: var(--font-Work) !important;
+}
+
+.designing_single_heading_secound h1 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58.65px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2A341F;
+}
+
+section.wedding_design_secound {
+    padding: 50px 0;
+}
+
+img.creative_full_bg {
+    width: 100%;
+}
+
+.content_creative_sec {
+    padding: 50px 0;
+}
+
+.content_creative_sec p {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    line-height: 26.3px;
+    text-align: center;
+}
+
+.content_creative_sec h2 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+/* Blog Page Css Start */
+
+.blog_page_journal {
+    padding: 50px 0 !important;
+    background: #fff !important;
+}
+
+.blog_page_journal .journal_content h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-top: 4px;
+    color: var(--primary-bg-color);
+}
+
+span.Journal_date {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 15.45px;
+    line-height: 12.87px;
+    letter-spacing: 1px;
+    color: #686868;
+}
+
+.blog_page_journal .col-md-4:hover .journal_content span.Journal_date {
+    color: #ddd;
+}
+
+.blog_page_journal .col-md-4:hover .journal_content h2 {
+    color: #fff;
+}
+
+.blog_page_journal .col-md-4:hover .journal_content p {
+    color: #ddd;
+}
+
+.blog_page_journal .journal_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.96px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.blog_page_journal .row {
+    margin-top: 30px;
+}
+
+.blog_page_journal .row .journal_content {
+    top: -65px;
+    background: #fff;
+}
+
+/* Blog Page Css End */
+
+
+/* Testimonial Css Start */
+
+.testimonial_main .img_testimonial_journal img {
+    width: 100%;
+}
+
+.col-md-6.testimonial-content-bg {
+    background: #F8F1E2;
+}
+
+.content_testimonial_journal {
+    padding: 50px 70px;
+    text-align: center;
+}
+
+.content_testimonial_journal p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.3px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.content_testimonial_journal span {
+    font-family: var(--font-Work);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31.3px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 40px;
+    display: block;
+    color: var(--primary-bg-color);
+}
+
+.testimonial_main .col-md-6 {
+    padding: 0 !important;
+}
+
+.testimonial_main {
+    padding: 50px 0 80px;
+}
+
+section.testimonial_main .row {
+    gap: 50px 0;
+    margin-top: 30px;
+}
+
+/* Testimonial Css End */
+
+
+/* Contact Form Css Start */
+
+section.Enquire_main_bg {
+    background: url(../images/contact/form_banner_contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.Enquire_form_bg {
+    background: #F8F1E2;
+    padding: 50px;
+}
+
+form.wedding-form .form-flex {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+form.wedding-form .form-flex label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18.65px;
+    vertical-align: middle;
+    color: #000;
+    font-family: var(--font-Merriweather)
+}
+
+form.wedding-form .form-flex input {
+    width: 100%;
+    border: 1.33px solid #AEAEAE66;
+    background: transparent;
+    height: 53px;
+    border-radius: 14px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-Work);
+    line-height: 100%;
+    color: #000;
+    outline: 0;
+}
+
+form.wedding-form .form-flex div {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form.wedding-form .form-flex select {
+    width: 100%;
+    border: 1.33px solid #AEAEAE66;
+    background: transparent;
+    height: 53px;
+    border-radius: 14px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-Work);
+    line-height: 100%;
+    color: #000;
+    outline: 0;
+}
+
+.file-upload label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18.65px;
+    vertical-align: middle;
+    color: #000;
+    font-family: var(--font-Merriweather)
+}
+
+.dotted_border_upload {
+    border: 1.33px dotted #AEAEAE66;
+    border-radius: 14px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotted_border_upload img {
+    position: absolute;
+}
+
+.dotted_border_upload input#file-upload {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.Enquire_form_bg button.submit-btn {
+    font-family: var(--font-spectral);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAE6A5;
+    background-color: var(--primary-bg-color);
+    border: 1px solid #FAE6A5;
+    height: 60px;
+    display: flex;
+    gap: 12px;
+    padding: 0px 24px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    margin: 50px auto 0;
+}
+
+.Stay_Connected_main {
+    padding: 70px 0;
+}
+
+.Stay_Connected_main p.perg_tp {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.4px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.Stay_Connected_main h2.section_heading {
+    margin: 10px;
+}
+
+.Stay_Connected_main .get_touch {
+    height: 100%;
+    border: 1px solid #FFDD94;
+    background: #F8F1E2;
+    margin-left: 30px;
+    padding: 30px 50px;
+    border-radius: 19px;
+}
+
+.contact_map iframe {
+    height: 320px;
+    border-radius: 19px;
+}
+
+.get_touch ul {
+    display: flex;
+    gap: 7px;
+}
+
+.get_touch ul li {
+    list-style: none;
+}
+
+.get_touch ul li a {
+    background: #143733;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+.get_touch h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63.46px;
+    color: var(--primary-bg-color);
+}
+
+.get_touch address {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30.48px;
+    letter-spacing: 0%;
+    color: var(--primary-bg-color);
+}
+
+.get_touch a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.48px;
+    width: 100%;
+    color: var(--primary-bg-color);
+    display: block;
+}
+
+.get_touch p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24.07px;
+    letter-spacing: 0%;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.Stay_Connected_main .row {
+    margin-top: 35px;
+}
+
+/* Location Css */
+
+section.locations_bg {
+    padding: 40px 0;
+    background: #F8F1E2;
+    margin-bottom: 50px;
+}
+
+.locations_card {
+    text-align: center;
+}
+
+.locations_card_header {
+    background: var(--primary-bg-color);
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.48px;
+    letter-spacing: 1px;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 15px;
+    padding: 3px 30px;
+}
+
+p.mb-0.small {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.locations_bg .col-sm-6.col-md-3 {
+    border-right: 1px solid #D7D7D7;
+}
+
+.locations_bg .col-sm-6.col-md-3:last-child {
+    border: none;
+}
+
+.full_width.large-field {
+    width: 100%;
+    display: block !important;
+    margin: 20px 0;
+}
+
+.large-field textarea {
+    height: 85px !important;
+    width: 100%;
+    border: 1.33px solid #AEAEAE66;
+    background: transparent;
+    border-radius: 14px;
+    padding: 11px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-Work);
+    line-height: 100%;
+    color: #000;
+    outline: 0;
+}
+
+.form-flex.full_width.team_form.large-field {
+    margin: 0;
+}
+
+.file-upload.space_team {
+    margin-bottom: 20px;
+}
+
+.form-status {
+    margin-top: 25px;
+    font-family: var(--font-Work);
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+.form-status.success {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+}
+
+.form-status.error {
+    color: #B3261E;
+    font-weight: 600;
+}
+
+/* Contact Form Css Start */
+
+/* Faq Css */
+.faQ_heading h3 {
+    margin: 40px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 42px;
+}
+.faq-section {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.faq-box {
+    background-color: #F8F1E2;
+    margin-bottom: 20px;
+    padding: 9px 20px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.faq-question span {
+    font-family: var(--font-Work);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--primary-bg-color);
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.faq-answer li,
+.faq-answer p {
+    font-family: var(--font-Work);
+    color: var(--primary-bg-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.3px;
+    letter-spacing: 0%;
+}
+.faq-box.open button.toggle-btn {
+    color: #fff;
+    background-color: var(--primary-bg-color);
+}
+.faq-box .toggle-btn {
+    border: none;
+    font-size: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #e1dcdc;
+    outline: 0;
+    height: 32px;
+    width: 32px;
+    color: #000;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 15px 20px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.faq-answer ul {
+    padding-left: 18px;
+    margin: 10px 0;
+}
+
+.faq-answer ul li {
+    margin-bottom: 8px;
+}
+
+.faq-box.open .faq-answer {
+    display: block;
+}
+
+
+/* Humsafer Glimpses Inner Page Css Start */
+
+    .inner_humsafer_main {
+        padding: 20px 0;
+    }
+
+    .inner_humsafer_main p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .journal_inner_page {
+        background: transparent !important;
+        padding: 30px 0 0 !important;
+    }
+    .journal_inner_page .journal_content h5 {
+        height: auto;
+    }
+    .journal_inner_page .journal_content span {
+        padding-bottom: 16px;
+        display: block;
+        font-family: var(--font-Work);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: var(--primary-bg-color);
+        text-align: center;
+    }
+    .journal_inner_page .col-md-4:hover .journal_content span {
+        color: #fff;
+    }
+    .humsafer_secound_row {
+        background: var(--inner-section-bg) !important;
+        padding: 80px 0 0 !important;
+    }
+    .third_row_sec {
+        padding: 70px 0 0 !important;
+    }
+
+
+
+/* Wedding Management  Page Css */
+
+.perfect_moments_main img {
+    width: 100%;
+}
+.perfect_sec_content {
+    background: #F8F1E2;
+    width: 41%;
+    padding: 20px 40px;
+    margin: 0 0 0 auto;
+    margin-top: -120px;
+    z-index: 9;
+    position: relative;
+    box-shadow: 0 0 10px 0 #F8F1E2;
+    top: -70px;
+}
+.perfect_sec_content h3 {
+    font-weight: 600;
+    color: var(--primary-bg-color);
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.perfect_sec_content ul li, .perfect_sec_content ul li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.3px;
+    padding-bottom: 7px;
+    font-family: var(--font-Work);
+    color: var(--primary-bg-color);
+}
+
+.perfect_sec_content ul {
+    padding: 0 20px;
+}
+
+.Management_service {
+    padding-top: 0 !important;
+}
+
+
+/* Word Destination Css */
+
+.Humsafar_Couples .perfect_sec_content {
+    width: 57%;
+    margin-top: -176px;
+}
+.word_destination_space h1 {
+    padding-top: 25px;
+}
+.word_destination_space {
+    padding-bottom: 40px;
+}
+.world_marrage .word_detail_space {
+    padding-top: 20px;
+}
+
+
+/* Wedding Planning Css Start */
+
+.planing_img_box {
+    width: 55%;
+}
+.flex_planing_multipal_img {
+    display: flex;
+    gap: 10px;
+}
+img.creative_full_bg_perfect {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+.content_width_fix {
+    width: 75%;
+    margin: 0 auto;
+}
+.content_width_fix p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+video.full-video {
+    width: 100%;
+    height: 100vh !important;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hero image slideshow (crossfade via slick) */
+.hero-slider,
+.hero-slider .slick-list,
+.hero-slider .slick-track,
+.hero-slider .slick-slide,
+.hero-slider .slick-slide > div {
+    height: 100vh;
+}
+
+.hero-slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* About Css Start */
+
+.inner_bannner_about img {
+    height: 100%;
+}
+
+
+
+
+/* Header Css Start */
+.header_main.sticky {
+    position: fixed;
+    background: var(--primary-bg-color);
+}
+/* .header_main.sticky  .nav-links li a {
+    color: var(--primary-bg-color);
+} */
+
+.header_main {
+    background-color: var(--primary-bg-color);
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(30px);
+}
+/* .header_main {
+    background-color: var(--primary-bg-color);
+} */
+.mega-box ul li a {
+    color: var(--primary-bg-color) !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+    line-height: 27px !important;
+}
+.destination_india_menu h3 {
+    text-align: left;
+    font-size: 22px;
+    margin-top: 11px;
+    border-bottom: 1px solid#ddd;
+    padding: 10px 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.col-md-3.left-column h2 {
+    font-size: 20px;
+    text-align: left;
+    color: var(--primary-bg-color);
+    padding: 0;
+    letter-spacing: 2px;
+}
+ul.whats-new-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0px;
+}
+.mega-menu-grid p {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-Merriweather);
+    color: var(--primary-bg-color);
+    font-weight: 500;
+}
+ul.whats-new-list li {
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+    background: transparent;
+    width: fit-content;
+}
+.custom-navbar .nav-link {
+    color: var(--text-gold);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+header.header_main .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+nav {
+    z-index: 99;
+    width: 100%;
+}
+
+nav .wrapper {
+    position: relative;
+    max-width: 100;
+    padding: 0 30;
+    line-height: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.wrapper .logo a {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrapper .nav-links {
+    display: inline-flex;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+    width: fit-content !important;
+    height: 96px;
+    line-height: 96px;
+}
+
+header.header_main .nav-links li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.85px;
+    letter-spacing: 1px;
+    font-family: "Spectral" !important;
+    color: var(--highlight-color);
+    padding: 0 19px;
+    text-transform: uppercase;
+}
+
+.mega-menu-grid .image-item a {
+    display: block;
+    height: fit-content;
+}
+
+.mega-menu-grid .image-item a p {
+    padding-top: 15px;
+}
+
+
+body .nav-links li a:hover {
+    text-decoration: none;
+}
+
+.nav-links .mobile-item {
+    display: none;
+}
+
+header.header_main ul.drop-menu li a {
+    color: #000 !important;
+    padding: 10px !important;
+}
+
+.nav-links .drop-menu {
+    position: absolute;
+    background: #fff;
+    width: fit-content;
+    line-height: 45px;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px 13px;
+    margin-top: 15px;
+}
+
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+    transition: all 0.3s ease;
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-menu li a {
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+ul.drop-menu li {
+    height: auto;
+}
+.mega-box .row {
+    background-color: #fff;
+    padding: 30px;
+    padding-right: 0;
+}
+.mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    top: 81px !important;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+
+.mega-box .content {
+    background: var(--highlight-color);
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mega-box .content .row {
+    width: calc(25% - 30px);
+    line-height: 45px;
+}
+
+.content .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .row header {
+    color: var(--primary-bg-color);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font-Merriweather);
+}
+
+.content .row .mega-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.row .mega-links li {
+    padding: 0 20px;
+}
+
+.row .mega-links li a {
+    padding: 0px;
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+}
+
+.row .mega-links li a:hover {
+    color: #f2f2f2;
+}
+
+.wrapper .btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper .btn.close-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper .btn {
+        display: block;
+    }
+
+    .wrapper .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        top: 0;
+        left: -100%;
+        background: #242526;
+        display: block;
+        padding: 50px 10px;
+        line-height: 50px;
+        overflow-y: auto;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+        transition: all 0.3s ease;
+    }
+
+    /* custom scroll bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #242526;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3A3B3C;
+    }
+
+    #menu-btn:checked~.nav-links {
+        left: 0%;
+    }
+
+    #menu-btn:checked~.btn.menu-btn {
+        display: none;
+    }
+
+    #close-btn:checked~.btn.menu-btn {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 15px 10px;
+    }
+
+    .nav-links li a {
+        padding: 0 20px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .nav-links .drop-menu {
+        position: static;
+        opacity: 1;
+        top: 65px;
+        visibility: visible;
+        padding-left: 20px;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.3s ease;
+    }
+
+    #showDrop:checked~.drop-menu,
+    #showMega:checked~.mega-box {
+        max-height: 100%;
+    }
+
+    .nav-links .desktop-item {
+        display: none;
+    }
+
+    .nav-links .mobile-item {
+        display: block;
+        color: #f2f2f2;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links .mobile-item:hover {
+        background: #3A3B3C;
+    }
+
+    .drop-menu li {
+        margin: 0;
+    }
+
+    .drop-menu li a {
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .mega-box {
+        position: static;
+        top: 65px;
+        opacity: 1;
+        visibility: visible;
+        padding: 0 20px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .mega-box .content {
+        box-shadow: none;
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+    }
+
+    .mega-box .content .row {
+        width: 100%;
+        margin-bottom: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mega-box .content .row:nth-child(1),
+    .mega-box .content .row:nth-child(2) {
+        border-top: 0px;
+    }
+
+    .content .row .mega-links {
+        border-left: 0px;
+        padding-left: 15px;
+    }
+
+    .row .mega-links li {
+        margin: 0;
+    }
+
+    .content .row header {
+        font-size: 19px;
+    }
+}
+
+nav input {
+    display: none;
+}
+.Website_logo a {
+    padding: 0 0 1px;
+}
+.Website_logo {
+    width: 20%;
+    padding: 10px 0;
+}
+.desktop-logo {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.logo-lockup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.logo-wordmark {
+    font-family: var(--font-spectral);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.mega-menu-grid .image-item {
+    text-align: center;
+}
+
+.mega-menu-grid .image-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 1px solid#dddd;
+    padding: 12px;
+}
+.Left_menu_code, .right_menu_code {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+ul.whats-new-list li {
+    height: fit-content !important;
+}
+
+
+
+
+/* About Page HTML Start */
+.tab-button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #234432;
+  transition: all 0.3s ease;
+}
+.tab-button.active {
+  background-color: #234432;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.hw-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #234432;
+}
+.year-tabs button {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+}
+body .year-tabs {
+    justify-content: space-between !important;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: inherit !important;
+    border-bottom: 1px solid var(--primary-bg-color);
+}
+.year-tabs button:focus {
+    outline: 0 !important;
+}
+.tab_section_about .subheading {
+    font-family: Spectral;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--primary-bg-color);
+    padding: 20px 0;
+}
+
+.design_tabs_content {
+    background: #F8F1E2;
+    padding: 69px;
+    text-align: center;
+    border: 1px solid #DDD5C4
+}
+
+.design_tabs_content h4 {
+    font-weight: 700;
+    font-style: italic; 
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--primary-bg-color);
+}
+.design_tabs_content p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    margin: 25px auto;
+    color: var(--primary-bg-color);
+}
+.family-section-bg {
+    border-radius: 19px;
+    background: #F8F1E2;
+    padding: 20px;
+}
+
+.family-section-border {
+    border: 0.87px solid #14393580;
+    border-radius: 19px;
+    padding: 20px;
+}
+.member-card {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+.member-info p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--primary-bg-color);
+}
+.member-info {
+    width: 60%;
+}
+.member-card img {
+    width: 40%;
+}
+.member-card.no-photo .member-info {
+    width: 100%;
+}
+.leaf-icon img.emotion_element {
+    width: 25%;
+}
+.member-info .title {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}
+.member-info h3 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42.84px;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+
+.amelia_harper {
+    padding-top: 50px;
+}
+
+h2.journey-title {
+    font-family: Spectral;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58.65px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2A341F;
+}
+
+/* Blog Page Css */
+
+section.blog_details {
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+.blog_deploy_content h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2A341F;
+}
+.blog_deploy_content em {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog_deploy_content p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #2A341F;
+}
+.space_between_blog {
+    width: 75%;
+    margin: 0 auto;
+}
+.blog_deploy_img {
+    padding: 40px 0;
+}
+.blog_deploy_content ul li {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.3px;
+    color: #2A341F;
+}
+section.guest_lived {
+    padding: 50px 0;
+    background-color: var(--inner-section-bg);
+}
+
+.heading_lived h2 {
+    font-family: "Merriweather" !important;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}
+.heading_lived h2 img:nth-child(1) {
+    position: relative;
+    right: 22px;
+    bottom: 7px;
+}
+.heading_lived h2 img:last-child {
+    position: relative;
+    bottom: -6px;
+    left: 13px;
+}
+section.full_banner_Ceremonies img {
+    width: 100%;
+}
+.content_ceremonies h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.content_ceremonies {
+    padding: 40px 0;
+}
+.box_ceremonies {
+    background: var(--inner-section-bg);
+    padding: 50px;
+    width: 68%;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+.box_ceremonies h3 {
+    text-align: center;
+}
+.box_ceremonies ul li {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.3px;
+    padding: 5px 0;
+}
+.flex-image-soul {
+    display: flex;
+    gap: 10px;
+}
+.Images_multipal_corner {
+    padding-bottom: 50px;
+}
+.sound_healing_blog {
+    width: 82%;
+    margin: 0 auto;
+}
+.sound_healing_blog ul {
+    width: 57%;
+    margin: 0 auto 22px;
+}
+section.sound_healing {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.blog_deploy_content h5 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog_deploy_img img {
+    width: 100%;
+}
+.flex-image-soul img {
+    width: 50%;
+    object-fit: cover;
+}
+.Toast_tribute .blog_deploy_content {
+    margin-top: 40px;
+}
+.flex-image-soul.width_fixed img {
+    width: 33%;
+}
+.journal_img img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.humsafar_way {
+    background: #143733;
+    padding: 80px 0;
+}
+
+.content_humsafer_way h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.content_humsafer_way p {
+    color: #E9DBB0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-family: 'Merriweather' !important;
+    margin-top: 15px;
+}
+
+
+.locomotive_slide {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+body .oval.fit_images {
+    height: 100%;
+    width: 100%;
+}
+.locomotive_slide .step {
+    width: 350px;
+    border: 1.5px solid #DDBC85;
+    border-radius: 224.37px;
+    text-align: center;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locomotive_slide .oval {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.locomotive_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locomotive_slide {
+    margin-top: 70px;
+}
+
+.locomotive_slide .oval h2 {
+    font-family: 'Merriweather' !important;
+    font-size: 86px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+.locomotive_slide .oval h3 {
+    font-family: Spectral;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ddbb85;
+    padding: 0 20px;
+}
+.locomotive_slide .oval p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.9px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+
+/* Mobile Header Css */
+
+
+header.mobile_header_code {
+      background: var(--primary-bg-color);
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      display: none;
+}
+ 
+    header.mobile_header_code .logo {
+      font-size: 20px;
+    }
+ 
+    header.mobile_header_code .hamburger {
+      font-size: 26px;
+      cursor: pointer;
+      display: none;
+    }
+ 
+    .mobile_menu {
+        width: 100%;
+        max-width: 320px;
+        background: #fff;
+        position: ABSOLUTE;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        transition: left 0.3s ease;
+        padding: 2rem 1rem;
+        z-index: 9999;
+    }
+    
+    .mobile_menu .close-btn {
+      font-size: 24px;
+      text-align: right;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+ 
+    .mobile_menu nav ul {
+      list-style: none;
+    }
+ 
+    .mobile_menu nav li {
+      border-bottom: 1px solid #eee;
+    }
+ 
+ .mobile_menu nav a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    font-weight: 500;
+    font-family: 'Merriweather' !important;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+    .mobile_menu nav .has-submenu>a::after {
+      content: '▼';
+      float: right;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+ 
+    .mobile_menu nav .submenu {
+      display: none;
+      background: #f9f9f9;
+    }
+ 
+    .mobile_menu nav .submenu a {
+      font-weight: normal;
+      padding-left: 20px;
+    }
+ 
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      display: none;
+      z-index: 999;
+    }
+
+    @media (max-width: 1024px) {
+    .hamburger {
+        display: block !important;
+    }
+    header.mobile_header_code {
+        display: flex !important;
+    }
+     .mobile_menu nav .submenu a {
+        font-size: 11px;
+        color: #000;
+    }
+header.mobile_header_code .logo img {
+    width: 48%;
+}
+    }
+
+.amelia_harper.last_spacing_gap {
+    padding-bottom: 70px;
+}
+
+
+
+
+.horizontal-wrapper {
+    height: 100vh !important;
+    overflow: hidden;
+    max-height: 100vh !important;
+}
+.locomotive_slide {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 0 10vw;
+}
+.step {
+  flex: 0 0 18vw;
+}
+.oval {
+  padding: 0rem;
+  border-radius: 20px;
+  text-align: center;
+}
+.oval img {
+  width: 100%;
+  border-radius: 10px;
+}
+.all_slides {
+    position: absolute;
+    left: 0;
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+
+body {
+
+.step {
+    flex: 0 0 22vw;
+}
+.locomotive_slide {
+    margin-top: 30px;
+}
+.locomotive_slide .step {
+    height: 470px;
+}
+.content_humsafer_way p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+}
+
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1299px) {
+
+body {
+
+.step {
+    flex: 0 0 26vw;
+}
+.locomotive_slide {
+    margin-top: 30px;
+}
+
+}
+
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+body {
+
+.step {
+    flex: 0 0 35vw;
+}
+.locomotive_slide {
+    margin-top: 0px;
+}
+
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+body {
+    
+.step {
+    flex: 0 0 85vw;
+}
+.horizontal-wrapper {
+    padding: 40px 20px !important;
+}
+.content_humsafer_way h2 {
+    font-size: 25px;
+}
+.content_humsafer_way p >br {
+    display: none;
+}
+.content_humsafer_way p {
+    font-size: 14px;
+    line-height: 28px;
+}
+.locomotive_slide {
+    margin-top: 20px;
+}
+
+
+}
+
+}
+
+

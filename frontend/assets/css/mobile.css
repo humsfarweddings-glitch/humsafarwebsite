@@ -1,0 +1,803 @@
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  header.header_main .nav-links li a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .Website_logo {
+    width: 15%;
+  }
+  .Website_logo img {
+    width: 90%;
+  }
+}
+
+/* Mobile Responsive Css Start */
+@media only screen and (max-width: 767px) {
+body {   
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .humsafar-section {
+    padding: 40px 0px;
+  }
+  .humsafar-content h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .humsafar-content span.subtitle {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .featured_flex {
+    display: block;
+  }
+  .row_wedding_flex a {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px;
+    letter-spacing: 1px;
+  }
+  section.world_wedding_score .single_heading_title {
+    padding: 25px 15px;
+    letter-spacing: 2px;
+    font-size: 22px;
+  }
+  section.humsafer_offering {
+    padding: 50px 0;
+  }
+  h2.section_heading {
+    font-size: 25px;
+    line-height: 35.65px;
+    letter-spacing: 2px;
+  }
+  section.humsafer_offering .row {
+    gap: 15px;
+  }
+  .humsafar-content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    width: 100%;
+  }
+  section.india_wedding_score,
+  section.world_wedding_score {
+    padding: 0 10px;
+  }
+  section.india_wedding_score .single_heading_title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .Choose_Humsafar {
+    padding: 50px 0;
+  }
+  .feature-box.d-flex {
+    flex-wrap: wrap;
+  }
+  section.humsafar-stories {
+    padding-bottom: 80px;
+    padding-top: 35px;
+  }
+  .humsafar-stories ul.slick-dots {
+    bottom: -20px;
+  }
+  .humsafar-stories .testimonial-content.p-4 {
+    width: 100%;
+    padding: 0 20px 20px !important;
+  }
+  .humsafar-stories .testimonial-image {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .humsafar-stories .testimonial-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .image_world_wedding,
+  .image_india_wedding {
+    height: 500px;
+  }
+  .journal_content {
+    width: 90%;
+    top: -68px;
+  }
+
+  /* Wedding Planning Css Start */
+  .Destinations_btn a {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 14px 20px;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+  .designing_content p,
+  .perfect_sec_content ul li {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .Destinations_btn {
+    padding: 0 15px;
+}
+  .planing_img_box {
+    width: 100%;
+  }
+  .perfect_sec_content {
+    width: 100%;
+    padding: 20px 0px;
+    margin: 0 0 0 auto;
+    top: 0;
+  }
+  .perfect_sec_content h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .perfect_sec_content ul li {
+    padding-bottom: 7px;
+  }
+  .designing_single_heading_secound h1 {
+    font-size: 25px;
+    line-height: 38.65px;
+    letter-spacing: 1px;
+  }
+  section.perfect_moments_main {
+    padding-bottom: 50px;
+  }
+  .content_width_fix {
+    width: 100%;
+  }
+  .content_creative_sec h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .content_width_fix p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .content_width_fix p > br {
+    display: none;
+  }
+
+  /* Footer Css Start */
+  .copy_right p {
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin: 0 !important;
+  }
+  .heading_featured h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddddd1f;
+    padding: 0 0 14px;
+  }
+  .link_featured {
+    width: 50%;
+    float: right;
+  }
+  .link_featured img {
+    width: 90%;
+  }
+  .instagram_images {
+    padding: 30px 0 0;
+    margin-top: 40px;
+  }
+  .footer_Magic_btn a {
+    font-size: 14px;
+    gap: 10px;
+    padding: 0px 15px;
+    width: 100%;
+  }
+
+  /* Destination All Css */
+  .banner_image img {
+    height: 450px;
+  }
+  .udaipur-section {
+    padding: 30px 0;
+  }
+  .udaipur-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .udaipur-section .subheading {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .udaipur-section .highlight-list li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Rajasthan-Destination_title h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .hotel-text {
+    padding: 30px;
+    width: 100%;
+    margin: 0 0 0 auto;
+    left: 0;
+    bottom: 0;
+  }
+  .hotel-box {
+    flex-wrap: wrap;
+  }
+  .hotel-text {
+    order: 2;
+    position: relative;
+  }
+  .hotel-image {
+    order: 1;
+    position: relative;
+  }
+  .hotel-image {
+    width: 100%;
+  }
+  .hotel-text.Ekaaya_content {
+    right: 0;
+  }
+  .hotel-feature {
+    padding: 20px 0;
+  }
+  .hotel-text h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .hotel-text li {
+    font-size: 17px;
+    margin-bottom: 5px;
+    line-height: 26.3px;
+    letter-spacing: 0%;
+  }
+  .journal_content {
+    padding: 25px 15px;
+    width: 92%;
+    top: -43px;
+  }
+.contact_map iframe {
+    height: 300px;
+    width: 100%;
+}
+.Enquire_form_bg {
+    padding: 30px;
+}
+form.wedding-form .form-flex label {
+    font-size: 13px;
+}
+form.wedding-form .form-flex {
+    display: block;
+    gap: 10px;
+}
+.testimonial_main {
+    padding: 20px 0 20px;
+}
+.Enquire_form_bg button.submit-btn {
+    font-size: 13px;
+    height: 54px;
+    gap: 12px;
+    padding: 0px 20px;
+    line-height: 54px;
+    letter-spacing: 1px;
+    margin: 20px auto 0;
+}
+.file-upload label {
+    font-size: 13px;
+}
+
+.Stay_Connected_main .get_touch {
+    margin-left: 0;
+    padding: 20px 30px;
+    margin-top: 15px;
+}
+.get_touch address {
+    font-size: 18px;
+}
+.get_touch h2 {
+    font-size: 34px;
+    line-height: 44px;
+}
+.locations_card {
+    margin-bottom: 28px;
+}
+.locations_card_header {
+    font-size: 18px;
+    width: 100%;
+}
+.Stay_Connected_main p.perg_tp {
+    font-size: 16px;
+    line-height: 26px;
+}
+.Stay_Connected_main {
+    padding: 50px 0;
+}
+
+.faq_section .Destinations_btn a {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    padding: 14px 7px;
+}
+.faq-question span {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+.faq-question {
+    padding: 10px 0px;
+}
+.faq-answer li, .faq-answer p {
+    font-size: 15px;
+    line-height: 20.3px;
+    letter-spacing: 0%;
+}
+
+/* Blog Detail Css */
+
+.flex-image-soul img {
+    width: 100%;
+}
+.flex-image-soul {
+    flex-wrap: wrap;
+}
+.blog_deploy_img img {
+    width: 100%;
+}
+.content_ceremonies h2 {
+    font-size: 25px;
+    line-height: 36px;
+}
+.space_between_blog {
+    width: 100%;
+}
+.blog_deploy_content h2 {
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+.blog_deploy_content em {
+    font-size: 20px;
+    line-height: 29px;
+}
+.blog_deploy_content p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.blog_deploy_content ul li {
+    font-size: 16px;
+    line-height: 24.3px;
+}
+.blog_deploy_content ul {
+    padding: 0 15px;
+}
+.heading_lived h2 {
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 3px;
+}
+section.guest_lived {
+    padding: 40px 12px;
+}
+.box_ceremonies {
+    padding: 20px;
+    width: 100%;
+    margin: 22px auto;
+    border-radius: 2px;
+}
+.sound_healing_blog {
+    width: 100%;
+}
+.sound_healing_blog ul {
+    width: 93%;
+}
+.Images_multipal_corner {
+    padding-bottom: 20px;
+}
+.content_ceremonies {
+    padding: 20px 0;
+}
+.blog_deploy_content h5 {
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+section.blog_details {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.year-tabs {
+    display: grid !important;
+    grid-template-columns: repeat(4, 2fr);
+    width: 100% !important;
+    gap: 5px;
+}
+.year-tabs button {
+    background: #fafafa;
+    border: 1px solid #ddd;
+}
+.tab_section_about .subheading {
+    font-size: 25px;
+    line-height: 37px;
+}
+.design_tabs_content {
+    padding: 20px;
+}
+.design_tabs_content h4 {
+    font-size: 22px;
+    line-height: 34px;
+}
+.design_tabs_content p {
+    font-size: 15px;
+    line-height: 27px;
+    width: 100%;
+}
+h2.journey-title {
+    font-size: 30px;
+    line-height: 40px;
+}
+.member-card {
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.member-card img {
+    width: 100%;
+}
+.member-info {
+    width: 100%;
+    order: 2;
+}
+.member-info p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+}
+.member-info h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.destination-content h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.destination-content p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.amelia_harper {
+    padding-top: 20px;
+}
+.faQ_heading h3 {
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-size: 22px;
+    line-height: 32px;
+}
+.faq-answer {
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 23px;
+}
+video.full-video {
+    height: 400px !important;
+}
+.flex-image-soul.width_fixed img {
+    width: 100%;
+}
+
+
+
+}
+
+}
+
+
+
+
+/* Ipad Responsive Css */
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+
+body {
+
+  .container {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .humsafar-content p {
+      font-size: 18px;
+      line-height: 30px;
+  }
+  .humsafar-content span.subtitle {
+      font-size: 30px;
+      line-height: 44px;
+      letter-spacing: 2px;
+  }
+  .humsafar-section {
+      padding: 40px 20px;
+  }
+  .Featured_main {
+      padding: 35px 20px;
+  }
+  .link_featured img {
+    width: 100%;
+  }
+  .heading_featured {
+      width: 50%;
+  }
+.heading_featured h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.image_india_wedding, .image_world_wedding {
+    height: 500px;
+}
+.row_wedding_flex a {
+    font-size: 20px;
+    line-height: 38.65px;
+    padding: 9px 20px;
+    letter-spacing: 4px;
+}
+section.india_wedding_score .single_heading_title {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 22px 0;
+    letter-spacing: 2px;
+}
+section.world_wedding_score .single_heading_title {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 22px 0;
+    letter-spacing: 2px;
+}
+section.humsafer_offering {
+    padding: 40px 0;
+}
+h2.section_heading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 2px;
+}
+.humsafer_offering .card-img-overlay a {
+    font-size: 15px;
+    line-height: 22.85px;
+    letter-spacing: 2px;
+}
+.Choose_Humsafar {
+    padding: 50px 0;
+}
+.feature-title {
+    font-size: 20px;
+    line-height: 28.38px;
+    letter-spacing: 1px;
+}
+section.Choose_Humsafar .row.g-4 {
+    display: block;
+}
+
+section.Choose_Humsafar .row.g-4 .col-md-6 {
+    max-width: 100%;
+}
+section.humsafar-stories {
+    padding-top: 30px;
+}
+.humsafar-stories .testimonial-image {
+    width: 98%;
+}
+.humsafar-stories .testimonial-content.p-4 {
+    width: 100%;
+    padding: 0 25px 30px !important;
+}
+.humsafar-stories .testimonial-text {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.humsafar-stories .testimonial-image img {
+    height: 650px;
+    object-fit: cover;
+}
+section.humsafar-journal .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.designing_content p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.flex_planing_multipal_img img {
+    width: 50%;
+}
+.planing_img_box {
+    width: 80%;
+}
+.perfect_sec_content h3 {
+    font-size: 25px;
+    line-height: 38px;
+}
+.perfect_sec_content ul li, .perfect_sec_content ul li {
+    font-size: 15px;
+    line-height: 23px;
+}
+.designing_single_heading_secound h1 {
+    font-size: 30px;
+    line-height: 42px;
+}
+section.wedding_design_secound {
+    padding: 20px 0;
+}
+.content_width_fix {
+    width: 100%;
+}
+
+.content_creative_sec h2 {
+    font-size: 25px;
+    line-height: 38px;
+}
+.content_width_fix p >br {
+    display: none;
+}
+.content_width_fix p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.designing_moments_content .row {
+    flex-wrap: wrap-reverse;
+}
+.designing_moments_content .row .col-md-6 {
+    max-width: 100%;
+    flex: 0 100%;
+    padding-bottom: 20px;
+}
+.perfect_sec_content {
+    width: 65%;
+}
+
+form.wedding-form .form-flex label {
+    font-size: 14px;
+}
+.file-upload label {
+    font-size: 14px;
+}
+.Enquire_form_bg button.submit-btn {
+    font-size: 14px;
+}
+.Stay_Connected_main .get_touch {
+    height: 100%;
+    margin-left: 0;
+    padding: 20px 30px;
+    border-radius: 19px;
+}
+.get_touch h2 {
+    font-size: 30px;
+    line-height: 45px;
+}
+.contact_map iframe {
+    height: 320px;
+    width: 100%;
+}
+.get_touch address {
+    font-size: 16px;
+    line-height: 23.48px;
+}
+.locations_bg .col-sm-6.col-md-3 {
+    border-right: 1px solid #D7D7D7;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 28px;
+}
+
+.banner_image img {
+    height: 500px;
+}
+.faq-box.open .faq-answer {
+    display: block !important;
+}
+
+.space_between_blog {
+    width: 100%;
+}
+.blog_deploy_content h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+}
+.blog_deploy_content em {
+    font-size: 20px;
+    line-height: 32px;
+}
+.blog_deploy_content p {
+    font-size: 16px;
+}
+
+.blog_deploy_content ul {
+    padding: 0 20px;
+}
+
+.blog_deploy_content ul li {
+    font-size: 16px;
+}
+.blog_deploy_img img {
+    width: 100%;
+}
+.heading_lived h2 {
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+.sound_healing_blog ul {
+    width: 82%;
+}
+
+.flex-image-soul img {
+    width: 50%;
+}
+.blog_deploy_content h5 {
+    font-size: 26px;
+    line-height: 36px;
+}
+.member-info p {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+}
+.member-info h3 {
+    font-size: 30px;
+    line-height: 41.84px;
+}
+.design_tabs_content p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+}
+.design_tabs_content {
+    padding: 40px;
+}
+.tab_section_about .subheading {
+    font-size: 30px;
+}
+.design_tabs_content h4 {
+    font-size: 25px;
+}
+h2.journey-title {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 2px;
+}
+.destination-content p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.destination-content h1 {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+
+
+
+
+
+}
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+body header.header_main .nav-links li a {
+    font-size: 13px;
+}
+
+
+}
+
+
+

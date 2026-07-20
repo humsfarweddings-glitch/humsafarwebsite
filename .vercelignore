@@ -1,0 +1,7 @@
+server/
+content/
+.claude/
+.gstack/
+.DS_Store
+**/.DS_Store
+README.md

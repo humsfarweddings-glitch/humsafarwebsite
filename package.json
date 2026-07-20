@@ -1,0 +1,8 @@
+{
+  "name": "humsafar-weddings",
+  "private": true,
+  "description": "Vercel Functions (api/) for the Humsafar Weddings static site.",
+  "dependencies": {
+    "@vercel/blob": "^2.6.1"
+  }
+}
