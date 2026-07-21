@@ -2,7 +2,7 @@
     /* Color Cols */
     --primary-bg-color: #143935;
     /* For background and heading */
-    --inner-section-bg: #F8F1E2;
+    --inner-section-bg: #ffffff;
     /* For inner section background */
     --highlight-color: #FAE6A5;
     /* For span, em, Strong, paragraph, <a> tags */
@@ -207,7 +207,7 @@ a:hover {
 }
 
 body {
-    background-color: #FFFAF0 !important;
+    background-color: #ffffff !important;
 }
 
 a {
@@ -406,7 +406,7 @@ section.world_wedding_score .single_heading_title {
 
 /* THE HUMSAFER OFFERINGS CSS  */
 section.humsafer_offering {
-    background: #F8F1E2;
+    background: #fff;
     padding: 80px 0;
     overflow: hidden;
 }
@@ -466,7 +466,7 @@ h2.section_heading {
 }
 
 .feature-box.d-flex {
-    background: #F8F1E2;
+    background: #fff;
     border: 1px solid #DDD5C4;
     margin-bottom: 20px;
     padding: 24px;
@@ -539,7 +539,7 @@ h2.section_heading {
 
 /* humsafer journal Css */
 section.humsafar-journal {
-    background: #F7F1E2;
+    background: #ffffff;
     padding: 80px 0 0;
     overflow: hidden;
 }
@@ -549,7 +549,7 @@ section.humsafar-journal {
 }
 
 .journal_content {
-    background: #FFFAF0D9;
+    background: #fff;
     text-align: center;
     padding: 30px 20px;
     width: 85%;
@@ -587,7 +587,7 @@ a.journal_button {
 /* Footer Css Start */
 section.footer_topbar {
     padding: 60px 0;
-    background: #F8F1E2;
+    background: #fff;
 }
 
 .footer_Magic_btn {
@@ -619,7 +619,7 @@ section.footer_topbar {
 }
 
 footer.footer_main {
-    background: #143733;
+    background: #fff;
     padding: 50px 0 0;
 }
 
@@ -679,7 +679,7 @@ footer.footer_main ul li.nav-item a {
 .humsafar-stories .testimonial-item {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    background: #F8F1E2;
+    background: #fff;
 }
 
 .humsafar-stories .testimonial-image img {
@@ -740,7 +740,7 @@ section.humsafar-stories {
 
 /* Indian Destination css */
 .journal_content-1 {
-    background: #FFFAF0D9;
+    background: #ffffffD9;
     text-align: center;
     padding: 20px;
     width: 78%;
@@ -817,7 +817,7 @@ section.humsafar-stories {
 
 /* Humsafar Glimpses Css */
 .humsafar-glimpses {
-    background-color: #fffaf5;
+    background-color: #ffffff;
 }
 
 /* Glimpses: scroll choreography. A tall (300vh) section with a sticky
@@ -954,6 +954,57 @@ section.humsafar-stories {
     display: block;
 }
 
+/* Glimpses strip: continuous CSS-only marquee (no slider library).
+   The track holds the slide list twice back-to-back and animates from
+   -50% to 0%, so the moment the first copy fully exits left the second
+   copy is in the exact same position — a seamless, smooth loop that
+   reads as scrolling left to right. */
+.glimpses-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.glimpses-track {
+    display: flex;
+    width: max-content;
+    animation: glimpses-scroll 90s linear infinite;
+}
+
+.glimpses-slider:hover .glimpses-track {
+    animation-play-state: paused;
+}
+
+.glimpse-slide {
+    flex: 0 0 auto;
+    width: 420px;
+    margin: 0 12px;
+}
+
+.glimpse-slide img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes glimpses-scroll {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0%); }
+}
+
+@media only screen and (max-width: 767px) {
+    .glimpse-slide {
+        width: 240px;
+        margin: 0 8px;
+    }
+    .glimpse-slide img {
+        height: 260px;
+    }
+    .glimpses-track {
+        animation-duration: 60s;
+    }
+}
+
 /* Udaipur Page Css */
 
 .Destinations_btn {
@@ -984,7 +1035,7 @@ section.humsafar-stories {
 .udaipur-section {
     padding: 60px 0;
     font-family: 'Georgia', serif;
-    background: #fffdf9;
+    background: #ffffff;
     color: #2c2c2c;
 }
 
@@ -1091,7 +1142,7 @@ section.humsafar-stories {
 
 .hotel-feature {
     padding: 60px 0;
-    background-color: #fffdf9;
+    background-color: #ffffff;
 }
 
 .hotel-box {
@@ -1122,7 +1173,7 @@ section.humsafar-stories {
 }
 
 .hotel-text {
-    background: #F8F1E2;
+    background: #ffffff;
     padding: 40px;
     width: 450px;
     margin: 0 0 0 auto;
@@ -1303,7 +1354,7 @@ span.Journal_date {
 }
 
 .col-md-6.testimonial-content-bg {
-    background: #F8F1E2;
+    background: #ffffff;
 }
 
 .content_testimonial_journal {
@@ -1358,7 +1409,7 @@ section.Enquire_main_bg {
 }
 
 .Enquire_form_bg {
-    background: #F8F1E2;
+    background: #ffffff;
     padding: 50px;
 }
 
@@ -1478,7 +1529,7 @@ form.wedding-form .form-flex select {
 .Stay_Connected_main .get_touch {
     height: 100%;
     border: 1px solid #FFDD94;
-    background: #F8F1E2;
+    background: #ffffff;
     margin-left: 30px;
     padding: 30px 50px;
     border-radius: 19px;
@@ -1552,7 +1603,7 @@ form.wedding-form .form-flex select {
 
 section.locations_bg {
     padding: 40px 0;
-    background: #F8F1E2;
+    background: #ffffff;
     margin-bottom: 50px;
 }
 
@@ -1659,7 +1710,7 @@ p.mb-0.small {
 }
 
 .faq-box {
-    background-color: #F8F1E2;
+    background-color: #ffffff;
     margin-bottom: 20px;
     padding: 9px 20px;
 }
@@ -1779,7 +1830,7 @@ p.mb-0.small {
     width: 100%;
 }
 .perfect_sec_content {
-    background: #F8F1E2;
+    background: #ffffff;
     width: 41%;
     padding: 20px 40px;
     margin: 0 0 0 auto;
@@ -2311,7 +2362,7 @@ nav input {
 }
 .desktop-logo {
     width: 100%;
-    max-width: 110px;
+    max-width: 88px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -2410,7 +2461,7 @@ body .year-tabs {
 }
 
 .design_tabs_content {
-    background: #F8F1E2;
+    background: #ffffff;
     padding: 69px;
     text-align: center;
     border: 1px solid #DDD5C4
@@ -2439,7 +2490,7 @@ body .year-tabs {
 }
 .family-section-bg {
     border-radius: 19px;
-    background: #F8F1E2;
+    background: #ffffff;
     padding: 20px;
 }
 
@@ -2975,6 +3026,254 @@ body {
 
 }
 
+}
+
+/* Footer's own "Featured In" row sits on the light footer background now,
+   unlike the homepage's dark .Featured_main section that shares the same
+   markup/classes — override just the footer instance so the white-fill
+   logo SVGs and heading stay legible. */
+footer.footer_main .heading_featured h2 {
+    color: var(--primary-bg-color);
+}
+
+footer.footer_main .link_featured img {
+    filter: brightness(0);
+    opacity: 0.8;
+}
+
+/* Footer Info Grid (logo / contact / QR / follow us) */
+.footer_grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+    gap: 16px;
+    padding: 70px 0 50px;
+    border-top: 1px solid rgba(20, 57, 53, 0.15);
+}
+
+.footer_col {
+    flex: 0 1 auto;
+}
+
+.footer_brand {
+    flex: 0 0 auto;
+    text-align: left;
+    margin-left: -80px;
+}
+
+.footer_contact {
+    flex: 1 1 210px;
+    min-width: 0;
+    padding-left: 60px;
+}
+
+.footer_brand .footer_logo_lockup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer_brand .footer_logo_img {
+    width: 250px;
+    height: auto;
+}
+
+.footer_brand .footer_logo_word {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.footer_col h3 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: var(--primary-bg-color);
+    margin-bottom: 16px;
+}
+
+.footer_contact address,
+.footer_contact a {
+    display: block;
+    font-family: var(--font-Work);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2b2b2b;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+
+.footer_contact a:hover {
+    color: var(--primary-bg-color);
+}
+
+/* Tighten the gap between the email and phone lines */
+.footer_contact a[href^="mailto:"] {
+    margin-bottom: 2px;
+}
+
+.footer_contact .footer_copyright_block {
+    margin-top: 34px;
+}
+
+.footer_contact .footer_copyright_block h3 {
+    margin-bottom: 8px;
+}
+
+.footer_contact .footer_copyright_block p {
+    font-family: var(--font-Work);
+    font-size: 15px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0;
+}
+
+.footer_qr {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.footer_qr .footer_qr_frame {
+    position: relative;
+    width: 290px;
+    max-width: 100%;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.footer_qr .footer_qr_frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer_follow {
+    flex: 0 0 auto;
+}
+
+.footer_follow .social_media ul {
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_follow .social_media ul li {
+    margin: 0;
+}
+
+.footer_follow .social_media ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #000;
+    border-radius: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer_follow .social_media ul li a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer_grid {
+        text-align: center;
+        justify-content: center;
+    }
+    .footer_brand .footer_logo_lockup {
+        justify-content: center;
+    }
+    .footer_follow .social_media ul {
+        justify-content: center;
+    }
+}
+
+/* Floating WhatsApp / Call buttons */
+.floating-contact-btn {
+    position: fixed;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    z-index: 9998;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.floating-contact-btn:hover {
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.floating-whatsapp-btn {
+    right: 24px;
+    background: #25d366;
+}
+
+.floating-call-btn {
+    display: none;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 92px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--primary-bg-color);
+    z-index: 9998;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top-btn.is-visible {
+    display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+    .floating-contact-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        bottom: 16px;
+    }
+    .floating-whatsapp-btn {
+        right: 16px;
+    }
+    .back-to-top-btn {
+        right: 16px;
+        bottom: 74px;
+    }
 }
 
 

@@ -143,3 +143,15 @@ if (window.jQuery) {
     }
   })(window.jQuery);
 }
+
+// Back To Top Button
+(function () {
+  var btn = document.getElementById("backToTopBtn");
+  if (!btn) return;
+  window.addEventListener("scroll", function () {
+    btn.classList.toggle("is-visible", window.scrollY > 400);
+  });
+  btn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();

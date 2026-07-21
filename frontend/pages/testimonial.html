@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moments | Humsafar Weddings</title>
+    <!-- Favicon Image -->
+    <link rel="icon" href="/assets/images/website_logo.png" type="image/png" />
+    <!-- AOS Animation Link -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <!-- Slick Slider All Pages -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Style Links -->
+    <link rel="stylesheet" href="/assets/css/mobile.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- Icon FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Moments Gallery (masonry) -->
+    <style>
+      .moments-title-wrap {
+        text-align: center;
+        padding: 220px 20px 30px;
+        background: #ffffff;
+      }
+      .moments-title-wrap h1 {
+        font-family: var(--font-spectral);
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--primary-bg-color);
+        margin: 0;
+      }
+      .moments-gallery {
+        column-count: 4;
+        column-gap: 6px;
+        padding: 0 6px 60px;
+      }
+      .moments-gallery figure {
+        margin: 0 0 6px;
+        break-inside: avoid;
+        overflow: hidden;
+        cursor: zoom-in;
+      }
+      .moments-gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+      .moments-gallery figure:hover img {
+        transform: scale(1.03);
+      }
+      .moments-lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.92);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        padding: 30px;
+      }
+      .moments-lightbox.is-open {
+        display: flex;
+      }
+      .moments-lightbox img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+      }
+      .moments-lightbox-close {
+        position: absolute;
+        top: 24px;
+        right: 34px;
+        color: #fff;
+        font-size: 36px;
+        line-height: 1;
+        cursor: pointer;
+        background: none;
+        border: none;
+      }
+      @media (max-width: 1200px) {
+        .moments-gallery {
+          column-count: 3;
+        }
+      }
+      @media (max-width: 768px) {
+        .moments-gallery {
+          column-count: 2;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header class="header_main">
+      <div id="mobileHeader">
+
+          <header class="mobile_header_code">
+    <div class="logo"><a class='navbar-brand text-center logo-lockup' href='/'>
+                  <img
+                    src="/assets/images/website_logo.png"
+                    alt="Website Logo"
+                    class="desktop-logo"
+                  />
+                  <span class="logo-wordmark">Humsafar Weddings</span>
+                </a></div>
+    <div class="hamburger">&#9776;</div>
+    <div class="mobile_menu">
+      <div class="close-btn">&times;</div>
+      <nav>
+        <ul>
+          <li><a href='/about-us'>MEET HUMSAFAR</a></li>
+          <li class="has-submenu"><a href="#">OFFERINGS</a>
+            <ul class="submenu">
+              <li><a href='/wedding-planning'>WEDDING PLANNING </a></li>
+              <li><a href='/wedding-designing'>WEDDING DESIGNING</a></li>
+              <li><a href='/wedding-management'>WEDDING MANAGEMENT</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Indian Destinations</a>
+            <ul class="submenu">
+              <li><a href='/india/udaipur'>Udaipur</a></li>
+              <li><a href='/india/jaipur'>Jaipur</a></li>
+              <li><a href='/india/jodhpur'>Jodhpur</a></li>
+              <li><a href='/india/jaisalmer'>Jaisalmer</a></li>
+              <li><a href='/india/goa'>Goa</a></li>
+              <li><a href='/india/kumarakom'>Kumarakom</a></li>
+              <li><a href='/india/kochi'>Kochi</a></li>
+              <li><a href='/india/alibaug'>Alibaug</a></li>
+              <li><a href='/india/mussoorie'>Mussoorie</a></li>
+              <li><a href='/india/shimla'>Shimla</a></li>
+              <li><a href='/india/rishikesh'>Rishikesh</a></li>
+              <li><a href='/india/jim-corbett'>Jim Corbett</a></li>
+              <li><a href='/india/kabini'>Kabini</a></li>
+              <li><a href='/india/mahabalipuram'>Mahabalipuram</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">International Destinations</a>
+            <ul class="submenu">
+              <li><a href='/world/bali'>Bali</a></li>
+              <li><a href='/world/abu-dhabi'>Abu Dhabi</a> </li>
+              <li><a href='/world/sri-lanka'>Sri Lanka</a></li>
+              <li><a href='/world/paris'>Paris</a></li>
+              <li><a href='/world/phuket'>Phuket</a></li>
+              <li><a href='/world/bahrain'>Bahrain</a></li>
+              <li><a href='/world/maldives'>Maldives</a></li>
+              <li><a href='/world/tuscany'>Tuscany</a></li>
+              <li><a href='/world/santorini'>Santorini</a></li>
+              <li><a href='/world/switzerland'>Switzerland</a></li>
+              <li><a href='/world/morocco'>Morocco</a></li>
+              <li><a href='/world/lake-como'>Lake Como</a></li>
+              <li><a href='/world/singapore'>Singapore</a></li>
+              <li><a href='/world/dubai'>Dubai</a></li>
+              <li><a href='/world/mauritius'>Mauritius</a></li>
+              <li><a href='/world/hua-hin'>hua Hin</a></li>
+            </ul>
+          </li>
+          <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+          <li><a href='/testimonial'>MOMENTS</a></li>
+          <li><a href='/blogs'>Journal</a></li>
+          <li class="has-submenu"><a href="#">Contact</a>
+            <ul class="submenu">
+              <li><a href='/contact-us'>CLIENT ENQUIRY</a></li>
+              <li><a href='/contact-vendor-collaboration'>VENDOR ENQUIRY</a></li>
+              <li><a href='/contact-team-form'>CAREERS</a></li>
+              <li><a href='/faq'>FAQ'S</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+  </header>
+
+
+      </div>
+      <div class="container">
+        <nav>
+          <div class="wrapper">
+            <!-- Main Navigation -->
+            <ul class="nav-links">
+              <!-- left_menu -->
+              <div class="Left_menu_code">
+                <li>
+                  <a class='desktop-item' href='/about-us'>MEET HUMSAFAR</a>
+                  <!-- dropdown -->
+                  <ul class="drop-menu">
+                    <li><a href='/about-us#journey'>OUR JOURNEY </a></li>
+                    <li>
+                      <a href='/about-us#humsafer_family'>THE HUMSAFAR FAMILY</a
+                      >
+                    </li>
+                    <li>
+                      <a href='/about-us#humsafer_way'>THE HUMSAFAR WAY</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="desktop-item">OFFERINGS</a>
+                  <!-- dropdown -->
+                  <ul class="drop-menu">
+                    <li><a href='/wedding-planning'>WEDDING PLANNING </a></li>
+                    <li><a href='/wedding-designing'>WEDDING DESIGNING</a></li>
+                    <li><a href='/wedding-management'>WEDDING MANAGEMENT</a></li>
+                  </ul>
+                </li>
+                <!-- Mega Menu Trigger -->
+                <li>
+                  <a href="#" class="desktop-item">DESTINATIONS</a>
+                  <input type="checkbox" id="showMega" />
+                  <label for="showMega" class="mobile-item">Mega Menu</label>
+                  <div class="mega-box">
+                    <div class="row">
+                      <!-- Left List -->
+                      <div class="col-md-3 left-column">
+                        <h2>Destination Weddings Across</h2>
+                        <div class="destination_world_flex">
+                          <div class="destination_india_menu">
+                            <h3><a href='/indian-destination'>India</a></h3>
+                            <ul class="whats-new-list">
+                              <li><a href='/india/udaipur'>Udaipur</a></li>
+                              <li><a href='/india/jaipur'>Jaipur</a></li>
+                              <li><a href='/india/jodhpur'>Jodhpur</a></li>
+                              <li><a href='/india/jaisalmer'>Jaisalmer</a></li>
+                              <li><a href='/india/goa'>Goa</a></li>
+                              <li><a href='/india/kumarakom'>Kumarakom</a></li>
+                              <li><a href='/india/kochi'>Kochi</a></li>
+                              <li><a href='/india/alibaug'>Alibaug</a></li>
+                              <li><a href='/india/mussoorie'>Mussoorie</a></li>
+                              <li><a href='/india/shimla'>Shimla</a></li>
+                              <li><a href='/india/rishikesh'>Rishikesh</a></li>
+                              <li><a href='/india/jim-corbett'>Jim Corbett</a></li>
+                              <li><a href='/india/kabini'>Kabini</a></li>
+                              <li><a href='/india/mahabalipuram'>Mahabalipuram</a></li>
+                            </ul>
+                          </div>
+                          <div class="destination_india_menu">
+                            <h3><a href='/world-destination'>World</a></h3>
+                            <ul class="whats-new-list">
+                              <li><a href='/world/bali'>Bali</a></li>
+                              <li><a href='/world/abu-dhabi'>Abu Dhabi</a> </li>
+                              <li><a href='/world/sri-lanka'>Sri Lanka</a></li>
+                              <li><a href='/world/paris'>Paris</a></li>
+                              <li><a href='/world/phuket'>Phuket</a></li>
+                              <li><a href='/world/bahrain'>Bahrain</a></li>
+                              <li><a href='/world/maldives'>Maldives</a></li>
+                              <li><a href='/world/tuscany'>Tuscany</a></li>
+                              <li><a href='/world/santorini'>Santorini</a></li>
+                              <li><a href='/world/switzerland'>Switzerland</a></li>
+                              <li><a href='/world/morocco'>Morocco</a></li>
+                              <li><a href='/world/lake-como'>Lake Como</a></li>
+                              <li><a href='/world/singapore'>Singapore</a></li>
+                              <li><a href='/world/dubai'>Dubai</a></li>
+                              <li><a href='/world/mauritius'>Mauritius</a></li>
+                              <li><a href='/world/hua-hin'>hua Hin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Right Grid -->
+                      <div class="col-md-9 right-column">
+                        <div class="mega-menu-grid slider-a">
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination.jpg"
+                              alt=""
+                            />
+                            <p>Udaipur</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-1.jpg"
+                              alt=""
+                            />
+                            <p>Jaipur</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-2.jpg"
+                              alt=""
+                            />
+                            <p>Jodhpur</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-3.jpg"
+                              alt=""
+                            />
+                            <p>Jaisalmer</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-4.jpg"
+                              alt=""
+                            />
+                            <p>Goa</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-5.jpg"
+                              alt=""
+                            />
+                            <p>Kumarakom</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-6.jpg"
+                              alt=""
+                            />
+                            <p>Kochi</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-7.jpg"
+                              alt=""
+                            />
+                            <p>Alibaug</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-8.jpg"
+                              alt=""
+                            />
+                            <p>Mussoorie</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-9.jpg"
+                              alt=""
+                            />
+                            <p>Shimla</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-10.jpg"
+                              alt=""
+                            />
+                            <p>Rishikesh</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-11.jpg"
+                              alt=""
+                            />
+                            <p>Jim Corbett</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-12.jpg"
+                              alt=""
+                            />
+                            <p>Kabini</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-13.jpg"
+                              alt=""
+                            />
+                            <p>Mahabalipuram</p>
+                          </div>
+                        </div>
+
+                        <!-- Secound Slide -->
+                        <div class="mega-menu-grid slider-b">
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_01.jpg"
+                              alt=""
+                            />
+                            <p>Bali</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_02.jpg"
+                              alt=""
+                            />
+                            <p>Abu Dhabi</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_03.jpg"
+                              alt=""
+                            />
+                            <p>Sri Lanka</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_04.jpg"
+                              alt=""
+                            />
+                            <p>Paris</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_05.jpg"
+                              alt=""
+                            />
+                            <p>Phuket</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_06.jpg"
+                              alt=""
+                            />
+                            <p>Bahrain</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_07.jpg"
+                              alt=""
+                            />
+                            <p>Maldives</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_08.jpg"
+                              alt=""
+                            />
+                            <p>Tuscany</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_09.jpg"
+                              alt=""
+                            />
+                            <p>Switzerland</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_10.jpg"
+                              alt=""
+                            />
+                            <p>Morocco</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_11.jpg"
+                              alt=""
+                            />
+                            <p>Lake Como</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_12.jpg"
+                              alt=""
+                            />
+                            <p>Singapore</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_13.jpg"
+                              alt=""
+                            />
+                            <p>Dubai</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_14.jpg"
+                              alt=""
+                            />
+                            <p>Mauritius</p>
+                          </div>
+                          <div class="image-item">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_15.jpg"
+                              alt=""
+                            />
+                            <p>hua Hin</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+
+              <!-- Center Logo -->
+              <div class="Website_logo">
+                <a class='navbar-brand text-center logo-lockup' href='/'>
+                  <img
+                    src="/assets/images/website_logo.png"
+                    alt="Website Logo"
+                    class="desktop-logo"
+                  />
+                  <span class="logo-wordmark">Humsafar Weddings</span>
+                </a>
+              </div>
+
+              <!-- left_menu -->
+              <div class="right_menu_code">
+                <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+                <li><a href='/testimonial'>MOMENTS</a></li>
+                <li><a href='/blogs'>JOURNAL</a></li>
+
+                <li>
+                  <a href="#" class="desktop-item">CONTACT US</a>
+                  <!-- dropdown -->
+                  <ul class="drop-menu">
+                    <li><a href='/contact-us'>CLIENT ENQUIRY</a></li>
+                    <li>
+                      <a href='/contact-vendor-collaboration'>VENDOR ENQUIRY</a
+                      >
+                    </li>
+                    <li><a href='/contact-team-form'>CAREERS</a></li>
+                    <li><a href='/faq'>FAQ's</a></li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Moments Page Title -->
+    <div class="moments-title-wrap" data-aos="fade-up">
+      <h1>Moments</h1>
+    </div>
+
+    <!-- Moments Masonry Gallery -->
+    <section class="moments-gallery" data-aos="fade-up">
+      <figure><img src="/assets/images/home_images/Humsafar_story.jpg" alt="Humsafar wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/testimonial/testimonial_03.jpg" alt="Bride portrait moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/guest_list.jpg" alt="Wedding guest list styling" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/ADA01428.jpg" alt="Humsafar wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/wedding-ceremony.jpg" alt="Wedding ceremony moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/misc/haldi.jpg" alt="Haldi ceremony moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/word_wedding.jpg" alt="Destination wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding_designing/Designing_Moments.jpg" alt="Wedding design moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/testimonial/testimonial_02.jpg" alt="Wedding celebration moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/image_planing_01.jpg" alt="Wedding planning moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/india_wedding.jpg" alt="Indian wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/misc/Confetti%20Celebration%20Photo.jpg" alt="Confetti celebration moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/humsafar-glimpses/humsafer_inner_02.jpg" alt="Destination wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/image_planing_02.jpg" alt="Wedding planning moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/ADA01554.jpg" alt="Humsafar wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-management/sunset-wedding-ceremony.jpg" alt="Sunset wedding ceremony" loading="lazy" /></figure>
+      <figure><img src="/assets/images/misc/Hindu%20Wedding%20Celebration.jpg" alt="Hindu wedding celebration moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding_designing/Previews.jpg" alt="Wedding design preview moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/humsafar-glimpses/humsafer_inner_05.jpg" alt="Destination wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/plannig_destination.jpg" alt="Destination wedding planning" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding_designing/Touchpoints.jpg" alt="Wedding design touchpoints" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/slider_image_05.jpg" alt="Wedding glimpse moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-management/timeline_managment.jpg" alt="Wedding timeline management" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/indian_wedding.jpg" alt="Indian wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding_designing/visual_styling_img.jpg" alt="Wedding visual styling moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/humsafar-glimpses/humsafer_inner_07.jpg" alt="Destination wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-management/supervision.jpg" alt="Wedding day supervision moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/banner_susnt.jpg" alt="Sunset wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/slider_image_10.jpg" alt="Wedding glimpse moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-management/perfect_partner_banner.jpg" alt="Wedding partner moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/humsafar-glimpses/humsafer_inner_09.jpg" alt="Destination wedding moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-planning/dimensions.jpg" alt="Wedding decor detail moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding_designing/creative_banner.jpg" alt="Creative wedding design moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/wedding-management/Logistics.jpg" alt="Wedding logistics moment" loading="lazy" /></figure>
+      <figure><img src="/assets/images/home_images/ADA01368.jpg" alt="Humsafar wedding moment" loading="lazy" /></figure>
+    </section>
+
+    <!-- Moments Lightbox -->
+    <div class="moments-lightbox" id="momentsLightbox">
+      <button class="moments-lightbox-close" id="momentsLightboxClose">&times;</button>
+      <img src="" alt="" id="momentsLightboxImg" />
+    </div>
+
+    <!-- Footer Code Start -->
+    <section class="footer_topbar">
+      <div class="container">
+        <div class="footer_Magic_btn">
+          <a href='/contact-us'>Let's create Magic Together<span
+              ><img
+                src="/assets/images/home_images/right_arrow.svg"
+                alt="right_arrow" /></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_main">
+      <div class="container">
+        <div class="featured_flex">
+          <div class="heading_featured">
+            <h2>Featured In :</h2>
+          </div>
+          <!-- Website Link -->
+          <div class="link_featured">
+            <a href="https://www.weddingwire.in/"
+              ><img
+                src="/assets/images/home_images/weddingwire.in.svg"
+                alt="weddingwire"
+            /></a>
+          </div>
+          <!-- Website Link -->
+          <div class="link_featured">
+            <a href="https://www.wedmegood.com/"
+              ><img src="/assets/images/home_images/wedmegood.svg" alt="weddingwire"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Footer Info Grid -->
+        <div class="footer_grid">
+          <div class="footer_col footer_brand">
+            <a class="footer_logo_lockup" href="/">
+              <img
+                src="/assets/images/website_logo.png"
+                alt="Humsafar Weddings"
+                class="footer_logo_img"
+              />
+              <span class="footer_logo_word">Humsafar<br />Weddings</span>
+            </a>
+          </div>
+          <div class="footer_col footer_contact">
+            <h3>Contact</h3>
+            <address>C 3061, 4th Floor, Green Field,<br />Faridabad, Haryana, 121010</address>
+            <a href="mailto:info@humsafarwedding.com">info@humsafarwedding.com</a>
+            <a href="tel:+918305377774">+91 83053 77774</a>
+            <div class="footer_copyright_block">
+              <h3>Copyright</h3>
+              <p>&copy; Humsafar Weddings 2026</p>
+            </div>
+          </div>
+          <div class="footer_col footer_qr">
+            <div class="footer_qr_frame">
+              <img
+                src="/assets/images/home_images/instagram_qr.png"
+                alt="Scan to follow Humsafar Weddings on Instagram"
+              />
+            </div>
+          </div>
+          <div class="footer_col footer_follow">
+            <h3>Follow Us</h3>
+            <div class="social_media">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/humsfarweddings/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/HumsafarWeddings"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/humsfarweddings/posts/?feedView=all"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Code End -->
+
+    <!-- Floating Contact Buttons -->
+    <a
+      href="https://wa.me/918305377774"
+      class="floating-contact-btn floating-whatsapp-btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <a
+      href="tel:+918305377774"
+      class="floating-contact-btn floating-call-btn"
+      aria-label="Call Humsafar Weddings"
+      ><i class="fa-solid fa-phone"></i
+    ></a>
+    <button
+      type="button"
+      class="back-to-top-btn"
+      id="backToTopBtn"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Slick Slider All Pages -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Js Link -->
+    <script src="/assets/js/custom.js"></script>
+    <!-- Bootstrap Js Link -->
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Moments Lightbox Script -->
+    <script>
+      (function () {
+        var lightbox = document.getElementById("momentsLightbox");
+        var lightboxImg = document.getElementById("momentsLightboxImg");
+        var closeBtn = document.getElementById("momentsLightboxClose");
+        document.querySelectorAll(".moments-gallery figure img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add("is-open");
+          });
+        });
+        function closeLightbox() {
+          lightbox.classList.remove("is-open");
+          lightboxImg.src = "";
+        }
+        closeBtn.addEventListener("click", closeLightbox);
+        lightbox.addEventListener("click", function (e) {
+          if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeLightbox();
+        });
+      })();
+    </script>
+  </body>
+</html>
