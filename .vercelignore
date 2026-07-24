@@ -2,6 +2,7 @@ server/
 content/
 .claude/
 .gstack/
+source-images/
 .DS_Store
 **/.DS_Store
 README.md

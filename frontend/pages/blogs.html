@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin />
+    <title>Journal | Humsafar Weddings</title>
+    <meta name="description" content="Stories, planning guides, and destination inspiration from the Humsafar Weddings team." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- Favicon Image -->
+    <link rel="icon" href="/assets/images/website_logo.png" type="image/png" />
+    <!-- AOS Animation Link -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <!-- Slick Slider All Pages -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Style Links -->
+    <link rel="stylesheet" href="/assets/css/mobile.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- Icon FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preload" as="image" href="/assets/images/home_images/Humsafar_story.webp" fetchpriority="high" />
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header class="header_main">
+      <div id="mobileHeader">
+
+          <header class="mobile_header_code">
+    <div class="logo"><a class='navbar-brand text-center logo-lockup' href='/'>
+                  <img
+                    src="/assets/images/website_logo.png"
+                    alt="Website Logo"
+                    class="desktop-logo" decoding="async" />
+                  <span class="logo-wordmark">Humsafar Weddings</span>
+                </a></div>
+    <div class="hamburger">&#9776;</div>
+    <div class="mobile_menu">
+      <div class="close-btn">&times;</div>
+      <nav>
+        <ul>
+          <li><a href='/about-us'>MEET HUMSAFAR</a></li>
+          <li class="has-submenu"><a href="#">OFFERINGS</a>
+            <ul class="submenu">
+              <li><a href='/wedding-planning'>WEDDING PLANNING </a></li>
+              <li><a href='/wedding-designing'>WEDDING DESIGNING</a></li>
+              <li><a href='/wedding-management'>WEDDING MANAGEMENT</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Indian Destinations</a>
+            <ul class="submenu">
+              <li><a href='/india/udaipur'>Udaipur</a></li>
+              <li><a href='/india/jaipur'>Jaipur</a></li>
+              <li><a href='/india/jodhpur'>Jodhpur</a></li>
+              <li><a href='/india/jaisalmer'>Jaisalmer</a></li>
+              <li><a href='/india/goa'>Goa</a></li>
+              <li><a href='/india/kumarakom'>Kumarakom</a></li>
+              <li><a href='/india/kochi'>Kochi</a></li>
+              <li><a href='/india/alibaug'>Alibaug</a></li>
+              <li><a href='/india/mussoorie'>Mussoorie</a></li>
+              <li><a href='/india/shimla'>Shimla</a></li>
+              <li><a href='/india/rishikesh'>Rishikesh</a></li>
+              <li><a href='/india/jim-corbett'>Jim Corbett</a></li>
+              <li><a href='/india/kabini'>Kabini</a></li>
+              <li><a href='/india/mahabalipuram'>Mahabalipuram</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">International Destinations</a>
+            <ul class="submenu">
+              <li><a href='/world/bali'>Bali</a></li>
+              <li><a href='/world/abu-dhabi'>Abu Dhabi</a> </li>
+              <li><a href='/world/sri-lanka'>Sri Lanka</a></li>
+              <li><a href='/world/paris'>Paris</a></li>
+              <li><a href='/world/phuket'>Phuket</a></li>
+              <li><a href='/world/bahrain'>Bahrain</a></li>
+              <li><a href='/world/maldives'>Maldives</a></li>
+              <li><a href='/world/tuscany'>Tuscany</a></li>
+              <li><a href='/world/santorini'>Santorini</a></li>
+              <li><a href='/world/switzerland'>Switzerland</a></li>
+              <li><a href='/world/morocco'>Morocco</a></li>
+              <li><a href='/world/lake-como'>Lake Como</a></li>
+              <li><a href='/world/singapore'>Singapore</a></li>
+              <li><a href='/world/dubai'>Dubai</a></li>
+              <li><a href='/world/mauritius'>Mauritius</a></li>
+              <li><a href='/world/hua-hin'>hua Hin</a></li>
+            </ul>
+          </li>
+          <li><a href="#">GLIMPSES</a></li>
+          <li><a href="#">MOMENTS</a></li>
+          <li><a href='/blogs'>Journal</a></li>
+          <li class="has-submenu"><a href="#">Contact</a>
+            <ul class="submenu">
+              <li><a href="#">CLIENT ENQUIRY</a></li>
+              <li><a href="#">VENDOR ENQUIRY</a></li>
+              <li><a href='/contact-team-form'>CAREERS</a></li>
+              <li><a href="#">FAQ'S</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+  </header>
+
+
+      </div>
+      <div class="container">
+        <nav>
+          <div class="wrapper">
+            <!-- Main Navigation -->
+            <ul class="nav-links">
+              <!-- left_menu -->
+              <div class="Left_menu_code">
+                <li>
+                  <a class='desktop-item' href='/about-us'>MEET HUMSAFAR</a>
+                </li>
+                <li>
+                  <a href="#" class="desktop-item">OFFERINGS</a>
+                  <!-- dropdown -->
+                  <ul class="drop-menu">
+                    <li><a href='/wedding-planning'>WEDDING PLANNING </a></li>
+                    <li><a href='/wedding-designing'>WEDDING DESIGNING</a></li>
+                    <li><a href='/wedding-management'>WEDDING MANAGEMENT</a></li>
+                  </ul>
+                </li>
+                <!-- Mega Menu Trigger -->
+                <li>
+                  <a href="#" class="desktop-item">DESTINATIONS</a>
+                  <input type="checkbox" id="showMega" />
+                  <label for="showMega" class="mobile-item">Mega Menu</label>
+                  <div class="mega-box">
+                    <div class="row">
+                      <!-- Left List -->
+                      <div class="col-md-3 left-column">
+                        <h2>Destination Weddings Across</h2>
+                        <div class="destination_world_flex">
+                          <div class="destination_india_menu">
+                            <h3><a href='/indian-destination'>India</a></h3>
+                            <ul class="whats-new-list">
+                              <li><a href='/india/udaipur'>Udaipur</a></li>
+                              <li><a href='/india/jaipur'>Jaipur</a></li>
+                              <li><a href='/india/jodhpur'>Jodhpur</a></li>
+                              <li><a href='/india/jaisalmer'>Jaisalmer</a></li>
+                              <li><a href='/india/goa'>Goa</a></li>
+                              <li><a href='/india/kumarakom'>Kumarakom</a></li>
+                              <li><a href='/india/kochi'>Kochi</a></li>
+                              <li><a href='/india/alibaug'>Alibaug</a></li>
+                              <li><a href='/india/mussoorie'>Mussoorie</a></li>
+                              <li><a href='/india/shimla'>Shimla</a></li>
+                              <li><a href='/india/rishikesh'>Rishikesh</a></li>
+                              <li><a href='/india/jim-corbett'>Jim Corbett</a></li>
+                              <li><a href='/india/kabini'>Kabini</a></li>
+                              <li><a href='/india/mahabalipuram'>Mahabalipuram</a></li>
+                            </ul>
+                          </div>
+                          <div class="destination_india_menu">
+                            <h3><a href='/world-destination'>World</a></h3>
+                            <ul class="whats-new-list">
+                              <li><a href='/world/bali'>Bali</a></li>
+                              <li><a href='/world/abu-dhabi'>Abu Dhabi</a> </li>
+                              <li><a href='/world/sri-lanka'>Sri Lanka</a></li>
+                              <li><a href='/world/paris'>Paris</a></li>
+                              <li><a href='/world/phuket'>Phuket</a></li>
+                              <li><a href='/world/bahrain'>Bahrain</a></li>
+                              <li><a href='/world/maldives'>Maldives</a></li>
+                              <li><a href='/world/tuscany'>Tuscany</a></li>
+                              <li><a href='/world/santorini'>Santorini</a></li>
+                              <li><a href='/world/switzerland'>Switzerland</a></li>
+                              <li><a href='/world/morocco'>Morocco</a></li>
+                              <li><a href='/world/lake-como'>Lake Como</a></li>
+                              <li><a href='/world/singapore'>Singapore</a></li>
+                              <li><a href='/world/dubai'>Dubai</a></li>
+                              <li><a href='/world/mauritius'>Mauritius</a></li>
+                              <li><a href='/world/hua-hin'>hua Hin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Right Grid -->
+                      <div class="col-md-9 right-column">
+                        <div class="mega-menu-grid slider-a">
+                          <div class="image-item"><a class="image-link" href="/india/udaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Udaipur</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/jaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-1.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Jaipur</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/jodhpur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-2.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Jodhpur</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/jaisalmer" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-3.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Jaisalmer</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/goa" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-4.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Goa</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/kumarakom" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-5.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Kumarakom</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/kochi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-6.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Kochi</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/alibaug" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-7.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Alibaug</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/mussoorie" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-8.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Mussoorie</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/shimla" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-9.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Shimla</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/rishikesh" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-10.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Rishikesh</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/jim-corbett" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-11.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Jim Corbett</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/kabini" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-12.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Kabini</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/india/mahabalipuram" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_India/indian-destination-13.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Mahabalipuram</p>
+                          </a></div>
+                        </div>
+
+                        <!-- Secound Slide -->
+                        <div class="mega-menu-grid slider-b">
+                          <div class="image-item"><a class="image-link" href="/world/bali" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_01.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Bali</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/abu-dhabi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_02.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Abu Dhabi</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/sri-lanka" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_03.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Sri Lanka</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/paris" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_04.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Paris</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/phuket" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_05.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Phuket</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/bahrain" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_06.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Bahrain</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/maldives" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_07.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Maldives</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/tuscany" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_08.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Tuscany</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/switzerland" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_09.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Switzerland</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/morocco" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_10.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Morocco</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/lake-como" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_11.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Lake Como</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/singapore" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_12.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Singapore</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/dubai" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_13.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Dubai</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/mauritius" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_14.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>Mauritius</p>
+                          </a></div>
+                          <div class="image-item"><a class="image-link" href="/world/hua-hin" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
+                            <img
+                              src="/assets/images/destination_wedding_world/world_15.jpg"
+                              alt="" decoding="async" loading="lazy" />
+                            <p>hua Hin</p>
+                          </a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+
+              <!-- Center Logo -->
+              <div class="Website_logo">
+                <a class='navbar-brand text-center logo-lockup' href='/'>
+                  <img
+                    src="/assets/images/website_logo.png"
+                    alt="Website Logo"
+                    class="desktop-logo" decoding="async" />
+                  <span class="logo-wordmark">Humsafar Weddings</span>
+                </a>
+              </div>
+
+              <!-- left_menu -->
+              <div class="right_menu_code">
+                <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+                <li><a href='/testimonial'>MOMENTS</a></li>
+                <li><a href='/blogs'>JOURNAL</a></li>
+
+                <li>
+                  <a href="#" class="desktop-item">CONTACT US</a>
+                  <!-- dropdown -->
+                  <ul class="drop-menu">
+                    <li><a href='/contact-us'>CLIENT ENQUIRY</a></li>
+                    <li>
+                      <a href='/contact-vendor-collaboration'>VENDOR ENQUIRY</a
+                      >
+                    </li>
+                    <li><a href='/contact-team-form'>CAREERS</a></li>
+                    <li><a href='/faq'>FAQ's</a></li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Hero Banner Code -->
+    <section class="hero_banner" data-aos="zoom-in">
+      <div class="banner_image">
+        <img src="/assets/images/home_images/Humsafar_story.webp" alt="Humsafar Weddings journal" decoding="async" fetchpriority="high" />
+      </div>
+    </section>
+
+    <section class="humsafar-stories" data-aos="fade-up">
+      <div class="container">
+        <h2 class="stories-heading">The <em>Humsafar</em> Journal</h2>
+        <div class="stories-grid">
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/our-most-heartfelt-weddings">
+              <img src="/assets/images/home_images/Humsafar_story.webp" alt="A couple sharing an emotional moment during their wedding ceremony" decoding="async" />
+            </a>
+            <h3 class="story-card__title">From Yes to Forever: Real Stories Behind Our Most Heartfelt Weddings</h3>
+            <p class="story-card__excerpt">Behind every Humsafar wedding is a story of two families becoming one. A look at the moments, big and small, that stay with our team long after the last dance.</p>
+            <a class="story-card__more" href="/blogs/our-most-heartfelt-weddings">Read more &rarr;</a>
+            <span class="story-card__tags">Real Weddings &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/the-most-beautiful-promises-weve-witnessed">
+              <img src="/assets/images/misc/Hindu-Wedding-Celebration.webp" alt="A couple performing traditional wedding rituals around a sacred fire" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Vows That Melt Hearts: The Most Beautiful Promises We've Witnessed</h3>
+            <p class="story-card__excerpt">From traditional saat phere commitments to personal, unscripted vows, a look at how couples we've worked with have chosen to make their promises.</p>
+            <a class="story-card__more" href="/blogs/the-most-beautiful-promises-weve-witnessed">Read more &rarr;</a>
+            <span class="story-card__tags">Real Weddings &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/2025-26-wedding-trends">
+              <img src="/assets/images/wedding_designing/Designing_Moments.jpg" alt="Elegant wedding décor with soft lighting and floral design" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">2025–26 Wedding Trends That Touch the Soul, Not Just the Eyes</h3>
+            <p class="story-card__excerpt">From heirloom-inspired décor to slower, more intentional timelines, the wedding trends Humsafar Weddings is planning around this season.</p>
+            <a class="story-card__more" href="/blogs/2025-26-wedding-trends">Read more &rarr;</a>
+            <span class="story-card__tags">Trends &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/how-to-choose-your-destination-wedding-location">
+              <img src="/assets/images/home_images/india_wedding.jpg" alt="Aerial view of a destination wedding venue set against scenic landscape" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">How to Choose the Right Destination for Your Wedding</h3>
+            <p class="story-card__excerpt">A practical framework for choosing between India and international destination wedding locations, from a team that has planned across both.</p>
+            <a class="story-card__more" href="/blogs/how-to-choose-your-destination-wedding-location">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/a-guide-to-planning-a-royal-udaipur-wedding">
+              <img src="/assets/images/india/udaipur/udaipur-2.jpg" alt="A grand palace venue in Udaipur overlooking Lake Pichola" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">A Guide to Planning a Royal Udaipur Wedding</h3>
+            <p class="story-card__excerpt">Everything to consider when planning a palace wedding in Udaipur, from venue logistics to the best season to book.</p>
+            <a class="story-card__more" href="/blogs/a-guide-to-planning-a-royal-udaipur-wedding">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/planning-a-goa-beach-wedding">
+              <img src="/assets/images/india/Goa/header-photo.webp" alt="Sunset beach wedding setup in Goa" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Planning a Goa Beach Wedding: What to Know Before You Book</h3>
+            <p class="story-card__excerpt">A planner's honest look at what it takes to pull off a beautiful beach wedding in Goa, from tide timing to monsoon planning.</p>
+            <a class="story-card__more" href="/blogs/planning-a-goa-beach-wedding">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/dream-wedding-in-bali-a-planning-guide">
+              <img src="/assets/images/world/Bali/Header.webp" alt="Clifftop wedding venue overlooking the ocean in Bali" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Planning a Dream Wedding in Bali</h3>
+            <p class="story-card__excerpt">A planning guide for Indian couples considering Bali for their destination wedding — legal notes, venue types, and travel logistics.</p>
+            <a class="story-card__more" href="/blogs/dream-wedding-in-bali-a-planning-guide">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/santorini-destination-wedding-checklist">
+              <img src="/assets/images/world/Santorini/Header.webp" alt="Whitewashed wedding venue overlooking the Santorini caldera" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Your Santorini Destination Wedding Checklist</h3>
+            <p class="story-card__excerpt">A practical checklist for couples planning a Santorini wedding, covering season, venue access, and guest logistics.</p>
+            <a class="story-card__more" href="/blogs/santorini-destination-wedding-checklist">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/dubai-luxury-wedding-planning-guide">
+              <img src="/assets/images/world/Dubai/Header.webp" alt="Luxury wedding venue in Dubai with skyline views" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">A Luxury Wedding Planning Guide to Dubai</h3>
+            <p class="story-card__excerpt">What to know about planning a luxury Indian wedding in Dubai — venues, timing, and why the city works well for large guest lists.</p>
+            <a class="story-card__more" href="/blogs/dubai-luxury-wedding-planning-guide">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/mehendi-and-sangeet-ceremony-ideas">
+              <img src="/assets/images/misc/haldi.webp" alt="Colourful mehendi ceremony setup with floral décor" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Mehendi and Sangeet Ideas That Go Beyond the Usual Playlist</h3>
+            <p class="story-card__excerpt">Creative mehendi and sangeet ideas from our design team — décor, entertainment, and food ideas that feel personal, not templated.</p>
+            <a class="story-card__more" href="/blogs/mehendi-and-sangeet-ceremony-ideas">Read more &rarr;</a>
+            <span class="story-card__tags">Ceremony Ideas &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/how-far-in-advance-should-you-plan-a-destination-wedding">
+              <img src="/assets/images/wedding-planning/plannig_destination.jpg" alt="Wedding planning desk with venue plans and destination photos" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">How Far in Advance Should You Plan a Destination Wedding?</h3>
+            <p class="story-card__excerpt">A month-by-month planning timeline for destination weddings, based on what we've learned from planning hundreds of them.</p>
+            <a class="story-card__more" href="/blogs/how-far-in-advance-should-you-plan-a-destination-wedding">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/budgeting-for-a-luxury-destination-wedding">
+              <img src="/assets/images/wedding-planning/gift_banner.jpg" alt="Elegant wedding table setting representing luxury wedding planning" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Budgeting for a Luxury Destination Wedding, Without the Guesswork</h3>
+            <p class="story-card__excerpt">A transparent breakdown of how destination wedding budgets are typically allocated, and the costs couples most often overlook.</p>
+            <a class="story-card__more" href="/blogs/budgeting-for-a-luxury-destination-wedding">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/how-to-choose-the-right-wedding-planner">
+              <img src="/assets/images/humsafar_way/humsafar_way_01.webp" alt="Wedding planning team coordinating venue details" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">How to Choose the Right Wedding Planner for Your Family</h3>
+            <p class="story-card__excerpt">Honest advice on what to look for in a wedding planner, and the questions that reveal how a planning team actually works.</p>
+            <a class="story-card__more" href="/blogs/how-to-choose-the-right-wedding-planner">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/intimate-weddings-vs-grand-celebrations">
+              <img src="/assets/images/wedding-management/wedding-management-banner.jpg" alt="Grand wedding celebration with a large guest gathering" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Intimate Wedding or Grand Celebration? How to Decide</h3>
+            <p class="story-card__excerpt">A guide to weighing intimate destination weddings against large-scale celebrations, based on what actually shapes the decision.</p>
+            <a class="story-card__more" href="/blogs/intimate-weddings-vs-grand-celebrations">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/a-kerala-backwaters-wedding-in-kumarakom">
+              <img src="/assets/images/india/Kumarakom/header-photo.webp" alt="Serene backwater wedding venue in Kumarakom, Kerala" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">A Kerala Backwaters Wedding: Why Kumarakom Deserves a Look</h3>
+            <p class="story-card__excerpt">Why Kumarakom's backwaters make for one of India's most underrated destination wedding settings.</p>
+            <a class="story-card__more" href="/blogs/a-kerala-backwaters-wedding-in-kumarakom">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/a-desert-royal-wedding-in-jaisalmer">
+              <img src="/assets/images/india/Jaisalmer/header-photo.jpg" alt="Desert fort wedding venue in Jaisalmer" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">A Royal Desert Wedding in Jaisalmer</h3>
+            <p class="story-card__excerpt">What makes Jaisalmer one of Rajasthan's most dramatic destination wedding settings, and how to plan around its desert climate.</p>
+            <a class="story-card__more" href="/blogs/a-desert-royal-wedding-in-jaisalmer">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/mountain-weddings-shimla-and-mussoorie">
+              <img src="/assets/images/india/shimla/Header-Photo.webp" alt="Mountain wedding venue in Shimla surrounded by pine forests" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Mountain Weddings: Why Shimla and Mussoorie Are Worth Considering</h3>
+            <p class="story-card__excerpt">A look at planning a hill-station wedding in Shimla or Mussoorie, from venue access to seasonal timing.</p>
+            <a class="story-card__more" href="/blogs/mountain-weddings-shimla-and-mussoorie">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/sustainable-eco-conscious-wedding-ideas">
+              <img src="/assets/images/india/Kochi/Header-Photo.webp" alt="Greenery-filled wedding venue reflecting sustainable design" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Sustainable, Eco-Conscious Wedding Ideas That Don't Compromise on Beauty</h3>
+            <p class="story-card__excerpt">Practical, design-forward ways to plan a more sustainable destination wedding, from décor sourcing to food waste.</p>
+            <a class="story-card__more" href="/blogs/sustainable-eco-conscious-wedding-ideas">Read more &rarr;</a>
+            <span class="story-card__tags">Planning Guide &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/mandap-and-decor-trends-we-love">
+              <img src="/assets/images/wedding_designing/creative_banner.jpg" alt="Elaborate floral mandap design for a wedding ceremony" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Mandap and Décor Trends We're Loving Right Now</h3>
+            <p class="story-card__excerpt">Current mandap and wedding décor trends from the Humsafar Weddings design team, from floral architecture to lighting design.</p>
+            <a class="story-card__more" href="/blogs/mandap-and-decor-trends-we-love">Read more &rarr;</a>
+            <span class="story-card__tags">Trends &middot; January 2026</span>
+          </article>
+
+          <article class="story-card">
+            <a class="story-card__media" href="/blogs/real-wedding-a-palace-celebration-in-udaipur">
+              <img src="/assets/images/india/udaipur/udaipur-6.jpg" alt="Grand palace wedding celebration in Udaipur at night" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Real Wedding: A Palace Celebration in Udaipur</h3>
+            <p class="story-card__excerpt">A behind-the-scenes look at planning a three-day palace wedding in Udaipur, from the Humsafar Weddings planning team.</p>
+            <a class="story-card__more" href="/blogs/real-wedding-a-palace-celebration-in-udaipur">Read more &rarr;</a>
+            <span class="story-card__tags">Real Weddings &middot; January 2026</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Code Start -->
+    <footer class="footer_main">
+      <div class="container">
+        <div class="featured_flex">
+          <div class="heading_featured">
+            <h2>Featured In :</h2>
+          </div>
+          <!-- Website Link -->
+          <div class="link_featured">
+            <a href="https://www.weddingwire.in/"
+              ><img
+                src="/assets/images/home_images/weddingwire.in.svg"
+                alt="weddingwire"
+            /></a>
+          </div>
+          <!-- Website Link -->
+          <div class="link_featured">
+            <a href="https://www.wedmegood.com/"
+              ><img src="/assets/images/home_images/wedmegood.svg" alt="weddingwire"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Footer Info Grid -->
+        <div class="footer_grid">
+          <div class="footer_col footer_brand">
+            <a class="footer_logo_lockup" href="/">
+              <img
+                src="/assets/images/website_logo.png"
+                alt="Humsafar Weddings"
+                class="footer_logo_img" decoding="async" loading="lazy" />
+              <span class="footer_logo_word">Humsafar<br />Weddings</span>
+            </a>
+          </div>
+          <div class="footer_col footer_contact">
+            <h3>Contact</h3>
+            <address>C 3061, 4th Floor, Green Field,<br />Faridabad, Haryana, 121010</address>
+            <a href="mailto:info@humsafarwedding.com">info@humsafarwedding.com</a>
+            <a href="tel:+918305377774">+91 83053 77774</a>
+            <div class="footer_copyright_block">
+              <h3>Copyright</h3>
+              <p>&copy; Humsafar Weddings 2026</p>
+            </div>
+          </div>
+          <div class="footer_col footer_qr">
+            <div class="footer_qr_frame">
+              <img
+                src="/assets/images/home_images/instagram_qr.png"
+                alt="Scan to follow Humsafar Weddings on Instagram"
+              />
+            </div>
+          </div>
+          <div class="footer_col footer_follow">
+            <h3>Follow Us</h3>
+            <div class="social_media">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/humsfarweddings/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/HumsafarWeddings"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/humsfarweddings/posts/?feedView=all"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Humsafar Weddings on LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Code End -->
+
+    <!-- Floating Contact Buttons -->
+    <a
+      href="https://wa.me/918305377774"
+      class="floating-contact-btn floating-whatsapp-btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <a
+      href="tel:+918305377774"
+      class="floating-contact-btn floating-call-btn"
+      aria-label="Call Humsafar Weddings"
+      ><i class="fa-solid fa-phone"></i
+    ></a>
+    <button
+      type="button"
+      class="back-to-top-btn"
+      id="backToTopBtn"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Slick Slider All Pages -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Js Link -->
+    <script src="/assets/js/custom.js"></script>
+    <!-- Bootstrap Js Link -->
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

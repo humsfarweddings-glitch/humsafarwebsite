@@ -1,0 +1,125 @@
+{
+  "page": "faq",
+  "title": "Frequently Asked Questions (FAQs)",
+  "subtitle": "From India to the World — Humsafar Wedding FAQs for You",
+  "source_url": "https://humsafar-wedding.netlify.app/faq",
+  "cta": "Let's create Magic Together",
+  "categories": [
+    {
+      "category": "About Humsafar Weddings",
+      "faqs": [
+        {
+          "question": "What is Humsafar Weddings, and what services do you offer?",
+          "answer": "Humsafar Weddings is a premium wedding planning company that specializes in luxury destination weddings across India and abroad. We offer end-to-end services including wedding planning, theme décor, logistics, guest hospitality, entertainment, and complete on-ground execution."
+        },
+        {
+          "question": "Do you only plan destination weddings?",
+          "answer": "Not at all. While destination weddings are our forte, we also curate luxury weddings in your hometown or any location of your choice with the same passion and precision."
+        },
+        {
+          "question": "Why choose Humsafar Weddings over other wedding planners?",
+          "answer": "We focus on emotionally personalized, story-driven celebrations with world-class execution. From concept to coordination, our attention to detail, design innovation, and smooth management set us apart."
+        }
+      ]
+    },
+    {
+      "category": "Destination Wedding Planning in India & Abroad",
+      "faqs": [
+        {
+          "question": "What are the best locations for a destination wedding in India?",
+          "answer": "We specialize in India's top wedding destinations such as:",
+          "list": [
+            "Udaipur, Jaipur, Jodhpur – for royal palace weddings",
+            "Goa and Kerala – for beach and tropical vibes",
+            "Jim Corbett, Mussoorie, and Rishikesh – for forest and hill station experiences"
+          ]
+        },
+        {
+          "question": "Can you plan our wedding abroad?",
+          "answer": "Yes! We plan weddings internationally in locations like:",
+          "list": [
+            "Bali, Thailand, Dubai",
+            "Italy, Greece, Turkey"
+          ],
+          "answer_after": "We manage everything from venue sourcing to cross-border vendor coordination."
+        },
+        {
+          "question": "How far in advance should we start planning a destination wedding?",
+          "answer": "We recommend starting at least 9 to 12 months in advance, especially for peak-season or international weddings. This ensures venue availability and a stress-free planning timeline."
+        }
+      ]
+    },
+    {
+      "category": "Guest Experience & Wedding Logistics",
+      "faqs": [
+        {
+          "question": "Do you manage guest travel and accommodation?",
+          "answer": "Yes. We handle:",
+          "list": [
+            "Flight bookings and RSVPs",
+            "Hotel accommodations",
+            "Airport pickups and drop-offs",
+            "24x7 hospitality desk and concierge at the venue"
+          ]
+        },
+        {
+          "question": "How do you ensure a smooth wedding day experience?",
+          "answer": "Our experienced on-ground team manages real-time vendor coordination, event flow, and guest support to ensure a flawless and enjoyable wedding experience for everyone."
+        }
+      ]
+    },
+    {
+      "category": "Wedding Design & Styling",
+      "faqs": [
+        {
+          "question": "Do you provide wedding décor and theme design?",
+          "answer": "Absolutely! We conceptualize and execute all visual elements including:",
+          "list": [
+            "Floral and lighting installations",
+            "Theme-based stage and mandap design",
+            "Personalized elements and styling touches"
+          ]
+        },
+        {
+          "question": "Can you personalize our wedding to reflect our story and culture?",
+          "answer": "Yes. We believe your wedding should reflect your story. We craft emotionally rich, culturally respectful celebrations with customized rituals, themes, and design elements."
+        }
+      ]
+    },
+    {
+      "category": "Budget & Custom Packages",
+      "faqs": [
+        {
+          "question": "What is the starting budget for a Humsafar Weddings event?",
+          "answer": "Our weddings typically start from ₹70–80 lakhs and above, depending on location, guest count, scale, and level of customization."
+        },
+        {
+          "question": "Do you offer standard wedding planning packages?",
+          "answer": "No. We believe every wedding is unique. Instead of fixed packages, we offer custom-tailored planning solutions based on your vision, preferences, and priorities."
+        }
+      ]
+    },
+    {
+      "category": "Getting Started with Humsafar Weddings",
+      "faqs": [
+        {
+          "question": "How do we start planning our wedding with Humsafar?",
+          "answer": "Reach out to us via:",
+          "list": [
+            "Our Contact Form",
+            "Instagram DM or WhatsApp"
+          ],
+          "answer_after": "We'll schedule a complimentary wedding consultation to understand your requirements and share a tailored plan."
+        },
+        {
+          "question": "Is the first consultation chargeable?",
+          "answer": "No. Your first consultation is completely free, with no obligation — just a heart-to-heart conversation about your story and vision."
+        },
+        {
+          "question": "What is your wedding planning payment structure?",
+          "answer": "We follow a milestone-based payment model tied to project stages like concept design, vendor onboarding, and execution. This ensures transparency and builds trust every step of the way."
+        }
+      ]
+    }
+  ]
+}

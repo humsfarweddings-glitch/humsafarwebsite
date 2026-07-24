@@ -327,7 +327,7 @@ section.humsafar-journal .col-md-4:hover .journal_content a {
 
 /* Weddings Across India  Css */
 .image_india_wedding {
-    background: url(../images/home_images/india_wedding.jpg);
+    background: url(/assets/images/home_images/india_wedding.jpg);
     height: 700px;
     background-size: cover;
     background-position: center;
@@ -377,7 +377,7 @@ section.india_wedding_score .single_heading_title {
 
 /* WEDDINGS AROUND THE WORLD Html Css */
 .image_world_wedding {
-    background: url(../images/home_images/word_wedding.jpg);
+    background: url(/assets/images/home_images/word_wedding.jpg);
     height: 700px;
     background-size: cover;
     background-position: center;
@@ -933,7 +933,8 @@ section.humsafar-stories {
 }
 
 .humsafar-glimpses button.slick-prev:before {
-    background: url(../images/home_images/left.svg);
+    background: url(../images/home_images/right_arrow.svg);
+    transform: scaleX(-1);
     font-size: 0;
     z-index: 99;
     background-repeat: no-repeat;
@@ -944,7 +945,7 @@ section.humsafar-stories {
 }
 
 .humsafar-glimpses button.slick-next:before {
-    background: url(../images/home_images/right.svg);
+    background: url(../images/home_images/right_arrow.svg);
     font-size: 0;
     z-index: 99;
     background-repeat: no-repeat;
@@ -1002,6 +1003,200 @@ section.humsafar-stories {
     }
     .glimpses-track {
         animation-duration: 60s;
+    }
+}
+
+/* ============================================================
+   Humsafar Glimpses — editorial "wedding stories" sections
+   (Most Popular / By Culture / International / Destination),
+   inspired by the KnotsByAMP wedding-stories layout.
+   Placeholder photos + copy; per-story pages come later.
+   ============================================================ */
+.humsafar-stories {
+    background-color: #faf7f1;
+    padding: 66px 0;
+}
+
+/* Intro heading that leads into the story sections */
+.glimpses-intro {
+    padding: 62px 20px 26px;
+}
+
+.humsafar-stories--alt {
+    background-color: #faf7f1;
+}
+
+.humsafar-stories .container {
+    max-width: 1200px;
+}
+
+.stories-heading {
+    font-family: var(--font-spectral);
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--primary-bg-color);
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.stories-heading em {
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+}
+
+/* Three-up story cards */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+}
+
+.story-card__media {
+    display: block;
+    overflow: hidden;
+}
+
+.story-card__media img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.story-card__media:hover img {
+    transform: scale(1.05);
+}
+
+.story-card__title {
+    font-family: var(--font-spectral);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--primary-bg-color);
+    margin: 20px 0 12px;
+}
+
+.story-card__excerpt {
+    font-family: var(--font-Work);
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4a5a56;
+    margin-bottom: 16px;
+}
+
+.story-card__more {
+    font-family: var(--font-spectral);
+    font-size: 16px;
+    color: var(--primary-bg-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease;
+}
+
+.story-card__more:hover {
+    color: var(--primary-bg-color);
+    border-color: var(--primary-bg-color);
+}
+
+.story-card__tags {
+    display: block;
+    font-family: var(--font-Work);
+    font-size: 13px;
+    color: #9aa4a0;
+    margin-top: 14px;
+}
+
+/* "By Culture" cards: small portrait image + title + pill button */
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px 30px;
+}
+
+.culture-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.culture-card__media {
+    flex: 0 0 132px;
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culture-card__media img {
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+    object-fit: contain;
+    display: block;
+}
+
+.culture-card__title {
+    font-family: var(--font-spectral);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--primary-bg-color);
+    margin: 0 0 16px;
+}
+
+.culture-card__title em {
+    display: block;
+    font-style: italic;
+}
+
+.culture-card__btn {
+    display: inline-block;
+    font-family: var(--font-Work);
+    font-size: 14px;
+    color: var(--white-color);
+    background: var(--primary-bg-color);
+    padding: 9px 22px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.culture-card__btn:hover {
+    color: var(--white-color);
+    opacity: 0.85;
+}
+
+@media only screen and (max-width: 991px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 34px;
+    }
+    .culture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .humsafar-stories {
+        padding: 44px 0;
+    }
+    .stories-heading {
+        font-size: 27px;
+        margin-bottom: 32px;
+    }
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .culture-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+    .story-card__media img {
+        height: 260px;
     }
 }
 
@@ -1401,16 +1596,23 @@ section.testimonial_main .row {
 /* Contact Form Css Start */
 
 section.Enquire_main_bg {
-    background: url(../images/contact/form_banner_contact.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 70px 0;
+    background: #ffffff;
+    padding: 10px 0 70px;
+}
+
+/* Tighten the dead space above the form on contact pages */
+.testimonial_main:has(+ .Enquire_main_bg) {
+    padding-bottom: 24px;
 }
 
 .Enquire_form_bg {
     background: #ffffff;
+    max-width: 1040px;
+    margin: 0 auto;
     padding: 50px;
+    border: 1px solid #ece7dc;
+    border-radius: 16px;
+    box-shadow: 0 24px 60px -34px rgba(20, 57, 53, 0.4);
 }
 
 form.wedding-form .form-flex {
@@ -1780,6 +1982,240 @@ p.mb-0.small {
 
 .faq-box.open .faq-answer {
     display: block;
+}
+
+/* ===== FAQ page — dedicated, premium treatment (scoped) ===== */
+.faq_page_main {
+    background: #ffffff;
+    padding: 20px 0 90px;
+}
+
+.faq_page_main .container {
+    max-width: 960px;
+}
+
+/* Elegant chapter divider for each topic group */
+.faq-cat-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 64px 0 26px;
+}
+
+.faq-cat-head:first-child {
+    margin-top: 30px;
+}
+
+.faq-cat-head .line {
+    flex: 0 1 90px;
+    height: 1px;
+    background: linear-gradient(
+        to var(--dir, right),
+        rgba(20, 57, 53, 0) 0%,
+        #cbb26a 100%
+    );
+}
+
+.faq-cat-head .line.left {
+    --dir: left;
+}
+
+.faq-cat-head h3 {
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.faq-cat-head .diamond {
+    color: #c9a94b;
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* Accordion */
+.faq_page_main .faq-section {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: visible;
+    border-radius: 0;
+}
+
+.faq_page_main .faq-box {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ece7dc;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 6px 20px -16px rgba(20, 57, 53, 0.35);
+    transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
+}
+
+.faq_page_main .faq-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--primary-bg-color);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease;
+}
+
+.faq_page_main .faq-box.open {
+    border-color: #dcd0ad;
+    box-shadow: 0 18px 40px -24px rgba(20, 57, 53, 0.4);
+}
+
+.faq_page_main .faq-box.open::before {
+    transform: scaleY(1);
+}
+
+.faq_page_main .faq-question {
+    padding: 24px 26px;
+    gap: 20px;
+}
+
+.faq_page_main .faq-question span {
+    font-family: var(--font-Work);
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.45;
+    color: var(--primary-bg-color);
+    letter-spacing: 0.2px;
+    transition: color 0.3s ease;
+}
+
+/* Circular gold-ringed toggle that morphs + to minus */
+.faq_page_main .faq-box .toggle-btn {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #cbb26a;
+    background: transparent;
+    color: var(--primary-bg-color);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.35s ease;
+}
+
+.faq_page_main .faq-box.open button.toggle-btn {
+    background: var(--primary-bg-color);
+    color: #FAE6A5;
+    border-color: var(--primary-bg-color);
+}
+
+/* Smooth reveal */
+.faq_page_main .faq-answer {
+    display: block;
+    max-height: 0;
+    padding: 0 26px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.faq_page_main .faq-box.open .faq-answer {
+    max-height: 620px;
+    padding: 0 26px 26px;
+}
+
+.faq_page_main .faq-answer p,
+.faq_page_main .faq-answer li {
+    font-family: var(--font-Work);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #46564e;
+    letter-spacing: 0.1px;
+}
+
+.faq_page_main .faq-answer p {
+    margin: 0 0 6px;
+}
+
+.faq_page_main .faq-answer p + ul {
+    margin-top: 4px;
+}
+
+.faq_page_main .faq-answer ul {
+    list-style: none;
+    padding-left: 4px;
+    margin: 8px 0 10px;
+}
+
+.faq_page_main .faq-answer ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+
+.faq_page_main .faq-answer ul li::before {
+    content: "\25C6"; /* diamond */
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #c9a94b;
+    font-size: 11px;
+}
+
+.faq_page_main .faq-answer strong {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+}
+
+/* Closing CTA */
+.faq_cta {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.faq_cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-Work);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    background: var(--primary-bg-color);
+    padding: 18px 40px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 4px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.faq_cta a:hover {
+    background: transparent;
+    color: var(--primary-bg-color);
+}
+
+.faq_cta a span img {
+    width: 20px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.4s ease;
+}
+
+.faq_cta a:hover span img {
+    filter: none;
 }
 
 

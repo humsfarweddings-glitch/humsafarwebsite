@@ -21,3 +21,7 @@ node_modules/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Source hero images (originals; placed copies live under frontend/assets)
+source-images/
+.vercel

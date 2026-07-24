@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin />
     <title>About Us | Humsafar Weddings</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- Favicon Image -->
@@ -30,6 +34,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preload" as="image" href="/assets/images/misc/ADA01661.webp" fetchpriority="high" />
   </head>
 
   <body>
@@ -42,8 +47,7 @@
                   <img
                     src="/assets/images/website_logo.png"
                     alt="Website Logo"
-                    class="desktop-logo"
-                  />
+                    class="desktop-logo" decoding="async" />
                   <span class="logo-wordmark">Humsafar Weddings</span>
                 </a></div>
     <div class="hamburger">&#9776;</div>
@@ -101,7 +105,7 @@
           </li>
           <li><a href="#">GLIMPSES</a></li>
           <li><a href="#">MOMENTS</a></li>
-          <li><a href="#">Journal</a></li>
+          <li><a href='/blogs'>Journal</a></li>
           <li class="has-submenu"><a href="#">Contact</a>
             <ul class="submenu">
               <li><a href="#">CLIENT ENQUIRY</a></li>
@@ -129,17 +133,6 @@
               <div class="Left_menu_code">
                 <li>
                   <a class='desktop-item' href='/about-us'>MEET HUMSAFAR</a>
-                  <!-- dropdown -->
-                  <ul class="drop-menu">
-                    <li><a href='/about-us#journey'>OUR JOURNEY </a></li>
-                    <li>
-                      <a href='/about-us#humsafer_family'>THE HUMSAFAR FAMILY</a
-                      >
-                    </li>
-                    <li>
-                      <a href='/about-us#humsafer_way'>THE HUMSAFAR WAY</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#" class="desktop-item">OFFERINGS</a>
@@ -210,99 +203,85 @@
                           <div class="image-item"><a class="image-link" href="/india/udaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Udaipur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-1.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jaipur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jodhpur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-2.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jodhpur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jaisalmer" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-3.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jaisalmer</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/goa" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-4.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Goa</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kumarakom" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-5.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kumarakom</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kochi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-6.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kochi</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/alibaug" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-7.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Alibaug</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/mussoorie" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-8.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mussoorie</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/shimla" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-9.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Shimla</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/rishikesh" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-10.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Rishikesh</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jim-corbett" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-11.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jim Corbett</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kabini" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-12.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kabini</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/mahabalipuram" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-13.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mahabalipuram</p>
                           </a></div>
                         </div>
@@ -312,106 +291,91 @@
                           <div class="image-item"><a class="image-link" href="/world/bali" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_01.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Bali</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/abu-dhabi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_02.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Abu Dhabi</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/sri-lanka" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_03.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Sri Lanka</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/paris" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_04.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Paris</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/phuket" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_05.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Phuket</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/bahrain" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_06.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Bahrain</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/maldives" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_07.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Maldives</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/tuscany" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_08.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Tuscany</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/switzerland" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_09.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Switzerland</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/morocco" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_10.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Morocco</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/lake-como" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_11.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Lake Como</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/singapore" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_12.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Singapore</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/dubai" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_13.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Dubai</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/mauritius" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_14.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mauritius</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/hua-hin" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_15.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>hua Hin</p>
                           </a></div>
                         </div>
@@ -427,8 +391,7 @@
                   <img
                     src="/assets/images/website_logo.png"
                     alt="Website Logo"
-                    class="desktop-logo"
-                  />
+                    class="desktop-logo" decoding="async" />
                   <span class="logo-wordmark">Humsafar Weddings</span>
                 </a>
               </div>
@@ -463,7 +426,7 @@
     <!-- Hero Banner Code -->
     <section class="hero_banner" data-aos="zoom-in">
       <div class="banner_image">
-        <img src="/assets/images/misc/ADA01661.jpg" alt="testimonial_banner" />
+        <img src="/assets/images/misc/ADA01661.webp" alt="testimonial_banner" decoding="async" fetchpriority="high" />
       </div>
     </section>
 
@@ -765,9 +728,8 @@
           <div class="family-section-border">
             <div class="member-card">
               <img
-                src="/assets/images/about/Armaan Sharrma Profile.png"
-                alt="Armaan Sharrma"
-              />
+                src="/assets/images/about/Armaan-Sharrma-Profile.webp"
+                alt="Armaan Sharrma" decoding="async" loading="lazy" />
               <div class="member-info">
                 <h3>Armaan Sharrma</h3>
                 <div class="title">FOUNDER</div>
@@ -801,9 +763,8 @@
           <div class="family-section-border">
             <div class="member-card">
               <img
-                src="/assets/images/about/Arnav Khanna Profile.png"
-                alt="Arnav Khanna"
-              />
+                src="/assets/images/about/Arnav-Khanna-Profile.webp"
+                alt="Arnav Khanna" decoding="async" loading="lazy" />
               <div class="member-info">
                 <h3>Arnav Khanna</h3>
                 <div class="title">CO-FOUNDER</div>
@@ -858,9 +819,8 @@
           <div class="step">
             <div class="oval fit_images">
               <img
-                src="/assets/images/humsafar_way/humsafar_way_01.png"
-                alt="Step 1 Image"
-              />
+                src="/assets/images/humsafar_way/humsafar_way_01.webp"
+                alt="Step 1 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -879,8 +839,7 @@
             <div class="oval fit_images">
               <img
                 src="/assets/images/humsafar_way/humsafar_way_02.png"
-                alt="Step 2 Image"
-              />
+                alt="Step 2 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -899,9 +858,8 @@
           <div class="step">
             <div class="oval fit_images">
               <img
-                src="/assets/images/humsafar_way/humsafar_way_03.png"
-                alt="Step 3 Image"
-              />
+                src="/assets/images/humsafar_way/humsafar_way_03.webp"
+                alt="Step 3 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -919,9 +877,8 @@
           <div class="step">
             <div class="oval fit_images">
               <img
-                src="/assets/images/humsafar_way/humsafar_way_04.png"
-                alt="Step 4 Image"
-              />
+                src="/assets/images/humsafar_way/humsafar_way_04.webp"
+                alt="Step 4 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -940,8 +897,7 @@
             <div class="oval fit_images">
               <img
                 src="/assets/images/humsafar_way/humsafar_way_05.png"
-                alt="Step 5 Image"
-              />
+                alt="Step 5 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -959,9 +915,8 @@
           <div class="step">
             <div class="oval fit_images">
               <img
-                src="/assets/images/humsafar_way/humsafar_way_06.png"
-                alt="Step 6 Image"
-              />
+                src="/assets/images/humsafar_way/humsafar_way_06.webp"
+                alt="Step 6 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -980,8 +935,7 @@
             <div class="oval fit_images">
               <img
                 src="/assets/images/humsafar_way/humsafar_way_07.png"
-                alt="Step 7 Image"
-              />
+                alt="Step 7 Image" decoding="async" loading="lazy" />
             </div>
           </div>
           <div class="step">
@@ -1000,8 +954,7 @@
             <div class="oval fit_images">
               <img
                 src="/assets/images/humsafar_way/humsafar_way_08.png"
-                alt="Step 8 Image"
-              />
+                alt="Step 8 Image" decoding="async" loading="lazy" />
             </div>
           </div>
         </div>
@@ -1050,8 +1003,7 @@
               <img
                 src="/assets/images/website_logo.png"
                 alt="Humsafar Weddings"
-                class="footer_logo_img"
-              />
+                class="footer_logo_img" decoding="async" loading="lazy" />
               <span class="footer_logo_word">Humsafar<br />Weddings</span>
             </a>
           </div>

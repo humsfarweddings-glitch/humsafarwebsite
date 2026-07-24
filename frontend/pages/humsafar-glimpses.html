@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin />
     <title>Humsafar Glimpses | Humsafar Weddings</title>
     <!-- Favicon Image -->
     <link rel="icon" href="/assets/images/website_logo.png" type="image/png" />
@@ -29,6 +33,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preload" as="image" href="/assets/images/home_images/slider_image_01.webp" fetchpriority="high" />
   </head>
 
   <body>
@@ -41,8 +46,7 @@
                   <img
                     src="/assets/images/website_logo.png"
                     alt="Website Logo"
-                    class="desktop-logo"
-                  />
+                    class="desktop-logo" decoding="async" />
                   <span class="logo-wordmark">Humsafar Weddings</span>
                 </a></div>
     <div class="hamburger">&#9776;</div>
@@ -128,17 +132,6 @@
               <div class="Left_menu_code">
                 <li>
                   <a class='desktop-item' href='/about-us'>MEET HUMSAFAR</a>
-                  <!-- dropdown -->
-                  <ul class="drop-menu">
-                    <li><a href='/about-us#journey'>OUR JOURNEY </a></li>
-                    <li>
-                      <a href='/about-us#humsafer_family'>THE HUMSAFAR FAMILY</a
-                      >
-                    </li>
-                    <li>
-                      <a href='/about-us#humsafer_way'>THE HUMSAFAR WAY</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#" class="desktop-item">OFFERINGS</a>
@@ -209,99 +202,85 @@
                           <div class="image-item"><a class="image-link" href="/india/udaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Udaipur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jaipur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-1.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jaipur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jodhpur" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-2.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jodhpur</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jaisalmer" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-3.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jaisalmer</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/goa" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-4.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Goa</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kumarakom" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-5.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kumarakom</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kochi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-6.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kochi</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/alibaug" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-7.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Alibaug</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/mussoorie" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-8.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mussoorie</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/shimla" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-9.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Shimla</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/rishikesh" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-10.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Rishikesh</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/jim-corbett" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-11.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Jim Corbett</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/kabini" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-12.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Kabini</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/india/mahabalipuram" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_India/indian-destination-13.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mahabalipuram</p>
                           </a></div>
                         </div>
@@ -311,106 +290,91 @@
                           <div class="image-item"><a class="image-link" href="/world/bali" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_01.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Bali</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/abu-dhabi" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_02.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Abu Dhabi</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/sri-lanka" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_03.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Sri Lanka</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/paris" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_04.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Paris</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/phuket" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_05.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Phuket</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/bahrain" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_06.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Bahrain</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/maldives" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_07.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Maldives</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/tuscany" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_08.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Tuscany</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/switzerland" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_09.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Switzerland</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/morocco" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_10.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Morocco</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/lake-como" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_11.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Lake Como</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/singapore" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_12.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Singapore</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/dubai" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_13.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Dubai</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/mauritius" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_14.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>Mauritius</p>
                           </a></div>
                           <div class="image-item"><a class="image-link" href="/world/hua-hin" style="display:block;text-decoration:none;color:inherit;cursor:pointer">
                             <img
                               src="/assets/images/destination_wedding_world/world_15.jpg"
-                              alt=""
-                            />
+                              alt="" decoding="async" loading="lazy" />
                             <p>hua Hin</p>
                           </a></div>
                         </div>
@@ -426,8 +390,7 @@
                   <img
                     src="/assets/images/website_logo.png"
                     alt="Website Logo"
-                    class="desktop-logo"
-                  />
+                    class="desktop-logo" decoding="async" />
                   <span class="logo-wordmark">Humsafar Weddings</span>
                 </a>
               </div>
@@ -463,7 +426,8 @@
     <!-- Hero Video -->
     <section class="hero_banner" data-aos="zoom-in">
       <div class="banner_image">
-        <video class="full-video" autoplay loop muted playsinline>
+        <video class="full-video" autoplay loop muted playsinline preload="auto" poster="/assets/images/humsafar-glimpses/humsafar-glimpses-banner-poster.webp">
+          <source src="/assets/images/humsafar-glimpses/humsafar-glimpses-banner.webm" type="video/webm" />
           <source src="/assets/images/humsafar-glimpses/humsafar-glimpses-banner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -473,283 +437,243 @@
       </div>
     </section>
 
-    <!-- humsafar GLIMPSES Slider Code -->
-    <section class="humsafar-glimpses py-5">
-      <h2 class="section_heading text-center mb-4" data-aos="zoom-out-down">
-        A Peek Into the Magic<br />
-        We Create Together
-      </h2>
-      <div class="glimpses-slider" data-aos="fade-up">
-        <div class="glimpses-track">
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_01.jpg" alt="Wedding Glimpse 1" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_02.jpg" alt="Wedding Glimpse 2" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_03.jpg" alt="Wedding Glimpse 3" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_04.jpg" alt="Wedding Glimpse 4" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_05.jpg" alt="Wedding Glimpse 5" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_06.jpg" alt="Wedding Glimpse 6" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_07.jpg" alt="Wedding Glimpse 7" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_08.jpg" alt="Wedding Glimpse 8" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_09.jpg" alt="Wedding Glimpse 9" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/home_images/slider_image_10.jpg" alt="Wedding Glimpse 10" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_01.jpg" alt="Destination wedding with majestic arches" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_02.jpg" alt="Glamorous four days destination wedding" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_03.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_04.jpg" alt="Destination wedding with majestic arches" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_05.jpg" alt="Glamorous four days destination wedding" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_06.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_07.jpg" alt="Destination wedding with majestic arches" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_08.jpg" alt="Glamorous four days destination wedding" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_09.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" class="img-fluid rounded" />
-          </div>
-          <!-- Duplicate set for a seamless infinite loop -->
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_01.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_02.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_03.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_04.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_05.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_06.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_07.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_08.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_09.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/home_images/slider_image_10.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_01.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_02.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_03.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_04.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_05.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_06.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_07.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_08.jpg" alt="" class="img-fluid rounded" />
-          </div>
-          <div class="glimpse-slide" aria-hidden="true">
-            <img src="/assets/images/humsafar-glimpses/humsafer_inner_09.jpg" alt="" class="img-fluid rounded" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- humsafar GLIMPSES — Wedding Stories -->
+    <!-- Placeholder photos + copy; per-story detail pages will be built later. -->
 
-    <!-- Humsafar Weddings Section Code -->
-    <section class="humsafar-section inner_humsafer_main" data-aos="fade-up">
+
+    <!-- Glimpses Intro Heading -->
+    <section class="humsafar-section inner_humsafer_main glimpses-intro" data-aos="fade-up">
       <div class="container">
         <div class="humsafar-content">
           <h2 class="title">Welcome to Our World !</h2>
           <span class="subtitle">Where Every Frame Tells a Love Story...</span>
-          <p class="para" data-aos="fade-up">
-            Step into the heart of <strong>Humsafar Weddings </strong>through a
-            curated collection of our most <strong>cherished moments</strong>.
-            Each image you see here is not just a wedding—it's the result of
-            <strong>thoughtful design, meaningful collaboration,</strong> and
-            the <strong>seamless execution</strong> of dreams.
-          </p>
-          <p class="para" data-aos="fade-up">
-            From <strong>royal palaces</strong> to
-            <strong>serene beaches</strong>, every wedding reflects our
-            signature blend of
-            <strong>effortless luxury, custom design, and unforgettable
-              moments.</strong>
-          </p>
-          <p class="para last" data-aos="fade-up">
-            We collaborate with the finest local and international vendors and
-            work with <strong>top destination wedding photographers</strong> to
-            capture every detail — from grand décor to
-            <strong>emotional moments</strong>.
-          </p>
-          <p class="para last" data-aos="fade-up">
-            <em>
-              <strong>Every frame here tells a story of love, culture, and
-                celebration designed and brought to life by the Humsafar
-                Weddings team.</strong>
-            </em>
-          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Most Popular Weddings -->
+    <section class="humsafar-stories" data-aos="fade-up">
+      <div class="container">
+        <h2 class="stories-heading"><em>Most Popular</em> Weddings</h2>
+        <div class="stories-grid">
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/home_images/slider_image_01.webp" alt="Royal palace wedding in Udaipur" decoding="async" loading="lazy" fetchpriority="high" />
+            </a>
+            <h3 class="story-card__title">A Royal Affair at City Palace, Udaipur</h3>
+            <p class="story-card__excerpt">
+              Set against the timeless grandeur of Udaipur's palaces, this celebration
+              wove regal décor, heartfelt rituals, and lakeside romance into three
+              unforgettable days by the water.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/home_images/slider_image_02.webp" alt="Beachside wedding in Alibaug" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Beachside Vows in Alibaug</h3>
+            <p class="story-card__excerpt">
+              Barefoot on golden sand and framed by the Arabian Sea, this intimate
+              coastal wedding traded grandeur for warmth, laughter, and the softest
+              sunset light.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/home_images/slider_image_03.webp" alt="Vibrant North Indian wedding in Jaipur" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Golden-Hour Wedding in Jaipur</h3>
+            <p class="story-card__excerpt">
+              Marigold, mirror-work, and the Pink City's glow — a vibrant North Indian
+              celebration where every corner burst with colour, music, and pure joy.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!--humsafer journal Section Code -->
-    <section class="humsafar-journal journal_inner_page">
+    <!-- By Culture Weddings -->
+    <section class="humsafar-stories humsafar-stories--alt" data-aos="fade-up">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_01.jpg" alt="Destination wedding with majestic arches" />
+        <h2 class="stories-heading"><em>By Culture</em> Weddings</h2>
+        <div class="culture-grid">
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/gujarati.png" alt="Gujarati wedding — Gujarati Turban stamp" decoding="async" loading="lazy" />
             </div>
-            <div class="journal_content">
-              <h5>Destination wedding with majestic arches</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Gujarati <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_02.jpg" alt="Glamorous four days destination wedding" />
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/bengali.webp" alt="Bengali wedding — Bengali Bride stamp" />
             </div>
-            <div class="journal_content">
-              <h5>Glamorous four days destination wedding</h5>
-              <span>Abu Dhabi, Dubai.</span>
-              <a href="#" class="journal_button">View Wedding</a>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Bengali <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_03.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" />
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/maharashtrian.webp" alt="Maharashtrian wedding — Maharashtra bride stamp" />
             </div>
-            <div class="journal_content">
-              <h5>Glamorous Gatsby inspired rehearsal dinner</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Maharashtrian <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
             </div>
-          </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/marwari.webp" alt="Marwari wedding — Rajasthani Turban stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Marwari <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/south-indian.webp" alt="South Indian wedding — Tamil Nadu bride stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">South Indian <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/north-indian.webp" alt="North Indian wedding — Punjab bride stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">North Indian <em>Weddings</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/two-states.webp" alt="Two States wedding — Madhubani art stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Two States <em>Wedding</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/christian.webp" alt="Christian wedding — Shrine Basilica stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Christian <em>Wedding</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
+          <article class="culture-card">
+            <div class="culture-card__media">
+              <img src="/assets/images/humsafar-glimpses/culture/muslim.webp" alt="Muslim wedding — Mosque art stamp" />
+            </div>
+            <div class="culture-card__body">
+              <h3 class="culture-card__title">Muslim <em>Wedding</em></h3>
+              <a class="culture-card__btn" href="#">read all blogs</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!--humsafer journal Secound Row Section Code -->
-    <section class="humsafar-journal journal_inner_page humsafer_secound_row">
+    <!-- International Weddings -->
+    <section class="humsafar-stories" data-aos="fade-up">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_04.jpg" alt="Destination wedding with majestic arches" />
-            </div>
-            <div class="journal_content">
-              <h5>Destination wedding with majestic arches</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_05.jpg" alt="Glamorous four days destination wedding" />
-            </div>
-            <div class="journal_content">
-              <h5>Glamorous four days destination wedding</h5>
-              <span>Abu Dhabi, Dubai.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_06.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" />
-            </div>
-            <div class="journal_content">
-              <h5>Glamorous Gatsby inspired rehearsal dinner</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
+        <h2 class="stories-heading"><em>International</em> Weddings</h2>
+        <div class="stories-grid">
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_world/world_01.jpg" alt="Cliffside wedding in Santorini" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">A Fairytale Wedding in Santorini</h3>
+            <p class="story-card__excerpt">
+              Whitewashed cliffs, endless blue, and vows exchanged above the Aegean —
+              an intimate island escape that turned into pure cinematic magic.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">International Weddings</span>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_world/world_02.jpg" alt="Château wedding in Tuscany" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Château Celebration in Tuscany</h3>
+            <p class="story-card__excerpt">
+              Rolling vineyards and candle-lit stone courtyards set the stage for a
+              warm, elegant Italian wedding under the soft glow of the summer sky.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">International Weddings</span>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_world/world_03.jpg" alt="Luxury wedding in Dubai" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Desert Romance in Dubai</h3>
+            <p class="story-card__excerpt">
+              Skyline glamour meets golden dunes in a lavish celebration that blended
+              modern luxury with timeless tradition, from mehndi to grand reception.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">International Weddings, Popular</span>
+          </article>
         </div>
       </div>
     </section>
 
-    <!--humsafer journal third Row Section Code -->
-    <section class="humsafar-journal journal_inner_page third_row_sec">
+    <!-- Destination Weddings -->
+    <section class="humsafar-stories humsafar-stories--alt" data-aos="fade-up">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_07.jpg" alt="Destination wedding with majestic arches" />
-            </div>
-            <div class="journal_content">
-              <h5>Destination wedding with majestic arches</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_08.jpg" alt="Glamorous four days destination wedding" />
-            </div>
-            <div class="journal_content">
-              <h5>Glamorous four days destination wedding</h5>
-              <span>Abu Dhabi, Dubai.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="journal_img">
-              <img src="/assets/images/humsafar-glimpses/humsafer_inner_09.jpg" alt="Glamorous Gatsby inspired rehearsal dinner" />
-            </div>
-            <div class="journal_content">
-              <h5>Glamorous Gatsby inspired rehearsal dinner</h5>
-              <span>Udaipur, India.</span>
-              <a href="#" class="journal_button">View Wedding</a>
-            </div>
-          </div>
+        <h2 class="stories-heading"><em>Destination</em> Weddings</h2>
+        <div class="stories-grid">
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_India/indian-destination-1.jpg" alt="Palace wedding in Jodhpur" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Palace Wedding in Jodhpur</h3>
+            <p class="story-card__excerpt">
+              The Blue City's forts and courtyards framed a celebration steeped in
+              Rajasthani heritage, colour, and the grandest of hospitality.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Weddings</span>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_India/indian-destination-2.jpg" alt="Backwater wedding in Kumarakom" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Backwater Wedding in Kumarakom</h3>
+            <p class="story-card__excerpt">
+              Palm-fringed lagoons and Kerala's serene backwaters set a tranquil,
+              soulful stage for two families to come together in celebration.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Weddings</span>
+          </article>
+          <article class="story-card">
+            <a class="story-card__media" href="#">
+              <img src="/assets/images/destination_wedding_India/indian-destination-3.jpg" alt="Hilltop wedding in Mussoorie" decoding="async" loading="lazy" />
+            </a>
+            <h3 class="story-card__title">Hilltop Wedding in Mussoorie</h3>
+            <p class="story-card__excerpt">
+              Misty Himalayan foothills and pine-scented mountain air made for a cool,
+              romantic celebration that neither family will ever forget.
+            </p>
+            <a class="story-card__more" href="#">Read more &rarr;</a>
+            <span class="story-card__tags">Destination Weddings</span>
+          </article>
         </div>
       </div>
     </section>
+
 
     <!-- Footer Code Start -->
     <section class="footer_topbar">
@@ -793,8 +717,7 @@
               <img
                 src="/assets/images/website_logo.png"
                 alt="Humsafar Weddings"
-                class="footer_logo_img"
-              />
+                class="footer_logo_img" decoding="async" loading="lazy" />
               <span class="footer_logo_word">Humsafar<br />Weddings</span>
             </a>
           </div>
