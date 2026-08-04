@@ -24,37 +24,33 @@ if (form) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     setStatus('', false);
+
+    const file = fileInput?.files[0];
+    if (!file) {
+      setStatus('Please upload your resume (PDF).', true);
+      return;
+    }
+
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Submitting…';
 
     try {
       const data = new FormData(form);
-      let cvFileUrl = '';
 
-      const file = fileInput?.files[0];
-      if (file) {
-        const blob = await upload(`career-cvs/${file.name}`, file, {
-          access: 'public',
-          handleUploadUrl: '/api/career-blob-upload',
-        });
-        cvFileUrl = blob.url;
-      }
+      const blob = await upload(`career-cvs/${file.name}`, file, {
+        access: 'public',
+        handleUploadUrl: '/api/career-blob-upload',
+      });
+      const cvFileUrl = blob.url;
 
       const payload = {
         fullName: data.get('fullName')?.trim() || '',
         email: data.get('email')?.trim() || '',
         phoneNumber: data.get('phoneNumber')?.trim() || '',
-        linkedin: data.get('linkedin')?.trim() || '',
-        instagram: data.get('instagram')?.trim() || '',
         position: data.get('position')?.trim() || '',
-        workLocation: data.get('workLocation')?.trim() || '',
-        experience: data.get('experience')?.trim() || '',
         cvFileUrl,
-        cvLink: data.get('cvLink')?.trim() || '',
-        availability: data.get('availability')?.trim() || '',
-        commitment: data.get('commitment')?.trim() || '',
-        heardFrom: data.get('heardFrom')?.trim() || '',
-        recentProjects: data.get('recentProjects')?.trim() || '',
+        linkedin: data.get('linkedin')?.trim() || '',
+        coverNote: data.get('coverNote')?.trim() || '',
       };
 
       const response = await fetch('/api/career-enquiry', {

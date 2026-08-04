@@ -102,8 +102,8 @@
               <li><a href='/world/hua-hin'>hua Hin</a></li>
             </ul>
           </li>
-          <li><a href="#">GLIMPSES</a></li>
-          <li><a href="#">MOMENTS</a></li>
+          <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+          <li><a href='/testimonial'>MOMENTS</a></li>
           <li><a href='/blogs'>Journal</a></li>
           <li class="has-submenu"><a href="#">Contact</a>
             <ul class="submenu">
@@ -462,20 +462,9 @@
                   <input type="tel" id="phoneNumber" name="phoneNumber" required />
                 </div>
                 <div>
-                  <label for="linkedin">LinkedIn</label>
-                  <input type="url" id="linkedin" name="linkedin" placeholder="https://" />
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="instagram">Instagram</label>
-                  <input type="url" id="instagram" name="instagram" placeholder="https://" />
-                </div>
-                <div>
-                  <label for="position">Position Applying For</label>
+                  <label for="position">Role Applying For</label>
                   <select id="position" name="position" required>
-                    <option value="">Select a position</option>
+                    <option value="">Select a role</option>
                     <option value="Wedding Planner">Wedding Planner</option>
                     <option value="Wedding Designer">Wedding Designer</option>
                     <option value="Wedding Manager">Wedding Manager</option>
@@ -484,31 +473,12 @@
                 </div>
               </div>
 
-              <div class="form-flex">
-                <div>
-                  <label for="workLocation">Preferred Work Location</label>
-                  <select id="workLocation" name="workLocation" required>
-                    <option value="">Select a location</option>
-                    <option value="Delhi NCR">Delhi NCR</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Jim Corbett">Jim Corbett</option>
-                    <option value="Raipur">Raipur</option>
-                    <option value="Remote">Remote</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="experience">Experience (Years)</label>
-                  <input type="number" id="experience" name="experience" min="0" step="1" />
-                </div>
-              </div>
-
               <div class="form-flex full_width team_form large-field file-upload space_team">
                 <div>
-                  <label for="cv-file" class="upload-label">Upload CV / Portfolio (PDF)</label>
+                  <label for="cv-file" class="upload-label">Upload Resume (PDF)</label>
                   <div class="dotted_border_upload">
                     <img src="/assets/images/contact/Upload_icon.svg" alt="upload" />
-                    <input type="file" id="cv-file" name="cvFile" accept="application/pdf" />
+                    <input type="file" id="cv-file" name="cvFile" accept="application/pdf" required />
                     <span class="portfolio-file-name" id="cv-file-name"></span>
                   </div>
                 </div>
@@ -516,45 +486,15 @@
 
               <div class="form-flex full_width large-field">
                 <div>
-                  <label for="cvLink">Or share a CV / Portfolio Link</label>
-                  <input type="url" id="cvLink" name="cvLink" placeholder="https://drive.google.com/..." />
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="availability">Availability to Join</label>
-                  <select id="availability" name="availability">
-                    <option value="Immediate" selected>Immediate</option>
-                    <option value="Within 15 Days">Within 15 Days</option>
-                    <option value="Within 30 Days">Within 30 Days</option>
-                    <option value="More than 30 Days">More than 30 Days</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="commitment"
-                    >Are you open to a 2-year commitment if shortlisted?</label
-                  >
-                  <select id="commitment" name="commitment">
-                    <option value="Yes" selected>Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="heardFrom">How did you hear about us?</label>
-                  <input type="text" id="heardFrom" name="heardFrom" />
+                  <label for="linkedin">LinkedIn / Portfolio (Optional)</label>
+                  <input type="url" id="linkedin" name="linkedin" placeholder="https://" />
                 </div>
               </div>
 
               <div class="form-flex full_width large-field">
                 <div>
-                  <label for="recentProjects"
-                    >Top 3 Recent Wedding Projects (Brief Description)</label
-                  >
-                  <textarea id="recentProjects" name="recentProjects"></textarea>
+                  <label for="coverNote">Cover Note (Optional)</label>
+                  <textarea id="coverNote" name="coverNote"></textarea>
                 </div>
               </div>
             </div>
@@ -591,7 +531,7 @@
           <div class="col-md-6">
             <div class="contact_map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4269.904301241666!2d78.90110337553574!3d29.570400175165794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a3e730f73156f%3A0xe5babe0501567889!2sJim%20Corbett%20National%20Park%20Uttarakhand%20India!5e1!3m2!1sen!2sin!4v1756898562531!5m2!1sen!2sin"
+                src="https://www.google.com/maps?q=C-3061%2C%20Sagar%20Properties%2C%20Green%20Field%2C%20Faridabad%2C%20Haryana%20121010&output=embed"
                 width="600"
                 height="450"
                 style="border: 0"
@@ -715,7 +655,7 @@
           </div>
           <div class="footer_col footer_contact">
             <h3>Contact</h3>
-            <address>C 3061, 4th Floor, Green Field,<br />Faridabad, Haryana, 121010</address>
+            <address>C-3061, Sagar Properties, Green Field,<br />Faridabad, Haryana, 121010</address>
             <a href="mailto:info@humsafarwedding.com">info@humsafarwedding.com</a>
             <a href="tel:+918305377774">+91 83053 77774</a>
             <div class="footer_copyright_block">

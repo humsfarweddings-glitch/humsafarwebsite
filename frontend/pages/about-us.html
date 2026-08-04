@@ -103,8 +103,8 @@
               <li><a href='/world/hua-hin'>hua Hin</a></li>
             </ul>
           </li>
-          <li><a href="#">GLIMPSES</a></li>
-          <li><a href="#">MOMENTS</a></li>
+          <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+          <li><a href='/testimonial'>MOMENTS</a></li>
           <li><a href='/blogs'>Journal</a></li>
           <li class="has-submenu"><a href="#">Contact</a>
             <ul class="submenu">
@@ -1064,27 +1064,66 @@
     </footer>
     <!-- Footer Code End -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script>
-      gsap.registerPlugin(ScrollTrigger);
+      // Humsafar Way: the strip only ever moves on a deliberate horizontal
+      // gesture (shift+wheel, trackpad left/right swipe, touch drag).
+      // Plain vertical scrolling is forwarded to the page ourselves so the
+      // incidental deltaX "noise" every real trackpad/mouse produces during
+      // a vertical scroll can never creep the strip forward on its own.
+      (function () {
+        const track = document.querySelector(".all_slides");
+        if (!track) return;
 
-      const slider = document.querySelector(".locomotive_slide");
-      const siteHeader = document.querySelector(".header_main");
+        const maxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
+        const clamp = (v) => Math.min(maxScroll(), Math.max(0, v));
 
-      gsap.to(slider, {
-        x: () => -(slider.scrollWidth - window.innerWidth),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".horizontal-wrapper",
-          start: () => `top top+=${siteHeader ? siteHeader.offsetHeight : 0}`,
-          end: () => `+=${slider.scrollWidth - window.innerWidth}`,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        },
-      });
+        track.addEventListener(
+          "wheel",
+          (e) => {
+            e.preventDefault();
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+              track.scrollLeft = clamp(track.scrollLeft + e.deltaX);
+            } else {
+              window.scrollBy(0, e.deltaY);
+            }
+          },
+          { passive: false }
+        );
+
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchScrollStart = 0;
+        let touchIsHorizontal = null;
+
+        track.addEventListener(
+          "touchstart",
+          (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchScrollStart = track.scrollLeft;
+            touchIsHorizontal = null;
+          },
+          { passive: true }
+        );
+
+        track.addEventListener(
+          "touchmove",
+          (e) => {
+            const dx = e.touches[0].clientX - touchStartX;
+            const dy = e.touches[0].clientY - touchStartY;
+
+            if (touchIsHorizontal === null && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
+              touchIsHorizontal = Math.abs(dx) > Math.abs(dy);
+            }
+
+            if (touchIsHorizontal) {
+              e.preventDefault();
+              track.scrollLeft = clamp(touchScrollStart - dx);
+            }
+          },
+          { passive: false }
+        );
+      })();
     </script>
 
     <!-- Floating Contact Buttons -->

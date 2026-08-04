@@ -103,8 +103,8 @@
               <li><a href='/world/hua-hin'>hua Hin</a></li>
             </ul>
           </li>
-          <li><a href="#">GLIMPSES</a></li>
-          <li><a href="#">MOMENTS</a></li>
+          <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+          <li><a href='/testimonial'>MOMENTS</a></li>
           <li><a href='/blogs'>Journal</a></li>
           <li class="has-submenu"><a href="#">Contact</a>
             <ul class="submenu">
@@ -448,24 +448,35 @@
           <form class="wedding-form" id="vendor-form" novalidate>
             <div class="form-flex">
               <div>
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="full_name" required />
+                <label for="businessName">Business Name</label>
+                <input type="text" id="businessName" name="business_name" required />
               </div>
               <div>
-                <label for="companyName">Company/Brand Name</label>
-                <input type="text" id="companyName" name="company_name" required />
+                <label for="contactPerson">Contact Person</label>
+                <input type="text" id="contactPerson" name="contact_person" required />
               </div>
             </div>
 
             <div class="form-flex">
               <div>
-                <label for="category">Category of Service</label>
+                <label for="contactNumber">Phone</label>
+                <input type="tel" id="contactNumber" name="contact_number" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-flex">
+              <div>
+                <label for="category">Category</label>
                 <select id="category" name="category" required>
                   <option value="">Select a category</option>
                   <option value="Venue">Venue</option>
-                  <option value="Decor">Decor</option>
-                  <option value="Photography & Videography">Photography &amp; Videography</option>
                   <option value="Catering">Catering</option>
+                  <option value="Photography & Videography">Photography &amp; Videography</option>
+                  <option value="Decor">Decor</option>
                   <option value="Makeup & Styling">Makeup &amp; Styling</option>
                   <option value="Entertainment">Entertainment</option>
                   <option value="Invitations & Favors">Invitations &amp; Favors</option>
@@ -474,108 +485,22 @@
                 </select>
               </div>
               <div>
-                <label for="cityOfResidence">City of Residence</label>
-                <input type="text" id="cityOfResidence" name="city_of_residence" required />
-              </div>
-            </div>
-
-            <div class="form-flex">
-              <div>
-                <label for="operationalCities">Operational Cities / Regions</label>
-                <input type="text" id="operationalCities" name="operational_cities" placeholder="e.g. Delhi, Mumbai, Jaipur" />
-              </div>
-              <div>
-                <label for="yearsOfExperience">Years of Experience</label>
-                <input type="number" id="yearsOfExperience" name="years_of_experience" min="0" step="1" />
-              </div>
-            </div>
-
-            <div class="form-flex">
-              <div>
-                <label for="instagramOrWebsite">Instagram / Website Link</label>
-                <input type="url" id="instagramOrWebsite" name="instagram_or_website" placeholder="https://" />
-              </div>
-              <div>
-                <label for="linkedin">LinkedIn</label>
-                <input type="url" id="linkedin" name="linkedin" placeholder="https://" />
-              </div>
-            </div>
-
-            <div class="file-upload" style="grid-column: span 2">
-              <label for="file-upload" class="upload-label">
-                Portfolio Upload (PDF) <br />
-              </label>
-              <div class="dotted_border_upload">
-                <img src="/assets/images/contact/Upload_icon.svg" alt="upload" />
-                <input type="file" id="file-upload" name="portfolio_file" accept="application/pdf" />
+                <label for="citiesServed">City / Cities Served</label>
+                <input type="text" id="citiesServed" name="cities_served" placeholder="e.g. Delhi, Mumbai, Jaipur" required />
               </div>
             </div>
 
             <div class="form-flex full_width large-field">
               <div>
-                <label for="portfolioLink">Or share a Portfolio Drive Link</label>
-                <input type="url" id="portfolioLink" name="portfolio_link" placeholder="https://drive.google.com/..." />
+                <label for="portfolioLink">Portfolio or Instagram Link</label>
+                <input type="url" id="portfolioLink" name="portfolio_link" placeholder="https://" />
               </div>
             </div>
 
             <div class="form-flex full_width large-field">
               <div>
-                <label for="recentProjects">Top 3 Recent Wedding Projects (Brief Description)</label>
-                <textarea id="recentProjects" name="recent_projects"></textarea>
-              </div>
-            </div>
-
-            <div class="form-flex">
-              <div>
-                <label for="averagePricing">Average Pricing (Range)</label>
-                <select id="averagePricing" name="average_pricing">
-                  <option value="">Select a range</option>
-                  <option value="Under ₹1 Lakh">Under &#8377;1 Lakh</option>
-                  <option value="₹1 Lakh - ₹5 Lakh">&#8377;1 Lakh &ndash; &#8377;5 Lakh</option>
-                  <option value="₹5 Lakh - ₹15 Lakh">&#8377;5 Lakh &ndash; &#8377;15 Lakh</option>
-                  <option value="₹15 Lakh+">&#8377;15 Lakh+</option>
-                </select>
-              </div>
-              <div>
-                <label for="workedWithPlannersBefore">Have you worked with any wedding planners before?</label>
-                <select id="workedWithPlannersBefore" name="worked_with_planners_before">
-                  <option value="">Select an option</option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-flex full_width large-field">
-              <div>
-                <label for="collaborationReason">Why do you want to collaborate with Humsafar Weddings?</label>
-                <textarea id="collaborationReason" name="collaboration_reason"></textarea>
-              </div>
-            </div>
-
-            <div class="form-flex">
-              <div>
-                <label for="contactNumber">Contact Number</label>
-                <input type="tel" id="contactNumber" name="contact_number" required />
-              </div>
-              <div>
-                <label for="email">Email ID</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-            </div>
-
-            <div class="form-flex full_width large-field">
-              <div>
-                <label for="hearAboutUs">How did you hear about us?</label>
-                <select id="hearAboutUs" name="heard_from">
-                  <option value="">Select an option</option>
-                  <option value="Instagram">Instagram</option>
-                  <option value="Google Search">Google Search</option>
-                  <option value="Referral">Referral</option>
-                  <option value="LinkedIn">LinkedIn</option>
-                  <option value="Wedding Expo">Wedding Expo</option>
-                  <option value="Other">Other</option>
-                </select>
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message"></textarea>
               </div>
             </div>
 
@@ -608,7 +533,7 @@
           <div class="col-md-6">
             <div class="contact_map">
               <iframe
-                src="https://www.google.com/maps?q=Jim%20Corbett%2C%20India&output=embed"
+                src="https://www.google.com/maps?q=C-3061%2C%20Sagar%20Properties%2C%20Green%20Field%2C%20Faridabad%2C%20Haryana%20121010&output=embed"
                 width="100%"
                 height="320"
                 style="border: 0"
@@ -745,7 +670,7 @@
           </div>
           <div class="footer_col footer_contact">
             <h3>Contact</h3>
-            <address>C 3061, 4th Floor, Green Field,<br />Faridabad, Haryana, 121010</address>
+            <address>C-3061, Sagar Properties, Green Field,<br />Faridabad, Haryana, 121010</address>
             <a href="mailto:info@humsafarwedding.com">info@humsafarwedding.com</a>
             <a href="tel:+918305377774">+91 83053 77774</a>
             <div class="footer_copyright_block">

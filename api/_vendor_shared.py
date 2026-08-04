@@ -23,32 +23,24 @@ DEFAULT_FROM_EMAIL = "Humsafar Weddings <onboarding@resend.dev>"
 MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024  # 4 MB
 
 REQUIRED_FIELDS = {
-    "full_name": "Full Name",
-    "company_name": "Company/Brand Name",
-    "category": "Category of Service",
-    "city_of_residence": "City of Residence",
-    "contact_number": "Contact Number",
-    "email": "Email ID",
+    "business_name": "Business Name",
+    "contact_person": "Contact Person",
+    "contact_number": "Phone",
+    "email": "Email",
+    "category": "Category",
+    "cities_served": "City / Cities Served",
 }
 
 # Ordered field -> label map used to render the notification email.
 FIELD_LABELS = {
-    "full_name": "Full Name",
-    "company_name": "Company/Brand Name",
-    "category": "Category of Service",
-    "city_of_residence": "City of Residence",
-    "operational_cities": "Operational Cities / Regions",
-    "years_of_experience": "Years of Experience",
-    "instagram_or_website": "Instagram / Website Link",
-    "linkedin": "LinkedIn",
-    "portfolio_link": "Portfolio Link (Drive/other)",
-    "recent_projects": "Top 3 Recent Wedding Projects",
-    "average_pricing": "Average Pricing (Range)",
-    "worked_with_planners_before": "Worked with wedding planners before?",
-    "collaboration_reason": "Why do you want to collaborate with Humsafar Weddings?",
-    "contact_number": "Contact Number",
-    "email": "Email ID",
-    "heard_from": "How did you hear about us?",
+    "business_name": "Business Name",
+    "contact_person": "Contact Person",
+    "contact_number": "Phone",
+    "email": "Email",
+    "category": "Category",
+    "cities_served": "City / Cities Served",
+    "portfolio_link": "Portfolio or Instagram Link",
+    "message": "Message",
 }
 
 
@@ -109,7 +101,7 @@ def send_enquiry_email(data, attachment_bytes=None, attachment_filename=None):
 
     to_email = os.environ.get("RESEND_TO_EMAIL", DEFAULT_TO_EMAIL)
     from_email = os.environ.get("RESEND_FROM_EMAIL", DEFAULT_FROM_EMAIL)
-    company_name = (data.get("company_name") or "a vendor").strip()
+    company_name = (data.get("business_name") or "a vendor").strip()
     reply_to = (data.get("email") or "").strip()
 
     payload = {

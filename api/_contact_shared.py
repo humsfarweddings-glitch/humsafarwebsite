@@ -23,28 +23,17 @@ MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024  # 4 MB
 
 REQUIRED_FIELDS = {
     "full_name": "Full Name",
-    "contact_number": "Contact Number",
-    "email": "Email",
+    "contact_info": "Phone / Email",
 }
 
 # Ordered field -> label map used to render the notification email.
 FIELD_LABELS = {
     "full_name": "Full Name",
-    "contact_number": "Contact Number",
-    "email": "Email",
-    "city": "City of Residence",
-    "groom_name": "Groom Name",
-    "bride_name": "Bride Name",
-    "relationship": "Relationship to the Couple",
+    "contact_info": "Phone / Email",
     "wedding_date": "Wedding Date",
-    "wedding_location": "Preferred Wedding Location",
-    "room_count": "No. of Rooms",
-    "guest_count": "No. of Guests",
+    "city": "City / Destination",
     "budget": "Tentative Wedding Budget",
-    "wedding_type": "Type of Wedding",
-    "planning_help": "Needs End-to-End Planning",
-    "specific_help": "Specific Service Needed",
-    "heard_from": "How They Heard About Us",
+    "message": "Message",
 }
 
 
@@ -66,10 +55,6 @@ def validate_enquiry(data):
     for field, label in REQUIRED_FIELDS.items():
         if not (data.get(field) or "").strip():
             errors.append(f"{label} is required.")
-
-    email = (data.get("email") or "").strip()
-    if email and "@" not in email:
-        errors.append("Email address looks invalid.")
 
     if errors:
         raise EnquiryValidationError(errors)
@@ -106,7 +91,8 @@ def send_enquiry_email(data, attachment_bytes=None, attachment_filename=None):
     to_email = os.environ.get("RESEND_TO_EMAIL", DEFAULT_TO_EMAIL)
     from_email = os.environ.get("RESEND_FROM_EMAIL", DEFAULT_FROM_EMAIL)
     full_name = (data.get("full_name") or "Website Visitor").strip()
-    reply_to = (data.get("email") or "").strip()
+    contact_info = (data.get("contact_info") or "").strip()
+    reply_to = contact_info if "@" in contact_info else ""
 
     payload = {
         "from": from_email,

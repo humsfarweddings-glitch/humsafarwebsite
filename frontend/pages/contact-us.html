@@ -102,8 +102,8 @@
               <li><a href='/world/hua-hin'>hua Hin</a></li>
             </ul>
           </li>
-          <li><a href="#">GLIMPSES</a></li>
-          <li><a href="#">MOMENTS</a></li>
+          <li><a href='/humsafar-glimpses'>GLIMPSES</a></li>
+          <li><a href='/testimonial'>MOMENTS</a></li>
           <li><a href='/blogs'>Journal</a></li>
           <li class="has-submenu"><a href="#">Contact</a>
             <ul class="submenu">
@@ -451,126 +451,56 @@
                   <input type="text" id="fullName" name="full_name" required />
                 </div>
                 <div>
-                  <label for="contactNumber">Contact Number</label>
-                  <input type="tel" id="contactNumber" name="contact_number" required />
+                  <label for="contactInfo">Phone / Email</label>
+                  <input
+                    type="text"
+                    id="contactInfo"
+                    name="contact_info"
+                    placeholder="Phone number or email"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="form-flex">
                 <div>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
+                  <label for="weddingDate">Wedding Date</label>
+                  <input
+                    type="text"
+                    id="weddingDate"
+                    name="wedding_date"
+                    placeholder="DD/MM/YY"
+                    pattern="\d{2}/\d{2}/\d{2}"
+                  />
                 </div>
                 <div>
-                  <label for="city">City of Residence</label>
+                  <label for="city">City / Destination</label>
                   <input type="text" id="city" name="city" />
                 </div>
               </div>
 
               <div class="form-flex">
                 <div>
-                  <label for="groomName">Groom Name</label>
-                  <input type="text" id="groomName" name="groom_name" />
-                </div>
-                <div>
-                  <label for="brideName">Bride Name</label>
-                  <input type="text" id="brideName" name="bride_name" />
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="relationship">Relationship to the Couple</label>
-                  <select id="relationship" name="relationship">
-                    <option value="Bride" selected>Bride</option>
-                    <option value="Groom">Groom</option>
-                    <option value="Family">Family</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="weddingDate">Wedding Date</label>
-                  <input type="date" id="weddingDate" name="wedding_date" />
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="weddingLocation"
-                    >Preferred Wedding Location</label
-                  >
-                  <select id="weddingLocation" name="wedding_location">
-                    <option value="Destination" selected>Destination</option>
-                    <option value="Local">Local</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="roomCount">No. of Room</label>
-                  <input type="number" id="roomCount" name="room_count" min="0" />
-                </div>
-              </div>
-              <div class="form-flex">
-                <div>
-                  <label for="guestCount">No. of Guests</label>
-                  <select id="guestCount" name="guest_count">
-                    <option value="100–200" selected>100–200</option>
-                    <option value="200–500">200–500</option>
-                    <option value="500+">500+</option>
-                  </select>
-                </div>
-                <div>
                   <label for="budget">Tentative Wedding Budget</label>
                   <select id="budget" name="budget">
-                    <option value="₹80L – 1Cr" selected>₹80L – 1Cr</option>
-                    <option value="₹50L – ₹80L">₹50L – ₹80L</option>
+                    <option value="" selected>Select a budget range</option>
+                    <option value="Under ₹20L">Under &#8377;20L</option>
+                    <option value="₹20L – ₹50L">&#8377;20L &ndash; &#8377;50L</option>
+                    <option value="₹50L – ₹80L">&#8377;50L &ndash; &#8377;80L</option>
+                    <option value="₹80L – 1Cr">&#8377;80L &ndash; 1Cr</option>
                     <option value="1Cr+">1Cr+</option>
                   </select>
                 </div>
               </div>
 
-              <div class="form-flex">
+              <div class="form-flex full_width large-field">
                 <div>
-                  <label for="weddingType"
-                    >What type of wedding are you dreaming of?</label
-                  >
-                  <select id="weddingType" name="wedding_type">
-                    <option value="Theme" selected>Theme</option>
-                    <option value="Traditional">Traditional</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="planningHelp"
-                    >Do you need end-to-end planning?</label
-                  >
-                  <select id="planningHelp" name="planning_help">
-                    <option value="Yes" selected>Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-flex">
-                <div>
-                  <label for="specificHelp"
-                    >Any specific service you need help with?</label
-                  >
-                  <select id="specificHelp" name="specific_help">
-                    <option value="Decor" selected>Decor</option>
-                    <option value="Photography">Photography</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="heardFrom">How did you hear about us?</label>
-                  <input type="text" id="heardFrom" name="heard_from" />
-                </div>
-              </div>
-
-              <div class="file-upload" style="grid-column: span 2">
-                <label for="file-upload" class="upload-label">
-                  Upload Reference Photos <br />
-                </label>
-                <div class="dotted_border_upload">
-                  <img src="/assets/images/contact/Upload_icon.svg" alt="upload" />
-                  <input type="file" id="file-upload" name="reference_photo" accept="image/*" />
+                  <label for="message">Message (Optional)</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell us anything else about your wedding plans..."
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -607,7 +537,7 @@
           <div class="col-md-6">
             <div class="contact_map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4269.904301241666!2d78.90110337553574!3d29.570400175165794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a3e730f73156f%3A0xe5babe0501567889!2sJim%20Corbett%20National%20Park%20Uttarakhand%20India!5e1!3m2!1sen!2sin!4v1756898562531!5m2!1sen!2sin"
+                src="https://www.google.com/maps?q=C-3061%2C%20Sagar%20Properties%2C%20Green%20Field%2C%20Faridabad%2C%20Haryana%20121010&output=embed"
                 width="600"
                 height="450"
                 style="border: 0"
@@ -731,7 +661,7 @@
           </div>
           <div class="footer_col footer_contact">
             <h3>Contact</h3>
-            <address>C 3061, 4th Floor, Green Field,<br />Faridabad, Haryana, 121010</address>
+            <address>C-3061, Sagar Properties, Green Field,<br />Faridabad, Haryana, 121010</address>
             <a href="mailto:info@humsafarwedding.com">info@humsafarwedding.com</a>
             <a href="tel:+918305377774">+91 83053 77774</a>
             <div class="footer_copyright_block">

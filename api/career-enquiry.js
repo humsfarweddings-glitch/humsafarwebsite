@@ -6,8 +6,8 @@ const REQUIRED_FIELDS = [
   ['fullName', 'Full Name'],
   ['email', 'Email Id'],
   ['phoneNumber', 'Phone Number'],
-  ['position', 'Position Applying For'],
-  ['workLocation', 'Preferred Work Location'],
+  ['position', 'Role Applying For'],
+  ['cvFileUrl', 'Resume'],
 ];
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -16,17 +16,10 @@ const FIELD_LABELS = [
   ['fullName', 'Full Name'],
   ['email', 'Email Id'],
   ['phoneNumber', 'Phone Number'],
-  ['linkedin', 'LinkedIn'],
-  ['instagram', 'Instagram'],
-  ['position', 'Position Applying For'],
-  ['workLocation', 'Preferred Work Location'],
-  ['experience', 'Experience (Years)'],
-  ['cvFileUrl', 'Uploaded CV / Portfolio'],
-  ['cvLink', 'CV / Portfolio Link'],
-  ['availability', 'Availability to Join'],
-  ['commitment', 'Open to a 2-Year Commitment?'],
-  ['heardFrom', 'How They Heard About Us'],
-  ['recentProjects', 'Top 3 Recent Wedding Projects'],
+  ['position', 'Role Applying For'],
+  ['cvFileUrl', 'Resume'],
+  ['linkedin', 'LinkedIn / Portfolio'],
+  ['coverNote', 'Cover Note'],
 ];
 
 function escapeHtml(value) {
