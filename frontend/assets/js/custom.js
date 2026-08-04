@@ -55,8 +55,14 @@ if (window.jQuery) {
       $('.has-submenu > a').click(function (e) {
         e.preventDefault();
         var $submenu = $(this).next('.submenu');
-        $('.submenu').not($submenu).slideUp();
-        $submenu.slideToggle();
+        // Close the other submenus *instantly*, not with slideUp(). Animating
+        // them shut drags everything below up the screen — opening Contact
+        // while the 14-item destinations list collapsed moved its links 581px
+        // in ~400ms, so a tap during that window landed on the wrong item or
+        // on nothing at all. Collapsing with no animation settles the layout
+        // before the user can reach for a link.
+        $('.submenu').not($submenu).stop(true, true).hide();
+        $submenu.stop(true, true).slideToggle(200);
       });
     });
 
