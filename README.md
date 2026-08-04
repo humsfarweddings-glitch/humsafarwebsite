@@ -10,7 +10,7 @@ Wedding planning website — static frontend served at clean endpoints.
 │   │   ├── index.html      → /
 │   │   ├── about-us.html   → /about-us
 │   │   └── contact-us.html → /contact-us
-│   ├── assets/             ← css, js, images, fonts, icons, gallery, testimonials
+│   ├── assets/             ← css, js, images, fonts (only files the site serves)
 │   └── 404.html            ← not-found page (used locally and on Vercel)
 ├── content/                ← page content sources (JSON / Markdown)
 ├── api/
@@ -18,10 +18,19 @@ Wedding planning website — static frontend served at clean endpoints.
 │   └── _contact_shared.py  ← validation + Resend email logic (shared with Flask)
 ├── server/
 │   └── app.py              ← Flask dev server (local only); also serves /api/contact-enquiry
+├── source-images/          ← LOCAL ONLY (gitignored): originals + retired assets
 ├── requirements.txt
 ├── vercel.json              ← production routing (clean URLs on Vercel)
 └── .vercelignore
 ```
+
+### Asset convention
+
+`frontend/assets/` holds **only what a page actually references** — if a file
+there is unreferenced, it ships to visitors for nothing. Originals, oversized
+masters, and retired assets live in `source-images/`, which is gitignored and
+excluded from deploys. When you retire an image, move it to
+`source-images/unused-frontend-assets/` rather than leaving it in `assets/`.
 
 ## Contact enquiry endpoint
 

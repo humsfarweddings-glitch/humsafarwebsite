@@ -17,11 +17,17 @@ node_modules/
 
 # OS / editor cruft
 .DS_Store
+Thumbs.db
 .gstack/
+*.swp
+*~
 
 # Claude Code local settings
 .claude/settings.local.json
 
-# Source hero images (originals; placed copies live under frontend/assets)
+# Local image/asset archive: originals and retired assets. The copies the site
+# actually serves live under frontend/assets/ and are tracked normally.
 source-images/
-.vercel
+
+# Stray screenshots dropped in the repo root
+/Screenshot*.png
