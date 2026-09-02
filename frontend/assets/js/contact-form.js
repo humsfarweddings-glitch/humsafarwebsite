@@ -12,6 +12,20 @@ if (enquiryForm) {
   const weddingDateInput = document.getElementById("weddingDate");
   if (weddingDateInput) {
     weddingDateInput.addEventListener("change", () => weddingDateInput.blur());
+
+    // Native date inputs only open the picker when you hit the tiny
+    // calendar icon — showPicker() makes a click anywhere in the box
+    // open it, same as clicking the icon.
+    if (weddingDateInput.showPicker) {
+      weddingDateInput.addEventListener("click", () => {
+        try {
+          weddingDateInput.showPicker();
+        } catch (err) {
+          // showPicker() throws if called outside a user gesture or
+          // while another picker is open — safe to ignore.
+        }
+      });
+    }
   }
 
   const setStatus = (message, type) => {
