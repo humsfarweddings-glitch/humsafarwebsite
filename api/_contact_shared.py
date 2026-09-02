@@ -119,6 +119,10 @@ def send_enquiry_email(data, attachment_bytes=None, attachment_filename=None):
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
+            "Accept": "application/json",
+            # Resend's edge (Cloudflare) blocks the default Python-urllib
+            # User-Agent as bot traffic (error 1010) — send a real one.
+            "User-Agent": "HumsafarWedding-ContactForm/1.0",
         },
     )
     try:
