@@ -4,7 +4,7 @@
     /* For background and heading */
     --inner-section-bg: #ffffff;
     /* For inner section background */
-    --highlight-color: #FAE6A5;
+    --highlight-color: #E1B3BD;
     /* For span, em, Strong, paragraph, <a> tags */
     --white-color: #FFFFFF;
     /* White Color */
@@ -625,9 +625,9 @@ section.footer_topbar {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #FAE6A5;
+    color: var(--highlight-color);
     background-color: var(--primary-bg-color);
-    border: 1px solid #FAE6A5;
+    border: 1px solid var(--highlight-color);
     height: 60px;
     display: flex;
     gap: 12px;
@@ -662,7 +662,7 @@ footer.footer_main ul li.nav-item a {
     font-weight: 500;
     font-size: 15px;
     line-height: 20.85px;
-    color: #FAE6A5;
+    color: var(--highlight-color);
 }
 
 .instagram_images img {
@@ -1734,9 +1734,9 @@ form.wedding-form .form-flex select {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #FAE6A5;
+    color: var(--highlight-color);
     background-color: var(--primary-bg-color);
-    border: 1px solid #FAE6A5;
+    border: 1px solid var(--highlight-color);
     height: 60px;
     display: flex;
     gap: 12px;
@@ -2152,7 +2152,7 @@ p.mb-0.small {
 
 .faq_page_main .faq-box.open button.toggle-btn {
     background: var(--primary-bg-color);
-    color: #FAE6A5;
+    color: var(--highlight-color);
     border-color: var(--primary-bg-color);
 }
 
