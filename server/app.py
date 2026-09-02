@@ -1,4 +1,4 @@
-"""Humsafar Weddings — Flask server.
+"""Humsafar Wedding — Flask server.
 
 Serves every page in frontend/pages/ at a clean endpoint:
 

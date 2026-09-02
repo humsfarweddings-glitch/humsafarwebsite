@@ -17,7 +17,7 @@ from html import escape
 
 RESEND_API_URL = "https://api.resend.com/emails"
 DEFAULT_TO_EMAIL = "info@humsafarwedding.com"
-DEFAULT_FROM_EMAIL = "Humsafar Weddings <onboarding@resend.dev>"
+DEFAULT_FROM_EMAIL = "Humsafar Wedding <onboarding@resend.dev>"
 
 MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024  # 4 MB
 
@@ -71,7 +71,7 @@ def _build_email_html(data):
             "</tr>"
         )
     return (
-        "<h2>New Wedding Enquiry — Humsafar Weddings</h2>"
+        "<h2>New Wedding Enquiry — Humsafar Wedding</h2>"
         "<table style='border-collapse:collapse'>" + "".join(rows) + "</table>"
     )
 

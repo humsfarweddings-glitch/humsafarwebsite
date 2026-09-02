@@ -66,7 +66,7 @@ export default async function handler(request) {
   }
 
   const toEmail = process.env.CAREER_ENQUIRY_TO_EMAIL || 'info@gnkevents.in';
-  const fromEmail = process.env.CAREER_ENQUIRY_FROM_EMAIL || 'Humsafar Weddings <onboarding@resend.dev>';
+  const fromEmail = process.env.CAREER_ENQUIRY_FROM_EMAIL || 'Humsafar Wedding <onboarding@resend.dev>';
 
   const rows = FIELD_LABELS.filter(([key]) => String(body[key] ?? '').trim())
     .map(

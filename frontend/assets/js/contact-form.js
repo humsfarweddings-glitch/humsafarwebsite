@@ -7,6 +7,13 @@ if (enquiryForm) {
   const statusEl = document.getElementById("enquiry-form-status");
   const submitBtn = document.getElementById("enquiry-submit-btn");
 
+  // Chrome's native date picker stays open after a date is clicked —
+  // blur the field once the value is set so the calendar dismisses itself.
+  const weddingDateInput = document.getElementById("weddingDate");
+  if (weddingDateInput) {
+    weddingDateInput.addEventListener("change", () => weddingDateInput.blur());
+  }
+
   const setStatus = (message, type) => {
     if (!statusEl) return;
     statusEl.textContent = message;

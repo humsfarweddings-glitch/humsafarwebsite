@@ -335,78 +335,89 @@ form.wedding-form .form-flex {
     letter-spacing: 0%;
 }
 
-/* Blog Detail Css */
+/* Journal Article Css */
 
-.flex-image-soul img {
-    width: 100%;
+.journal-meta-top {
+    padding-top: 28px;
+    margin-bottom: 18px;
 }
-.flex-image-soul {
-    flex-wrap: wrap;
+.journal-category {
+    font-size: 11px;
+    padding: 6px 12px;
 }
-.blog_deploy_img img {
-    width: 100%;
+.journal-title {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 14px;
 }
-.content_ceremonies h2 {
-    font-size: 25px;
-    line-height: 36px;
+.journal-dek {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 22px;
 }
-.space_between_blog {
-    width: 100%;
+.journal-byline {
+    margin-bottom: 26px;
 }
-.blog_deploy_content h2 {
-    font-size: 25px;
-    line-height: 36px;
-    letter-spacing: 1px;
+.journal-toc {
+    padding: 20px 20px;
+    margin-bottom: 30px;
 }
-.blog_deploy_content em {
-    font-size: 20px;
-    line-height: 29px;
-}
-.blog_deploy_content p {
+.journal-toc a { font-size: 15px; }
+.journal-body p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.75;
+    margin-bottom: 20px;
 }
-.blog_deploy_content ul li {
+.journal-lead::first-letter {
+    font-size: 48px;
+    padding: 4px 8px 0 0;
+}
+.journal-body h2 {
+    font-size: 23px;
+    margin: 36px 0 14px;
+}
+.journal-body h3 {
+    font-size: 19px;
+    margin: 28px 0 12px;
+}
+.journal-body ul, .journal-body ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.journal-body ul li, .journal-body ol li {
     font-size: 16px;
-    line-height: 24.3px;
+    line-height: 1.6;
 }
-.blog_deploy_content ul {
-    padding: 0 15px;
+.journal-pullquote {
+    font-size: 21px;
+    padding-left: 18px;
+    margin: 30px 0;
 }
-.heading_lived h2 {
-    font-size: 20px;
-    line-height: 34px;
-    letter-spacing: 3px;
+.journal-figure { margin: 30px 0; }
+.journal-figure img { height: 220px; }
+.journal-figure.two-up { flex-direction: column; }
+.journal-figure.two-up img { width: 100%; height: 220px; }
+.journal-stat-box {
+    padding: 22px 22px;
+    margin: 30px 0;
 }
-section.guest_lived {
-    padding: 40px 12px;
+.journal-stat-box li { font-size: 16px; }
+.journal-cta {
+    padding: 34px 22px;
+    margin: 26px 0 10px;
 }
-.box_ceremonies {
-    padding: 20px;
-    width: 100%;
-    margin: 22px auto;
-    border-radius: 2px;
+.journal-cta h3 { font-size: 21px; }
+.journal-cta p { font-size: 15px; }
+.journal-related {
+    padding: 40px 20px 56px;
 }
-.sound_healing_blog {
-    width: 100%;
-}
-.sound_healing_blog ul {
-    width: 93%;
-}
-.Images_multipal_corner {
-    padding-bottom: 20px;
-}
-.content_ceremonies {
-    padding: 20px 0;
-}
-.blog_deploy_content h5 {
-    font-size: 22px;
-    line-height: 35px;
-    letter-spacing: 1px;
+.journal-related__grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
 }
 section.blog_details {
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .year-tabs {
@@ -697,47 +708,15 @@ form.wedding-form .form-flex label {
     display: block !important;
 }
 
-.space_between_blog {
-    width: 100%;
+.journal-title {
+    font-size: 36px;
+    line-height: 1.2;
 }
-.blog_deploy_content h2 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 43px;
+.journal-dek {
+    font-size: 19px;
 }
-.blog_deploy_content em {
-    font-size: 20px;
-    line-height: 32px;
-}
-.blog_deploy_content p {
-    font-size: 16px;
-}
-
-.blog_deploy_content ul {
-    padding: 0 20px;
-}
-
-.blog_deploy_content ul li {
-    font-size: 16px;
-}
-.blog_deploy_img img {
-    width: 100%;
-}
-.heading_lived h2 {
-    font-size: 20px;
-    line-height: 33px;
-    letter-spacing: 3px;
-}
-.sound_healing_blog ul {
-    width: 82%;
-}
-
-.flex-image-soul img {
-    width: 50%;
-}
-.blog_deploy_content h5 {
-    font-size: 26px;
-    line-height: 36px;
+.journal-related__grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 .member-info p {
     font-size: 14px;
