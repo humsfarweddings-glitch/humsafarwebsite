@@ -780,3 +780,282 @@ body header.header_main .nav-links li a {
 
 
 
+
+
+/* =========================================================================
+   Mobile + tablet corrections (<= 1024px only — desktop is untouched).
+   Flat selectors on purpose: the blocks above are wrapped in a nested
+   `body { ... }`, so these stay readable and independently overridable.
+   ========================================================================= */
+
+@media only screen and (max-width: 1024px) {
+
+  /* --- Header lockup ----------------------------------------------------
+     Bootstrap's `.navbar-brand { display: inline-block }` beats
+     `.logo-lockup { display: flex }` (same specificity, later in the
+     cascade), so the crest kept centring itself with `margin: 0 auto`
+     inside a full-width box while the wordmark stayed left-aligned and
+     stretched to 48% of that box (457px at 1024px wide). Restore the
+     column lockup and give each image a real size. */
+  header.mobile_header_code {
+    padding: 12px 16px;
+    gap: 16px;
+  }
+
+  header.mobile_header_code .logo {
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  header.mobile_header_code .logo-lockup {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Overrides the blanket `.logo img { width: 48% }` that sized both
+     images off an ever-changing container. */
+  header.mobile_header_code .logo .desktop-logo {
+    width: 52px;
+    max-width: 52px;
+    height: auto;
+    margin: 0;
+  }
+
+  header.mobile_header_code .logo .logo-wordmark {
+    width: 132px;
+    max-width: 132px;
+    height: auto;
+    margin: 0;
+  }
+
+  header.mobile_header_code .hamburger {
+    flex: 0 0 auto;
+    line-height: 1;
+    padding: 8px;
+    margin-right: -8px;
+  }
+
+  /* --- FAQ category headings -------------------------------------------
+     `white-space: nowrap` pushed "Destination Weddings — India & Abroad"
+     654px wide on a 390px screen, scrolling the whole page sideways. */
+  /* mobile.css is linked BEFORE style.css on every page, so an
+     equal-specificity rule here would lose the tie — hence !important. */
+  .faq-cat-head h3 {
+    white-space: normal !important;
+    font-size: 20px !important;
+    letter-spacing: 0.5px;
+  }
+
+  .faq-cat-head {
+    gap: 10px;
+  }
+
+  /* --- Wedding-planning image pair --------------------------------------
+     The two images kept their 626px intrinsic width inside the flex row,
+     dragging the page out to 1012px on a 390px screen. */
+  .flex_planing_multipal_img {
+    flex-wrap: wrap;
+  }
+
+  .flex_planing_multipal_img img {
+    width: 50% !important;
+    min-width: 0;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .planing_img_box {
+    max-width: 100%;
+  }
+
+  img.creative_full_bg_perfect,
+  .content_width_fix {
+    width: 100%;
+  }
+
+  /* --- Grid/flex children must be allowed to shrink ----------------------
+     Long single words ("Mahabalipuram") were forcing destination cards a
+     few px past the viewport at tablet widths. */
+  .footer_col,
+  .humsafar_destination_box,
+  .destination_card_box {
+    min-width: 0;
+  }
+
+  .humsafar_destination_box h3,
+  .destination_card_box h3 {
+    overflow-wrap: break-word;
+  }
+
+  /* Destination cards: the heading was sized off the full row instead of
+     its own padded column, poking a few px past the viewport. */
+  .journal_content-1 {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .journal_content-1 h3 {
+    width: auto !important;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
+/* --- "Featured In" row -------------------------------------------------
+   `.link_featured { width: 50%; float: right }` (mobile) and
+   `.heading_featured { width: 50% }` + `img { width: 100% }` (tablet) both
+   overflowed the row and clipped the WedMeGood logo.
+
+   Note the `body` prefix: the mobile/tablet blocks earlier in this file are
+   wrapped in a nested `body { ... }`, which resolves to `body .link_featured`
+   (specificity 0,1,1). A bare `.link_featured` here would lose to it, so
+   these match that shape and win on source order instead. */
+@media only screen and (max-width: 1024px) {
+  body .featured_flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px 26px;
+  }
+
+  body .heading_featured {
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  body .heading_featured h2 {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  body .link_featured {
+    width: auto;
+    float: none;
+    flex: 0 1 auto;
+    margin: 0;
+  }
+
+  body .link_featured a {
+    display: block;
+  }
+
+  body .link_featured img {
+    width: auto;
+    max-width: 100%;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .link_featured img {
+    height: 18px;
+  }
+
+  body .featured_flex {
+    gap: 12px 18px;
+  }
+}
+
+/* --- Footer grid ------------------------------------------------------
+   Four `flex: 1 1 210px` columns wrapped into a lopsided 2+2 with the QR
+   stranded left and "Follow Us" pushed to the far right by the parent's
+   `justify-content: space-between`. Make it an even two-column grid on
+   tablet and a single centred column on phones.
+
+   Prefixed with `footer.footer_main` throughout: mobile.css is linked
+   BEFORE style.css on every page, so a bare `.footer_grid` here would
+   lose the specificity tie to `.footer_grid` in style.css. */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer.footer_main .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: stretch;
+    gap: 44px 40px;
+    padding: 48px 0 40px;
+  }
+
+  footer.footer_main .footer_col {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  footer.footer_main .footer_brand {
+    align-self: start;
+  }
+
+  footer.footer_main .footer_brand .footer_logo_img {
+    width: 180px;
+  }
+
+  footer.footer_main .footer_brand .footer_logo_word {
+    width: 230px;
+  }
+
+  /* Left-align the QR with the brand column above it, and "Follow Us"
+     with the contact column above it, so the two rows line up. */
+  footer.footer_main .footer_qr {
+    text-align: left;
+  }
+
+  footer.footer_main .footer_qr .footer_qr_frame {
+    width: 200px;
+    padding: 10px;
+  }
+
+  footer.footer_main .footer_follow .social_media ul {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer.footer_main .footer_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 44px 0 36px;
+    text-align: center;
+  }
+
+  footer.footer_main .footer_col {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  footer.footer_main .footer_brand .footer_logo_img {
+    width: 165px;
+  }
+
+  footer.footer_main .footer_brand .footer_logo_word {
+    width: 210px;
+  }
+
+  footer.footer_main .footer_contact .footer_copyright_block {
+    margin-top: 24px;
+  }
+
+  footer.footer_main .footer_qr .footer_qr_frame {
+    width: 200px;
+    padding: 10px;
+  }
+
+  footer.footer_main .footer_follow .social_media ul {
+    justify-content: center;
+  }
+}
