@@ -1078,12 +1078,42 @@
         const maxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
         const clamp = (v) => Math.min(maxScroll(), Math.max(0, v));
 
+        // Snap-to-center: this strip only ever moves through JS-set
+        // scrollLeft (native horizontal scrolling is disabled below via
+        // overflow/touch-action), so it has no built-in scroll-snap "settle"
+        // behavior — whatever pixel a gesture ends on is where it stays.
+        // That left the strip resting mid-drag with a step half off-screen
+        // and its neighbour peeking in, instead of one step centered.
+        // Snap the nearest step to center once a gesture ends.
+        const steps = () => Array.from(track.querySelectorAll(".step"));
+
+        function snapToNearest() {
+          const list = steps();
+          if (!list.length) return;
+          const viewportCenter = track.scrollLeft + track.clientWidth / 2;
+          let nearest = list[0];
+          let nearestDist = Infinity;
+          for (const el of list) {
+            const center = el.offsetLeft + el.offsetWidth / 2;
+            const dist = Math.abs(center - viewportCenter);
+            if (dist < nearestDist) {
+              nearestDist = dist;
+              nearest = el;
+            }
+          }
+          const target = clamp(nearest.offsetLeft + nearest.offsetWidth / 2 - track.clientWidth / 2);
+          track.scrollTo({ left: target, behavior: "smooth" });
+        }
+
+        let wheelSettleTimer = null;
         track.addEventListener(
           "wheel",
           (e) => {
             e.preventDefault();
             if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
               track.scrollLeft = clamp(track.scrollLeft + e.deltaX);
+              clearTimeout(wheelSettleTimer);
+              wheelSettleTimer = setTimeout(snapToNearest, 120);
             } else {
               window.scrollBy(0, e.deltaY);
             }
@@ -1124,6 +1154,24 @@
           },
           { passive: false }
         );
+
+        track.addEventListener(
+          "touchend",
+          () => {
+            if (touchIsHorizontal) snapToNearest();
+            touchIsHorizontal = null;
+          },
+          { passive: true }
+        );
+
+        // A step may start out already centered (or not) purely from
+        // whatever the flex layout produces at the current viewport width —
+        // settle it once on load/resize too.
+        window.addEventListener("resize", () => {
+          clearTimeout(wheelSettleTimer);
+          wheelSettleTimer = setTimeout(snapToNearest, 150);
+        });
+        window.addEventListener("load", () => snapToNearest());
       })();
     </script>
 

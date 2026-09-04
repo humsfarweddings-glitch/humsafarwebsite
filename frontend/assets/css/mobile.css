@@ -120,12 +120,28 @@ body {
   .Destinations_btn {
     padding: 0 15px;
 }
+  /* This pairs with `.flex_planing_multipal_img { display: flex; gap: 10px }`
+     (style.css) to show the two wedding-planning images side by side —
+     full-width boxes here made each one wrap onto its own line instead.
+     calc() (not a flat 50%) leaves room for that 10px gap so the pair
+     actually fits on one row instead of wrapping anyway. */
   .planing_img_box {
-    width: 100%;
+    width: calc(50% - 5px);
   }
   .perfect_sec_content {
     width: 100%;
     padding: 20px 0px;
+    margin: 0 0 0 auto;
+    top: 0;
+  }
+  /* wedding-management's "Perfect For" card uses the `.Humsafar_Couples`
+     variant (`.Humsafar_Couples .perfect_sec_content { width: 57%;
+     margin-top: -176px }` in style.css) — two classes there outrank the
+     plain reset above, so on mobile the card stayed a narrow 57%-wide box
+     pulled up 176px, overlapping most of the banner image above it. Needs
+     the extra `.Humsafar_Couples` prefix to actually win. */
+  .Humsafar_Couples .perfect_sec_content {
+    width: 100%;
     margin: 0 0 0 auto;
     top: 0;
   }
@@ -420,15 +436,39 @@ section.blog_details {
     padding-bottom: 0;
 }
 
+/* Year tabs: a bordered 4-column grid read as a plain spreadsheet of boxes.
+   A horizontally scrolling pill row reads as an actual timeline strip
+   instead, and keeps all 10 years reachable by swipe without wrapping into
+   a grid at all. */
 .year-tabs {
-    display: grid !important;
-    grid-template-columns: repeat(4, 2fr);
+    display: flex !important;
+    flex-wrap: nowrap;
     width: 100% !important;
-    gap: 5px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding: 4px 4px 14px;
+    border-bottom: none !important;
+    scrollbar-width: none;
+}
+.year-tabs::-webkit-scrollbar {
+    display: none;
 }
 .year-tabs button {
-    background: #fafafa;
-    border: 1px solid #ddd;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: auto;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid var(--highlight-color);
+    border-radius: 999px;
+    padding: 9px 18px;
+    font-size: 14px;
+}
+.year-tabs button.active {
+    border-color: var(--primary-bg-color);
+    font-weight: 700;
 }
 .tab_section_about .subheading {
     font-size: 25px;
@@ -622,8 +662,10 @@ section.humsafar-journal .col-md-4 {
 .flex_planing_multipal_img img {
     width: 50%;
 }
+/* Same fix as the phone breakpoint above: 80% + 80% + the flex row's 10px
+   gap is well past 100%, so the second image wrapped onto its own line. */
 .planing_img_box {
-    width: 80%;
+    width: calc(50% - 5px);
 }
 .perfect_sec_content h3 {
     font-size: 25px;
@@ -798,6 +840,7 @@ body header.header_main .nav-links li a {
      stretched to 48% of that box (457px at 1024px wide). Restore the
      column lockup and give each image a real size. */
   header.mobile_header_code {
+    position: relative;
     padding: 12px 16px;
     gap: 16px;
   }
@@ -809,26 +852,34 @@ body header.header_main .nav-links li a {
 
   header.mobile_header_code .logo-lockup {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 4px;
+    justify-content: flex-start;
+    gap: 0;
     margin: 0;
     padding: 0;
   }
 
   /* Overrides the blanket `.logo img { width: 48% }` that sized both
-     images off an ever-changing container. */
+     images off an ever-changing container. Crest stays in normal flow at
+     the left edge; the wordmark is pulled out of flow and centered against
+     the whole header bar (not the leftover space next to the crest), so it
+     reads as the page title regardless of how wide the crest or hamburger
+     tap target is. */
   header.mobile_header_code .logo .desktop-logo {
-    width: 52px;
-    max-width: 52px;
+    width: 56px;
+    max-width: 56px;
     height: auto;
     margin: 0;
   }
 
   header.mobile_header_code .logo .logo-wordmark {
-    width: 132px;
-    max-width: 132px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 210px;
+    max-width: 210px;
     height: auto;
     margin: 0;
   }
@@ -1021,42 +1072,102 @@ body header.header_main .nav-links li a {
 }
 
 @media only screen and (max-width: 767px) {
+  /* Four sections stacked full-height (brand, contact+copyright, QR, follow)
+     ran to ~900px of scroll on a phone. Lay them out as a compact 2-column
+     grid instead: the contact block spans both rows on the left while QR
+     and Follow Us stack together on the right, so nothing is dropped but
+     the footer reads roughly half as tall. */
   footer.footer_main .footer_grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 44px 0 36px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas:
+      "brand brand"
+      "contact qr"
+      "contact follow";
+    align-items: start;
+    gap: 22px 14px;
+    padding: 32px 0 28px;
+    text-align: left;
   }
 
   footer.footer_main .footer_col {
     flex: 0 0 auto;
     width: 100%;
     min-width: 0;
+    text-align: left;
+  }
+
+  footer.footer_main .footer_brand {
+    grid-area: brand;
     text-align: center;
   }
 
+  footer.footer_main .footer_brand .footer_logo_lockup {
+    gap: 4px;
+  }
+
   footer.footer_main .footer_brand .footer_logo_img {
-    width: 165px;
+    width: 76px;
   }
 
   footer.footer_main .footer_brand .footer_logo_word {
-    width: 210px;
+    width: 150px;
   }
 
+  footer.footer_main .footer_contact {
+    grid-area: contact;
+  }
+
+  footer.footer_main .footer_col h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  footer.footer_main .footer_contact address,
+  footer.footer_main .footer_contact a {
+    font-size: 13.5px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  /* The standalone "Copyright" heading repeated a label above one short
+     line of text — drop the heading, keep the line, tighten the gap above it. */
   footer.footer_main .footer_contact .footer_copyright_block {
-    margin-top: 24px;
+    margin-top: 14px;
+  }
+
+  footer.footer_main .footer_contact .footer_copyright_block h3 {
+    display: none;
+  }
+
+  footer.footer_main .footer_qr {
+    grid-area: qr;
+    text-align: left;
   }
 
   footer.footer_main .footer_qr .footer_qr_frame {
-    width: 200px;
-    padding: 10px;
+    width: 150px;
+    padding: 8px;
+  }
+
+  footer.footer_main .footer_follow {
+    grid-area: follow;
+    text-align: left;
+  }
+
+  footer.footer_main .footer_follow h3 {
+    font-size: 16px;
   }
 
   footer.footer_main .footer_follow .social_media ul {
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  footer.footer_main .footer_follow .social_media ul li a {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
   }
 }
 
