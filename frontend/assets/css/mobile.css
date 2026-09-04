@@ -316,12 +316,27 @@ form.wedding-form .form-flex {
     font-size: 34px;
     line-height: 44px;
 }
+/* Desktop's small centered pill-badge header (width: fit-content) turned
+   into a full-bleed solid stripe here — the `width: 100%` this used to
+   carry. Wrapping each location in its own soft card gives the stack
+   some visual separation instead of a bare list of dark bars on white. */
 .locations_card {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+    padding: 24px 20px;
+    background: #fff;
+    border: 1px solid #E4DFD3;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px -8px rgba(20, 57, 53, 0.18);
 }
 .locations_card_header {
-    font-size: 18px;
-    width: 100%;
+    font-size: 14px;
+    width: fit-content;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.locations_bg .col-sm-6.col-md-3 {
+    border-right: none;
 }
 .Stay_Connected_main p.perg_tp {
     font-size: 16px;
@@ -659,8 +674,12 @@ section.humsafar-journal .col-md-4 {
     font-size: 18px;
     line-height: 30px;
 }
+/* The box (.planing_img_box, below) already provides the 50/50 split —
+   the image inside just needs to fill it. Leaving this at 50% shrank each
+   photo to a quarter of the row (50% of a box that's already half-width),
+   with big gaps on every side. */
 .flex_planing_multipal_img img {
-    width: 50%;
+    width: 100%;
 }
 /* Same fix as the phone breakpoint above: 80% + 80% + the flex row's 10px
    gap is well past 100%, so the second image wrapped onto its own line. */
@@ -913,10 +932,14 @@ body header.header_main .nav-links li a {
     flex-wrap: wrap;
   }
 
+  /* The box (.planing_img_box, below) already provides the 50/50 split —
+     the image inside just needs to fill it. Leaving this at 50% shrank
+     each photo to a quarter of the row (50% of a box that's already
+     half-width), with big gaps on every side. */
   .flex_planing_multipal_img img {
-    width: 50% !important;
+    width: 100% !important;
     min-width: 0;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
   }

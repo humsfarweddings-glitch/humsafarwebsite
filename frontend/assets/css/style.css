@@ -1151,10 +1151,19 @@ section.humsafar-stories {
     gap: 42px 30px;
 }
 
-.culture-card {
+/* The whole card is one link now (image or title both open the same blog
+   listing) instead of a separate "read all blogs" pill — see
+   .culture-card__link below. */
+.culture-card__link {
     display: flex;
     align-items: center;
     gap: 22px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.culture-card__link:hover .culture-card__title {
+    color: var(--highlight-color);
 }
 
 .culture-card__media {
@@ -1179,29 +1188,13 @@ section.humsafar-stories {
     font-weight: 500;
     line-height: 1.15;
     color: var(--primary-bg-color);
-    margin: 0 0 16px;
+    margin: 0;
+    transition: color 0.2s ease;
 }
 
 .culture-card__title em {
     display: block;
     font-style: italic;
-}
-
-.culture-card__btn {
-    display: inline-block;
-    font-family: var(--font-Work);
-    font-size: 14px;
-    color: var(--white-color);
-    background: var(--primary-bg-color);
-    padding: 9px 22px;
-    border-radius: 40px;
-    text-decoration: none;
-    transition: opacity 0.25s ease;
-}
-
-.culture-card__btn:hover {
-    color: var(--white-color);
-    opacity: 0.85;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1226,9 +1219,27 @@ section.humsafar-stories {
         grid-template-columns: 1fr;
         gap: 36px;
     }
+    /* Two stamps per row instead of one full-width card per row — each
+       card switches from the desktop image-beside-text row to a stacked,
+       centered tile so it still reads cleanly at ~half the width. */
     .culture-grid {
-        grid-template-columns: 1fr;
-        gap: 26px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 16px;
+    }
+    .culture-card__link {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .culture-card__media {
+        width: 100%;
+        flex-basis: auto;
+    }
+    .culture-card__media img {
+        max-height: 160px;
+    }
+    .culture-card__title {
+        font-size: 18px;
     }
     .story-card__media img {
         height: 260px;
