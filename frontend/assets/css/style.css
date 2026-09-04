@@ -2625,6 +2625,19 @@ header.header_main ul.drop-menu li a {
     visibility: visible;
 }
 
+/* "Contact Us" is the last item in the right-hand nav group, so its dropdown's
+   default left-anchored position leaves very little room before the header's
+   right edge. With `width: fit-content` and no `left`/`right` set, the browser
+   caps the box's width to that leftover space (~180px) instead of growing to
+   fit "VENDOR ENQUIRY" on one line — it wraps to two lines on most laptop
+   screens (anything narrower than a very wide monitor), not just small ones.
+   Anchor it to the trigger's own right edge and size to content instead. */
+.right_menu_code .drop-menu {
+    left: auto;
+    right: 0;
+    width: max-content;
+}
+
 .drop-menu li a {
     width: 100%;
     display: block;

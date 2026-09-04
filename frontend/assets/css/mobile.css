@@ -1059,3 +1059,67 @@ body header.header_main .nav-links li a {
     justify-content: center;
   }
 }
+
+/* --- Mobile nav drawer --------------------------------------------------
+   1) `.overlay` is `position: fixed; height: 100%`, but its parent
+      `.mobile_header_code` is `display: flex` — Blink resolves the
+      percentage against the flex parent's own (78px) box instead of the
+      viewport, so the dimming backdrop behind the drawer was an invisible
+      78px sliver instead of covering the page. `100vh` sidesteps the
+      percentage-resolution bug entirely.
+   2) Top-level drawer items mixed "MEET HUMSAFAR"/"OFFERINGS" (upper case)
+      with "Indian Destinations"/"Journal"/"Contact" (title case) because
+      the source HTML itself is inconsistent. Force upper case on just the
+      top-level links (not the submenu, which intentionally keeps proper
+      city/role names like "Jaipur") to match the rest of the site's nav. */
+@media only screen and (max-width: 1024px) {
+  body .overlay {
+    height: 100vh;
+  }
+
+  body .mobile_menu nav > ul > li > a {
+    text-transform: uppercase;
+  }
+}
+
+/* --- Destination-page venue cards (.hotel-box) at tablet width ---------
+   `.hotel-text` is a desktop overlay card (`position:relative; left:11%;
+   bottom:-70px; width:450px`) meant to float over the bottom corner of
+   `.hotel-image`. The <767px block below already un-stacks this into a
+   plain stacked card, but that fix stopped at 767px, so 768-1024px still
+   ran the desktop overlap — `.hotel-text` and `.hotel-image` bounding
+   boxes overlapped both horizontally and vertically, and squeezed one
+   venue's image down to ~24px tall. Reuse the same un-stacked layout for
+   tablet, sized for the wider column. */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body .hotel-box {
+    display: block;
+  }
+
+  body .hotel-text {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    padding: 35px;
+  }
+
+  body .hotel-text.Ekaaya_content {
+    left: 0;
+    right: 0;
+  }
+
+  body .hotel-image,
+  body .hotel-image.Ekaaya_image {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+
+  body .hotel-image img {
+    height: auto;
+  }
+}
